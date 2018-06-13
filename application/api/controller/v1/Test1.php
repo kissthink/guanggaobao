@@ -11,5 +11,8 @@ namespace app\api\controller\v1;
 
 class Test1
 {
-
+    public function test2()
+    {
+        echo 'test1骑着小马宝莉';
+    }
 }
