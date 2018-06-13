@@ -19,7 +19,7 @@ require __DIR__ . '/../thinkphp/start.php';
 
 //日志初始化
 \think\Log::init([
-    'type'=>'FILE',
+    'type'=>'file',
     'path'=>LOG_PATH,
     'level'=>['sql']
 ]);
