@@ -1,0 +1,6 @@
+---------------------------------------------------------------
+[ 2018-06-13T14:04:54+08:00 ] 0.0.0.0 GET /index.php/api/v1/banner/1?num=2
+[ info ] localhost:8888/index.php/api/v1/banner/1?num=2 [运行时间：0.259229s][吞吐率：3.86req/s] [内存消耗：2,421.44kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004081s ] mysql:host=localhost;port=3306;dbname=dcxe;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.025809s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  (  `banner_id` = 1 ) [ RunTime:0.010504s ]

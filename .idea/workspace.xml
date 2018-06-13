@@ -5,7 +5,7 @@
     <bookmark url="file://$PROJECT_DIR$/application/lib/exception/ParameterException.php" line="11" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb97e2ae-f3ac-4c82-8444-97df87c09ad9" name="Default" comment="">
+    <list default="true" id="cb97e2ae-f3ac-4c82-8444-97df87c09ad9" name="Default" comment="1.更改home配置文件：在文件最外层包裹了database键。">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,38 +37,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/home.php">
+      <file leaf-file-name="database.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
+            <state relative-caret-position="360">
               <caret line="32" column="14" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/database.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="32" lean-forward="true" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="config.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="166" column="24" selection-start-line="166" selection-start-column="20" selection-end-line="166" selection-end-column="24" />
+            <state relative-caret-position="375">
+              <caret line="33" column="39" lean-forward="true" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/home.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="38" column="31" lean-forward="true" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="24" column="3" lean-forward="true" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
+            <state relative-caret-position="225">
+              <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -76,7 +76,7 @@
       <file leaf-file-name="Banner.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/api/model/Banner.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
+            <state relative-caret-position="330">
               <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
               <folding>
                 <element signature="e#120#162#0#PHP" expanded="true" />
@@ -88,8 +88,8 @@
       <file leaf-file-name="Banner.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/api/controller/v1/Banner.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+            <state relative-caret-position="375">
+              <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
               <folding>
                 <element signature="e#127#167#0#PHP" expanded="true" />
               </folding>
@@ -100,7 +100,7 @@
       <file leaf-file-name="ExceptionHandler.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/lib/exception/ExceptionHandler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
+            <state relative-caret-position="315">
               <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
               <folding>
                 <element signature="e#123#137#0#PHP" expanded="true" />
@@ -128,9 +128,9 @@
       <find>exception</find>
       <find>Render</find>
       <find>File</find>
+      <find>log</find>
       <find>ex</find>
       <find>$ex</find>
-      <find>log</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -176,15 +176,16 @@
         <option value="$PROJECT_DIR$/application/lib/exception/ParameterException.php" />
         <option value="$PROJECT_DIR$/application/api/validate/IDMustBePositiveInt.php" />
         <option value="$PROJECT_DIR$/application/api/validate/BaseValidate.php" />
+        <option value="$PROJECT_DIR$/application/api/controller/v1/Banner.php" />
         <option value="$PROJECT_DIR$/application/lib/exception/BaseException.php" />
         <option value="$PROJECT_DIR$/application/lib/exception/ExceptionHandler.php" />
         <option value="$PROJECT_DIR$/application/database2.php" />
         <option value="$PROJECT_DIR$/application/database.php" />
         <option value="$PROJECT_DIR$/application/database-home.php" />
-        <option value="$PROJECT_DIR$/application/api/model/Banner.php" />
-        <option value="$PROJECT_DIR$/application/api/controller/v1/Banner.php" />
-        <option value="$PROJECT_DIR$/application/config.php" />
         <option value="$PROJECT_DIR$/public/index.php" />
+        <option value="$PROJECT_DIR$/application/api/model/Banner.php" />
+        <option value="$PROJECT_DIR$/application/config.php" />
+        <option value="$PROJECT_DIR$/application/home.php" />
       </list>
     </option>
   </component>
@@ -206,6 +207,7 @@
   <component name="PhpDebugGeneral" show_pre_config_in_web_page="false" />
   <component name="PhpServers">
     <servers>
+      <server host="localhost" id="4d9e48b5-b469-457d-9d43-a202f467b0ed" name="zerg" />
       <server host="127.0.0.1" id="3633376c-88cb-4b52-8a25-8bc1f139b9a2" name="127.0.0.1" use_path_mappings="true">
         <path_mappings>
           <mapping local-root="$PROJECT_DIR$/public" remote-root="E:/wamp64/www" />
@@ -231,9 +233,9 @@
     </include_path>
   </component>
   <component name="PhpXdebugProxy" ide_key="phpStorm" host="localhost" port="80" />
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -241,56 +243,23 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="zerg" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zerg" type="462c0819:PsiDirectoryNode" />
+              <item name="GitHubTest" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="zerg" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zerg" type="462c0819:PsiDirectoryNode" />
+              <item name="GitHubTest" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zerg" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zerg" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zerg" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zerg" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zerg" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zerg" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="v1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zerg" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zerg" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zerg" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zerg" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -301,7 +270,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="settings.php.debug.servers" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -310,6 +279,122 @@
       <recent name="D:\xammp\htdocs\zerg\application\index\view" />
       <recent name="E:\wamp64\www\thinkphp5\application\index\view\index" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree" date="片刻之前" ActionInfo="更新(_U)">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="从服务器更新" />
+        <option name="myStatusName" value="在服务器上改变的" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="更新的" />
+          <option name="myStatusName" value="更改的" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/database.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/index.php</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="创建的" />
+          <option name="myStatusName" value="创建的" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/home.php</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="删除的" />
+          <option name="myStatusName" value="删除的" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/api/controller/v1/Test.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/api/controller/v1/Test1.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/database-office.php</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="恢复的" />
+          <option name="myStatusName" value="将被恢复" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="修改的" />
+        <option name="myStatusName" value="修改的" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="跳过的" />
+        <option name="myStatusName" value="跳过的" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="合并冲突" />
+        <option name="myStatusName" value="将被合并冲突" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="已合并树冲突" />
+        <option name="myStatusName" value="已合并树冲突" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="合并属性冲突" />
+        <option name="myStatusName" value="将被合并属性冲突" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="合并的" />
+        <option name="myStatusName" value="将被合并" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="不在仓库" />
+        <option name="myStatusName" value="不在仓库" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="本地添加的" />
+        <option name="myStatusName" value="本地添加的" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="本地移除的" />
+        <option name="myStatusName" value="本地移除的" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="交换的" />
+        <option name="myStatusName" value="交换的" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -325,7 +410,7 @@
   </component>
   <component name="RunManager">
     <configuration default="true" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="localhost" />
-    <configuration name="index/index" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" browser="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" server_name="localhost" start_url="localhost/index.php/api/v1/banner/1" />
+    <configuration name="index/index" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="localhost" start_url="localhost:8888/index.php/api/v1/banner/1?num=2" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -371,35 +456,26 @@
       <workItem from="1528765408017" duration="27924000" />
       <workItem from="1528813672618" duration="2520000" />
       <workItem from="1528818345804" duration="705000" />
-      <workItem from="1528861922535" duration="1963000" />
-      <workItem from="1528868133332" duration="640000" />
     </task>
-    <task id="LOCAL-00001" summary="给小马宝莉后面加了两个叹号">
-      <created>1528862174566</created>
+    <task id="LOCAL-00001" summary="1.更改home配置文件：在文件最外层包裹了database键">
+      <created>1528870072454</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1528862174566</updated>
+      <updated>1528870072454</updated>
     </task>
-    <task id="LOCAL-00002" summary="删除小马宝莉后面的4个符号">
-      <created>1528862647413</created>
+    <task id="LOCAL-00002" summary="1.更改config.php配置文件：将'app_status'状态改成''">
+      <created>1528870686155</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1528862647414</updated>
+      <updated>1528870686156</updated>
     </task>
-    <task id="LOCAL-00003" summary="1.更改了database配置文件的数据库名称为'zerg'&#10;2.新建了一个数据库配置文件'home'&#10;3.将config.php配置文件的'app_statue'属性更改为'',默认开发环境&#10;4.修改入口文件第22行的type由大写改为小写.">
-      <created>1528868764366</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1528868764366</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111930000" />
+    <option name="totallyTimeSpent" value="111236000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -411,31 +487,42 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6884956" visible="true" weight="0.23402777" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32518598" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50159913" side_tool="true" weight="0.30861506" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32824427" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49840087" weight="0.3092455" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6884956" visible="true" weight="0.23933902" />
+      <window_info anchor="bottom" id="调试" order="13" sideWeight="0.4977612" weight="0.32665095" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50159913" side_tool="true" weight="0.30896226" />
       <window_info anchor="right" id="Database" order="3" weight="0.32995737" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3478735" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32900944" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" sideWeight="0.3103082" side_tool="true" weight="0.24114583" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991276" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49840087" weight="0.3092455" />
       <window_info id="Favorites" order="2" sideWeight="0.31150442" side_tool="true" weight="0.24114583" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6884956" visible="true" weight="0.23402777" />
+      <window_info id="Structure" order="1" sideWeight="0.3103082" side_tool="true" weight="0.24114583" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32518598" />
+      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="缩略图" order="12" weight="0.32946634" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3995749" />
       <window_info anchor="right" x="0" y="0" width="434" height="856" id="Documentation" order="4" side_tool="true" weight="0.3296875" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32995737" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50159913" side_tool="true" weight="0.3092455" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="调试" order="13" sideWeight="0.4977612" weight="0.32780084" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.34854773" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49840087" weight="0.3092455" />
+      <window_info id="Favorites" order="2" sideWeight="0.31150442" side_tool="true" weight="0.24114583" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -471,10 +558,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="给小马宝莉后面加了两个叹号" />
-    <MESSAGE value="删除小马宝莉后面的4个符号" />
-    <MESSAGE value="1.更改了database配置文件的数据库名称为'zerg'&#10;2.新建了一个数据库配置文件'home'&#10;3.将config.php配置文件的'app_statue'属性更改为'',默认开发环境&#10;4.修改入口文件第22行的type由大写改为小写." />
-    <option name="LAST_COMMIT_MESSAGE" value="1.更改了database配置文件的数据库名称为'zerg'&#10;2.新建了一个数据库配置文件'home'&#10;3.将config.php配置文件的'app_statue'属性更改为'',默认开发环境&#10;4.修改入口文件第22行的type由大写改为小写." />
+    <MESSAGE value="1.更改home配置文件：在文件最外层包裹了database键" />
+    <MESSAGE value="1.更改config.php配置文件：将'app_status'状态改成''" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.更改config.php配置文件：将'app_status'状态改成''" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -701,6 +787,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/database2.php" />
+    <entry file="file://$PROJECT_DIR$/application/database-office.php" />
     <entry file="file://$PROJECT_DIR$/thinkphp/library/think/db/builder/Mysql.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -732,7 +819,7 @@
     <entry file="file://$PROJECT_DIR$/public201806/12.log" />
     <entry file="file://$PROJECT_DIR$/application/lib/exception/ExceptionHandler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
+        <state relative-caret-position="315">
           <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
           <folding>
             <element signature="e#123#137#0#PHP" expanded="true" />
@@ -754,7 +841,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/api/model/Banner.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
+        <state relative-caret-position="330">
           <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
           <folding>
             <element signature="e#120#162#0#PHP" expanded="true" />
@@ -762,43 +849,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/api/controller/v1/Test.php" />
-    <entry file="file://$PROJECT_DIR$/application/api/controller/v1/Test1.php" />
     <entry file="file://$PROJECT_DIR$/application/api/controller/v1/Banner.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+        <state relative-caret-position="375">
+          <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
           <folding>
             <element signature="e#127#167#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="32" column="14" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
+        <state relative-caret-position="450">
+          <caret line="38" column="31" lean-forward="true" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="32" lean-forward="true" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+        <state relative-caret-position="360">
+          <caret line="32" column="14" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="166" column="24" selection-start-line="166" selection-start-column="20" selection-end-line="166" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="24" column="3" lean-forward="true" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
+        <state relative-caret-position="375">
+          <caret line="33" column="39" lean-forward="true" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
         </state>
       </provider>
     </entry>
