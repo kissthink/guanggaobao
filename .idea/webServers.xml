@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="14370315-4e39-479f-b121-1d9e8dff24a2" name="localhost" url="http://localhost">
+        <fileTransfer port="0" mountedRoot="E:\wamp64\www\thinkphp5\thinkphp5\application" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>
