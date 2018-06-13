@@ -12,11 +12,16 @@ namespace app\api\model;
 use app\lib\exception\BannerMissException;
 use think\Db;
 use think\Exception;
+use think\Model;
 
-class Banner
+class Banner extends Model
 {
+    public function items(){
+        return $this->hasMany('BannerItem','banner_id','id');
+    }
     public static function  getBannerByID($id)
     {
+
         //TODO:根据Banner ID号 获取Banner信息
 //        $result = Db::query(
 //          'select * from banner_item where banner_id=?',[$id]
