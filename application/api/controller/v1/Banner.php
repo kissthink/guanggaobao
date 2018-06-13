@@ -25,7 +25,7 @@ class Banner
             throw new BannerMissException();
         }
         return json($banner);
-        $a = '小马宝莉';
+        echo 'hello world!';
         }
 
 }
