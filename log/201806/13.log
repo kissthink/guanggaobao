@@ -209,3 +209,14 @@
 [ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000691s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.047248s ]
 [ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.002124s ]
+---------------------------------------------------------------
+[ 2018-06-13T17:47:20+08:00 ] 0.0.0.0 GET /index.php/api/v1/banner/1?num=2
+[ info ] localhost:8888/index.php/api/v1/banner/1?num=2 [运行时间：0.424634s][吞吐率：2.35req/s] [内存消耗：2,943.68kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010108s ] mysql:host=localhost;port=3306;dbname=dcxe;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.051820s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.007574s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.020839s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.003883s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.001315s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.019331s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.007969s ]
