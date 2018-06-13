@@ -23,23 +23,7 @@ class Banner extends Model
     {
 
         //TODO:根据Banner ID号 获取Banner信息
-//        $result = Db::query(
-//          'select * from banner_item where banner_id=?',[$id]
-//        );
-//        构造器实现方法：表达式法，闭包，数组法（不推荐）
-//        1.表达式法：
-//        $result = Db::table('banner_item')->where('banner_id','=',$id)->select();//不同的链式操作项其之间是没有先后顺序的
-//        2.闭包法：
-        $result = Db::table('banner_item')->where(function ($query) use($id){
-            $query->where('banner_id','=',$id);
-        })->select();
-        if (!$result)
-        {
-            throw new BannerMissException();
-        }
-        else{
-            return $result;
-        }
-
+        $banner = self::with(['items','items.img'])->find($id);//get,find:返回单条数据;all,select:返回一组数据;使用db类是不能使用get和all方法的.
+        return $banner;
     }
 }

@@ -18,13 +18,15 @@ class Banner
     {
         //AOP面向切面编程
         (new IDMustBePositiveInt())->goCheck();
-
-        $banner = BannerModel::with(['items','items.img'])->find($id);//get,find:返回单条数据;all,select:返回一组数据;使用db类是不能使用get和all方法的.
+        $banner = BannerModel::getBannerByID($id);
+        $data = $banner->toArray();
+        //删除获取的数组中的一个属性
+        unset($data['delete_time']);
         if (!$banner)
         {
             throw new BannerMissException();
         }
-        return $banner;
+        return $data;
         }
 
 }
