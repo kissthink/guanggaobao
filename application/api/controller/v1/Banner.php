@@ -25,6 +25,7 @@ class Banner
             throw new BannerMissException();
         }
         return json($banner);
+        echo'试一试' ;
         }
 
 }
