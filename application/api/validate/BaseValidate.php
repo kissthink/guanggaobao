@@ -28,13 +28,21 @@ class BaseValidate extends Validate
             $e = new ParameterException([
                     'msg' =>$this->error,
                     ''
-            ]);//当类被实力化是就对成员变量进行初始化
+            ]);//当类被实力化时就对成员变量进行初始化
             throw $e;
 //            $error = $this->error;
 //            throw new ParameterException($error);
         }
         else {
             return true;
+        }
+    }
+    protected  function  isPositiveInteger($value,$rule = '',$data = '',$field = '')
+    {       #判断是否数字        判断是否整型               判断是否大于0
+        if (is_numeric($value)&&is_int($value + 0)&&($value + 0)>0){
+            return true;
+        }else{
+            return false;
         }
     }
 }

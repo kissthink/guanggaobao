@@ -16,6 +16,8 @@ use think\Model;
 
 class Banner extends Model
 {
+//    隐藏数据的某个字段
+    protected $hidden = ['id'];
     public function items(){
         return $this->hasMany('BannerItem','banner_id','id');
     }

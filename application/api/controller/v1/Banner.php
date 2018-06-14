@@ -14,19 +14,23 @@ use app\lib\exception\BannerMissException;
 
 class Banner
 {
+/* @url api/:version/banner/:id=id
+ * @return一组Banner 模型
+ * */
     public function  getBanner($id)
     {
         //AOP面向切面编程
         (new IDMustBePositiveInt())->goCheck();
         $banner = BannerModel::getBannerByID($id);
-        $data = $banner->toArray();
-        //删除获取的数组中的一个属性
-        unset($data['delete_time']);
+//        $banner->hidden(['update_time']);
+//        按需求显示对应字段
+//        $banner->visible(['id']);
+
         if (!$banner)
         {
             throw new BannerMissException();
         }
-        return $data;
+        return $banner;
         }
 
 }
