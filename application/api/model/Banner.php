@@ -9,12 +9,7 @@
 namespace app\api\model;
 
 
-use app\lib\exception\BannerMissException;
-use think\Db;
-use think\Exception;
-use think\Model;
-
-class Banner extends Model
+class Banner extends BaseModel
 {
 //    隐藏数据的某个字段
     protected $hidden = ['id'];

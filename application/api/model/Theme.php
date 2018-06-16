@@ -8,8 +8,6 @@
 
 namespace app\api\model;
 
-use think\Model;
-
 class Theme extends BaseModel
 {
     protected $hidden =['delete_tiem','update_time','topic_img_id','head_img_id'];
