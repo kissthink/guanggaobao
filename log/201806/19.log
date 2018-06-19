@@ -1,0 +1,887 @@
+---------------------------------------------------------------
+[ 2018-06-19T09:04:57+08:00 ] 0.0.0.0 GET /index.php/api/v1.login/login?phone_number=13852442265&password=123456
+[ info ] localhost/index.php/api/v1.login/login?phone_number=13852442265&password=123456 [运行时间：1.284956s][吞吐率：0.78req/s] [内存消耗：2,438.70kb] [文件加载：46]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.052271s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.238196s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `phone_number` = '13852442265' LIMIT 1 [ RunTime:0.022355s ]
+---------------------------------------------------------------
+[ 2018-06-19T09:08:54+08:00 ] 0.0.0.0 GET /index.php/api/v1.login/login?phone_number=13852442265&password=123456
+[ info ] localhost/index.php/api/v1.login/login?phone_number=13852442265&password=123456 [运行时间：0.289604s][吞吐率：3.45req/s] [内存消耗：2,439.27kb] [文件加载：46]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010557s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.019586s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `phone_number` = '13852442265' LIMIT 1 [ RunTime:0.000671s ]
+---------------------------------------------------------------
+[ 2018-06-19T09:21:31+08:00 ] 0.0.0.0 GET /index.php/api/v1.login/login?phone_number=13852442265&password=123456
+[ info ] localhost/index.php/api/v1.login/login?phone_number=13852442265&password=123456 [运行时间：0.283702s][吞吐率：3.52req/s] [内存消耗：2,439.52kb] [文件加载：46]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010264s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.014352s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `phone_number` = '13852442265' LIMIT 1 [ RunTime:0.000630s ]
+---------------------------------------------------------------
+[ 2018-06-19T09:21:39+08:00 ] 0.0.0.0 GET /index.php/api/v1.login/login?phone_number=13852442265&password=123456
+[ info ] localhost/index.php/api/v1.login/login?phone_number=13852442265&password=123456 [运行时间：0.278758s][吞吐率：3.59req/s] [内存消耗：2,439.52kb] [文件加载：46]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010386s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.015214s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `phone_number` = '13852442265' LIMIT 1 [ RunTime:0.000643s ]
+---------------------------------------------------------------
+[ 2018-06-19T09:21:59+08:00 ] 0.0.0.0 GET /index.php/api/v1.login/login?phone_number=13852442265&password=123456
+[ info ] localhost/index.php/api/v1.login/login?phone_number=13852442265&password=123456 [运行时间：0.285262s][吞吐率：3.51req/s] [内存消耗：2,439.52kb] [文件加载：46]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010104s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009922s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `phone_number` = '13852442265' LIMIT 1 [ RunTime:0.000683s ]
+---------------------------------------------------------------
+[ 2018-06-19T09:30:40+08:00 ] 0.0.0.0 GET /index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayId=0
+[ info ] localhost/index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayId=0 [运行时间：0.273360s][吞吐率：3.66req/s] [内存消耗：2,440.02kb] [文件加载：46]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010143s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009254s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `phone_number` = '13852442265' LIMIT 1 [ RunTime:0.000623s ]
+---------------------------------------------------------------
+[ 2018-06-19T10:00:13+08:00 ] 0.0.0.0 GET /index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0
+[ info ] localhost/index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0 [运行时间：0.278431s][吞吐率：3.59req/s] [内存消耗：2,440.63kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010488s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.010502s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `phone_number` = '13852442265' LIMIT 1 [ RunTime:0.000625s ]
+---------------------------------------------------------------
+[ 2018-06-19T10:00:49+08:00 ] 0.0.0.0 GET /index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0
+[ info ] localhost/index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0 [运行时间：0.273403s][吞吐率：3.66req/s] [内存消耗：2,440.63kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010003s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.010426s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `phone_number` = '13852442265' LIMIT 1 [ RunTime:0.000657s ]
+---------------------------------------------------------------
+[ 2018-06-19T10:34:03+08:00 ] 0.0.0.0 GET /index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0
+[ info ] localhost/index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0 [运行时间：0.294289s][吞吐率：3.40req/s] [内存消耗：2,561.95kb] [文件加载：50]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010343s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009687s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `phone_number` = '13852442265' LIMIT 1 [ RunTime:0.000632s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_fans` [ RunTime:0.009064s ]
+[ sql ] [ SQL ] SELECT * FROM `my_fans` WHERE  `user_id` = 1 [ RunTime:0.000679s ]
+---------------------------------------------------------------
+[ 2018-06-19T10:35:09+08:00 ] 0.0.0.0 GET /index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0
+[ info ] localhost/index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0 [运行时间：0.310424s][吞吐率：3.22req/s] [内存消耗：2,562.09kb] [文件加载：50]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010306s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.019734s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `phone_number` = '13852442265' LIMIT 1 [ RunTime:0.000640s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_fans` [ RunTime:0.009713s ]
+[ sql ] [ SQL ] SELECT * FROM `my_fans` WHERE  `user_id` = 1 [ RunTime:0.000590s ]
+---------------------------------------------------------------
+[ 2018-06-19T10:40:26+08:00 ] 0.0.0.0 GET /index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0
+[ info ] localhost/index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0 [运行时间：0.300963s][吞吐率：3.32req/s] [内存消耗：2,562.59kb] [文件加载：50]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010252s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009970s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `phone_number` = '13852442265' LIMIT 1 [ RunTime:0.000585s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_fans` [ RunTime:0.009838s ]
+[ sql ] [ SQL ] SELECT * FROM `my_fans` WHERE  `user_id` = 1 [ RunTime:0.000594s ]
+---------------------------------------------------------------
+[ 2018-06-19T10:40:56+08:00 ] 0.0.0.0 GET /index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0
+[ info ] localhost/index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0 [运行时间：0.300969s][吞吐率：3.32req/s] [内存消耗：2,562.59kb] [文件加载：50]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010021s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009754s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `phone_number` = '13852442265' LIMIT 1 [ RunTime:0.000617s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_fans` [ RunTime:0.010112s ]
+[ sql ] [ SQL ] SELECT * FROM `my_fans` WHERE  `user_id` = 1 [ RunTime:0.000582s ]
+---------------------------------------------------------------
+[ 2018-06-19T10:41:33+08:00 ] 0.0.0.0 GET /index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0
+[ info ] localhost/index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0 [运行时间：0.300842s][吞吐率：3.32req/s] [内存消耗：2,562.57kb] [文件加载：50]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010026s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.017737s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `phone_number` = '13852442265' LIMIT 1 [ RunTime:0.000603s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_fans` [ RunTime:0.009827s ]
+[ sql ] [ SQL ] SELECT * FROM `my_fans` WHERE  `user_id` = 1 [ RunTime:0.000594s ]
+---------------------------------------------------------------
+[ 2018-06-19T10:44:39+08:00 ] 0.0.0.0 GET /index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0
+[ info ] localhost/index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0 [运行时间：0.299822s][吞吐率：3.34req/s] [内存消耗：2,562.60kb] [文件加载：50]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010686s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009765s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `phone_number` = '13852442265' LIMIT 1 [ RunTime:0.000724s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_fans` [ RunTime:0.010148s ]
+[ sql ] [ SQL ] SELECT * FROM `my_fans` WHERE  `user_id` = 1 [ RunTime:0.000577s ]
+---------------------------------------------------------------
+[ 2018-06-19T10:46:39+08:00 ] 0.0.0.0 GET /index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0
+[ info ] localhost/index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0 [运行时间：0.308997s][吞吐率：3.24req/s] [内存消耗：2,562.60kb] [文件加载：50]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010004s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.019590s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `phone_number` = '13852442265' LIMIT 1 [ RunTime:0.000612s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_fans` [ RunTime:0.009666s ]
+[ sql ] [ SQL ] SELECT * FROM `my_fans` WHERE  `user_id` = 1 [ RunTime:0.000584s ]
+---------------------------------------------------------------
+[ 2018-06-19T10:57:08+08:00 ] 0.0.0.0 GET /index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0&XDEBUG_SESSION_START=17770
+[ info ] localhost/index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0&XDEBUG_SESSION_START=17770 [运行时间：0.106895s][吞吐率：9.35req/s] [内存消耗：2,562.57kb] [文件加载：50]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010150s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.011301s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `phone_number` = '13852442265' LIMIT 1 [ RunTime:0.000680s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_fans` [ RunTime:0.010333s ]
+[ sql ] [ SQL ] SELECT * FROM `my_fans` WHERE  `user_id` = 1 [ RunTime:0.000664s ]
+---------------------------------------------------------------
+[ 2018-06-19T10:57:41+08:00 ] 0.0.0.0 GET /index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0&XDEBUG_SESSION_START=11817
+[ info ] localhost/index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0&XDEBUG_SESSION_START=11817 [运行时间：0.099005s][吞吐率：10.10req/s] [内存消耗：2,562.59kb] [文件加载：50]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010254s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009904s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `phone_number` = '13852442265' LIMIT 1 [ RunTime:0.000655s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_fans` [ RunTime:0.009325s ]
+[ sql ] [ SQL ] SELECT * FROM `my_fans` WHERE  `user_id` = 1 [ RunTime:0.000679s ]
+---------------------------------------------------------------
+[ 2018-06-19T11:00:46+08:00 ] 0.0.0.0 GET /index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0&XDEBUG_SESSION_START=11817
+[ info ] localhost/index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0&XDEBUG_SESSION_START=11817 [运行时间：0.127083s][吞吐率：7.87req/s] [内存消耗：2,579.60kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010432s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009669s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `phone_number` = '13852442265' LIMIT 1 [ RunTime:0.000750s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_fans` [ RunTime:0.009389s ]
+[ sql ] [ SQL ] SELECT * FROM `my_fans` WHERE  `user_id` = 1 [ RunTime:0.000639s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_follows` [ RunTime:0.009754s ]
+[ sql ] [ SQL ] SELECT * FROM `my_follows` WHERE  `user_id` = 1 [ RunTime:0.000615s ]
+---------------------------------------------------------------
+[ 2018-06-19T11:01:18+08:00 ] 0.0.0.0 GET /index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0&XDEBUG_SESSION_START=11817
+[ info ] localhost/index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0&XDEBUG_SESSION_START=11817 [运行时间：0.126360s][吞吐率：7.91req/s] [内存消耗：2,578.80kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000596s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.015806s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `phone_number` = '13852442265' LIMIT 1 [ RunTime:0.000721s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_fans` [ RunTime:0.010048s ]
+[ sql ] [ SQL ] SELECT * FROM `my_fans` WHERE  `user_id` = 1 [ RunTime:0.000632s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_follows` [ RunTime:0.009567s ]
+[ sql ] [ SQL ] SELECT * FROM `my_follows` WHERE  `user_id` = 1 [ RunTime:0.000659s ]
+---------------------------------------------------------------
+[ 2018-06-19T11:17:04+08:00 ] 0.0.0.0 GET /index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0&XDEBUG_SESSION_START=11817
+[ info ] localhost/index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0&XDEBUG_SESSION_START=11817 [运行时间：0.128619s][吞吐率：7.77req/s] [内存消耗：2,579.43kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009956s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009410s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `phone_number` = '13852442265' LIMIT 1 [ RunTime:0.000731s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_fans` [ RunTime:0.010090s ]
+[ sql ] [ SQL ] SELECT * FROM `my_fans` WHERE  `user_id` = 1 [ RunTime:0.000661s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_follows` [ RunTime:0.009974s ]
+[ sql ] [ SQL ] SELECT * FROM `my_follows` WHERE  `user_id` = 1 [ RunTime:0.000626s ]
+---------------------------------------------------------------
+[ 2018-06-19T11:18:05+08:00 ] 0.0.0.0 GET /index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0&XDEBUG_SESSION_START=11817
+[ info ] localhost/index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0&XDEBUG_SESSION_START=11817 [运行时间：0.134917s][吞吐率：7.41req/s] [内存消耗：2,660.02kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000601s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.010075s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `phone_number` = '13852442265' LIMIT 1 [ RunTime:0.000668s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_fans` [ RunTime:0.010452s ]
+[ sql ] [ SQL ] SELECT * FROM `my_fans` WHERE  `user_id` = 1 [ RunTime:0.000548s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_follows` [ RunTime:0.009981s ]
+[ sql ] [ SQL ] SELECT * FROM `my_follows` WHERE  `user_id` = 1 [ RunTime:0.000645s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `service_evaluation` [ RunTime:0.009985s ]
+[ sql ] [ SQL ] SELECT * FROM `service_evaluation` WHERE  `user_id` = 1 [ RunTime:0.000651s ]
+---------------------------------------------------------------
+[ 2018-06-19T11:21:03+08:00 ] 0.0.0.0 GET /index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0&XDEBUG_SESSION_START=11817
+[ info ] localhost/index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0&XDEBUG_SESSION_START=11817 [运行时间：0.146504s][吞吐率：6.83req/s] [内存消耗：2,660.06kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000719s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.013655s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `phone_number` = '13852442265' LIMIT 1 [ RunTime:0.000746s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_fans` [ RunTime:0.010416s ]
+[ sql ] [ SQL ] SELECT * FROM `my_fans` WHERE  `user_id` = 1 [ RunTime:0.000603s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_follows` [ RunTime:0.010075s ]
+[ sql ] [ SQL ] SELECT * FROM `my_follows` WHERE  `user_id` = 1 [ RunTime:0.000589s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `service_evaluation` [ RunTime:0.009965s ]
+[ sql ] [ SQL ] SELECT * FROM `service_evaluation` WHERE  `user_id` = 1 [ RunTime:0.000641s ]
+---------------------------------------------------------------
+[ 2018-06-19T11:21:57+08:00 ] 0.0.0.0 GET /index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0
+[ info ] localhost/index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0 [运行时间：0.159790s][吞吐率：6.26req/s] [内存消耗：2,659.87kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009802s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.020786s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `phone_number` = '13852442265' LIMIT 1 [ RunTime:0.000784s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_fans` [ RunTime:0.009043s ]
+[ sql ] [ SQL ] SELECT * FROM `my_fans` WHERE  `user_id` = 1 [ RunTime:0.000614s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_follows` [ RunTime:0.008875s ]
+[ sql ] [ SQL ] SELECT * FROM `my_follows` WHERE  `user_id` = 1 [ RunTime:0.000625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `service_evaluation` [ RunTime:0.008974s ]
+[ sql ] [ SQL ] SELECT * FROM `service_evaluation` WHERE  `user_id` = 1 [ RunTime:0.000639s ]
+---------------------------------------------------------------
+[ 2018-06-19T11:23:32+08:00 ] 0.0.0.0 GET /index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0&XDEBUG_SESSION_START=10356
+[ info ] localhost/index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0&XDEBUG_SESSION_START=10356 [运行时间：0.155067s][吞吐率：6.45req/s] [内存消耗：2,660.06kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010050s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.010445s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `phone_number` = '13852442265' LIMIT 1 [ RunTime:0.000690s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_fans` [ RunTime:0.010760s ]
+[ sql ] [ SQL ] SELECT * FROM `my_fans` WHERE  `user_id` = 1 [ RunTime:0.000785s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_follows` [ RunTime:0.009900s ]
+[ sql ] [ SQL ] SELECT * FROM `my_follows` WHERE  `user_id` = 1 [ RunTime:0.000728s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `service_evaluation` [ RunTime:0.010787s ]
+[ sql ] [ SQL ] SELECT * FROM `service_evaluation` WHERE  `user_id` = 1 [ RunTime:0.000626s ]
+---------------------------------------------------------------
+[ 2018-06-19T11:26:42+08:00 ] 0.0.0.0 GET /index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0&XDEBUG_SESSION_START=11583
+[ info ] localhost/index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0&XDEBUG_SESSION_START=11583 [运行时间：0.352370s][吞吐率：2.84req/s] [内存消耗：2,660.70kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010403s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.014798s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `phone_number` = '13852442265' LIMIT 1 [ RunTime:0.000647s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_fans` [ RunTime:0.008724s ]
+[ sql ] [ SQL ] SELECT * FROM `my_fans` WHERE  `user_id` = 1 [ RunTime:0.000802s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_follows` [ RunTime:0.009164s ]
+[ sql ] [ SQL ] SELECT * FROM `my_follows` WHERE  `user_id` = 1 [ RunTime:0.000581s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `service_evaluation` [ RunTime:0.008596s ]
+[ sql ] [ SQL ] SELECT * FROM `service_evaluation` WHERE  `user_id` = 1 [ RunTime:0.000672s ]
+---------------------------------------------------------------
+[ 2018-06-19T11:27:06+08:00 ] 0.0.0.0 GET /index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0&XDEBUG_SESSION_START=11583
+[ info ] localhost/index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0&XDEBUG_SESSION_START=11583 [运行时间：0.344219s][吞吐率：2.91req/s] [内存消耗：2,660.70kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011419s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.010508s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `phone_number` = '13852442265' LIMIT 1 [ RunTime:0.000625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_fans` [ RunTime:0.008773s ]
+[ sql ] [ SQL ] SELECT * FROM `my_fans` WHERE  `user_id` = 1 [ RunTime:0.000610s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_follows` [ RunTime:0.009782s ]
+[ sql ] [ SQL ] SELECT * FROM `my_follows` WHERE  `user_id` = 1 [ RunTime:0.000572s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `service_evaluation` [ RunTime:0.009083s ]
+[ sql ] [ SQL ] SELECT * FROM `service_evaluation` WHERE  `user_id` = 1 [ RunTime:0.000578s ]
+---------------------------------------------------------------
+[ 2018-06-19T11:27:31+08:00 ] 0.0.0.0 GET /index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0&XDEBUG_SESSION_START=11583
+[ info ] localhost/index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0&XDEBUG_SESSION_START=11583 [运行时间：0.335020s][吞吐率：2.98req/s] [内存消耗：2,660.70kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010228s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.008649s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `phone_number` = '13852442265' LIMIT 1 [ RunTime:0.000703s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_fans` [ RunTime:0.008490s ]
+[ sql ] [ SQL ] SELECT * FROM `my_fans` WHERE  `user_id` = 1 [ RunTime:0.000571s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_follows` [ RunTime:0.008701s ]
+[ sql ] [ SQL ] SELECT * FROM `my_follows` WHERE  `user_id` = 1 [ RunTime:0.000552s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `service_evaluation` [ RunTime:0.008497s ]
+[ sql ] [ SQL ] SELECT * FROM `service_evaluation` WHERE  `user_id` = 1 [ RunTime:0.000629s ]
+---------------------------------------------------------------
+[ 2018-06-19T11:28:56+08:00 ] 0.0.0.0 GET /index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0&XDEBUG_SESSION_START=11583
+[ info ] localhost/index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0&XDEBUG_SESSION_START=11583 [运行时间：0.333405s][吞吐率：3.00req/s] [内存消耗：2,660.33kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010608s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.008944s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `phone_number` = '13852442265' LIMIT 1 [ RunTime:0.000655s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_fans` [ RunTime:0.009651s ]
+[ sql ] [ SQL ] SELECT * FROM `my_fans` WHERE  `user_id` = 1 [ RunTime:0.000592s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_follows` [ RunTime:0.008687s ]
+[ sql ] [ SQL ] SELECT * FROM `my_follows` WHERE  `user_id` = 1 [ RunTime:0.000585s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `service_evaluation` [ RunTime:0.009808s ]
+[ sql ] [ SQL ] SELECT * FROM `service_evaluation` WHERE  `user_id` = 1 [ RunTime:0.000650s ]
+---------------------------------------------------------------
+[ 2018-06-19T11:34:52+08:00 ] 0.0.0.0 GET /index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0&XDEBUG_SESSION_START=11583
+[ info ] localhost/index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0&XDEBUG_SESSION_START=11583 [运行时间：0.353990s][吞吐率：2.82req/s] [内存消耗：2,660.70kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009935s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.021011s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `phone_number` = '13852442265' LIMIT 1 [ RunTime:0.000695s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_fans` [ RunTime:0.008590s ]
+[ sql ] [ SQL ] SELECT * FROM `my_fans` WHERE  `user_id` = 1 [ RunTime:0.000640s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_follows` [ RunTime:0.009074s ]
+[ sql ] [ SQL ] SELECT * FROM `my_follows` WHERE  `user_id` = 1 [ RunTime:0.000582s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `service_evaluation` [ RunTime:0.009189s ]
+[ sql ] [ SQL ] SELECT * FROM `service_evaluation` WHERE  `user_id` = 1 [ RunTime:0.000608s ]
+---------------------------------------------------------------
+[ 2018-06-19T11:36:05+08:00 ] 0.0.0.0 GET /index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0&XDEBUG_SESSION_START=11583
+[ info ] localhost/index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0&XDEBUG_SESSION_START=11583 [运行时间：0.344762s][吞吐率：2.90req/s] [内存消耗：2,676.73kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009636s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.010122s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `phone_number` = '13852442265' LIMIT 1 [ RunTime:0.000681s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_fans` [ RunTime:0.009507s ]
+[ sql ] [ SQL ] SELECT * FROM `my_fans` WHERE  `user_id` = 1 [ RunTime:0.000639s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_follows` [ RunTime:0.009042s ]
+[ sql ] [ SQL ] SELECT * FROM `my_follows` WHERE  `user_id` = 1 [ RunTime:0.000584s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `service_evaluation` [ RunTime:0.008513s ]
+[ sql ] [ SQL ] SELECT * FROM `service_evaluation` WHERE  `user_id` = 1 [ RunTime:0.000620s ]
+---------------------------------------------------------------
+[ 2018-06-19T11:36:35+08:00 ] 0.0.0.0 GET /index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0&XDEBUG_SESSION_START=11583
+[ info ] localhost/index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0&XDEBUG_SESSION_START=11583 [运行时间：0.335942s][吞吐率：2.98req/s] [内存消耗：2,676.98kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009832s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009425s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `phone_number` = '13852442265' LIMIT 1 [ RunTime:0.000649s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_fans` [ RunTime:0.009330s ]
+[ sql ] [ SQL ] SELECT * FROM `my_fans` WHERE  `user_id` = 1 [ RunTime:0.000607s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_follows` [ RunTime:0.008785s ]
+[ sql ] [ SQL ] SELECT * FROM `my_follows` WHERE  `user_id` = 1 [ RunTime:0.000567s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `service_evaluation` [ RunTime:0.008589s ]
+[ sql ] [ SQL ] SELECT * FROM `service_evaluation` WHERE  `user_id` = 1 [ RunTime:0.000573s ]
+---------------------------------------------------------------
+[ 2018-06-19T11:36:43+08:00 ] 0.0.0.0 GET /index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0
+[ info ] localhost/index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0 [运行时间：0.339873s][吞吐率：2.94req/s] [内存消耗：2,676.79kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009970s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.014638s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `phone_number` = '13852442265' LIMIT 1 [ RunTime:0.000576s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_fans` [ RunTime:0.008427s ]
+[ sql ] [ SQL ] SELECT * FROM `my_fans` WHERE  `user_id` = 1 [ RunTime:0.000565s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_follows` [ RunTime:0.008542s ]
+[ sql ] [ SQL ] SELECT * FROM `my_follows` WHERE  `user_id` = 1 [ RunTime:0.001148s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `service_evaluation` [ RunTime:0.009636s ]
+[ sql ] [ SQL ] SELECT * FROM `service_evaluation` WHERE  `user_id` = 1 [ RunTime:0.000587s ]
+---------------------------------------------------------------
+[ 2018-06-19T11:36:56+08:00 ] 0.0.0.0 GET /index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0&XDEBUG_SESSION_START=11583
+[ info ] localhost/index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0&XDEBUG_SESSION_START=11583 [运行时间：0.341897s][吞吐率：2.92req/s] [内存消耗：2,676.73kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010167s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009115s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `phone_number` = '13852442265' LIMIT 1 [ RunTime:0.000676s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_fans` [ RunTime:0.008697s ]
+[ sql ] [ SQL ] SELECT * FROM `my_fans` WHERE  `user_id` = 1 [ RunTime:0.000605s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_follows` [ RunTime:0.009216s ]
+[ sql ] [ SQL ] SELECT * FROM `my_follows` WHERE  `user_id` = 1 [ RunTime:0.000607s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `service_evaluation` [ RunTime:0.008760s ]
+[ sql ] [ SQL ] SELECT * FROM `service_evaluation` WHERE  `user_id` = 1 [ RunTime:0.000646s ]
+---------------------------------------------------------------
+[ 2018-06-19T11:37:12+08:00 ] 0.0.0.0 GET /index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0
+[ info ] localhost/index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0 [运行时间：0.342494s][吞吐率：2.92req/s] [内存消耗：2,677.20kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010384s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.013536s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `phone_number` = '13852442265' LIMIT 1 [ RunTime:0.000653s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_fans` [ RunTime:0.009049s ]
+[ sql ] [ SQL ] SELECT * FROM `my_fans` WHERE  `user_id` = 1 [ RunTime:0.000625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_follows` [ RunTime:0.009080s ]
+[ sql ] [ SQL ] SELECT * FROM `my_follows` WHERE  `user_id` = 1 [ RunTime:0.000925s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `service_evaluation` [ RunTime:0.009201s ]
+[ sql ] [ SQL ] SELECT * FROM `service_evaluation` WHERE  `user_id` = 1 [ RunTime:0.000743s ]
+---------------------------------------------------------------
+[ 2018-06-19T11:44:12+08:00 ] 0.0.0.0 GET /index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0&XDEBUG_SESSION_START=11583
+[ info ] localhost/index.php/api/v1.login/login?phone_number=13852442265&password=123456&loginWayID=0&XDEBUG_SESSION_START=11583 [运行时间：0.337765s][吞吐率：2.96req/s] [内存消耗：2,660.38kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000623s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.008652s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `phone_number` = '13852442265' LIMIT 1 [ RunTime:0.000658s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_fans` [ RunTime:0.008745s ]
+[ sql ] [ SQL ] SELECT * FROM `my_fans` WHERE  `user_id` = 1 [ RunTime:0.000614s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_follows` [ RunTime:0.008751s ]
+[ sql ] [ SQL ] SELECT * FROM `my_follows` WHERE  `user_id` = 1 [ RunTime:0.000576s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `service_evaluation` [ RunTime:0.009085s ]
+[ sql ] [ SQL ] SELECT * FROM `service_evaluation` WHERE  `user_id` = 1 [ RunTime:0.000611s ]
+---------------------------------------------------------------
+[ 2018-06-19T13:44:08+08:00 ] 0.0.0.0 GET /index.php/api/v1/banners/all
+[ info ] localhost/index.php/api/v1/banners/all [运行时间：0.263272s][吞吐率：3.80req/s] [内存消耗：2,424.64kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000566s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.010152s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` ORDER BY `id` DESC [ RunTime:0.000560s ]
+---------------------------------------------------------------
+[ 2018-06-19T13:56:25+08:00 ] 0.0.0.0 POST /index.php/api/v1/login/in?phone_number=13852442265&password=123456&loginWayID=0&XDEBUG_SESSION_START=11583
+[ info ] localhost/index.php/api/v1/login/in?phone_number=13852442265&password=123456&loginWayID=0&XDEBUG_SESSION_START=11583 [运行时间：0.379467s][吞吐率：2.64req/s] [内存消耗：2,664.14kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010022s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.019891s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `phone_number` = '13852442265' LIMIT 1 [ RunTime:0.006644s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_fans` [ RunTime:0.009537s ]
+[ sql ] [ SQL ] SELECT * FROM `my_fans` WHERE  `user_id` = 1 [ RunTime:0.015603s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_follows` [ RunTime:0.009326s ]
+[ sql ] [ SQL ] SELECT * FROM `my_follows` WHERE  `user_id` = 1 [ RunTime:0.009655s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `service_evaluation` [ RunTime:0.009433s ]
+[ sql ] [ SQL ] SELECT * FROM `service_evaluation` WHERE  `user_id` = 1 [ RunTime:0.001097s ]
+---------------------------------------------------------------
+[ 2018-06-19T13:56:42+08:00 ] 0.0.0.0 POST /index.php/api/v1/login/in?phone_number=13852442265&password=123456&loginWayID=0&XDEBUG_SESSION_START=11583
+[ info ] localhost/index.php/api/v1/login/in?phone_number=13852442265&password=123456&loginWayID=0&XDEBUG_SESSION_START=11583 [运行时间：0.339395s][吞吐率：2.95req/s] [内存消耗：2,663.34kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010521s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009553s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `phone_number` = '13852442265' LIMIT 1 [ RunTime:0.000641s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_fans` [ RunTime:0.008932s ]
+[ sql ] [ SQL ] SELECT * FROM `my_fans` WHERE  `user_id` = 1 [ RunTime:0.000633s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_follows` [ RunTime:0.008853s ]
+[ sql ] [ SQL ] SELECT * FROM `my_follows` WHERE  `user_id` = 1 [ RunTime:0.000559s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `service_evaluation` [ RunTime:0.008942s ]
+[ sql ] [ SQL ] SELECT * FROM `service_evaluation` WHERE  `user_id` = 1 [ RunTime:0.000670s ]
+---------------------------------------------------------------
+[ 2018-06-19T14:02:08+08:00 ] 0.0.0.0 GET /index.php/api/v1/category
+[ info ] localhost/index.php/api/v1/category [运行时间：0.274896s][吞吐率：3.64req/s] [内存消耗：2,417.86kb] [文件加载：43]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000670s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `service_category` [ RunTime:0.010273s ]
+[ sql ] [ SQL ] SELECT * FROM `service_category` [ RunTime:0.009070s ]
+---------------------------------------------------------------
+[ 2018-06-19T14:02:28+08:00 ] 0.0.0.0 GET /index.php/api/v1/category
+[ info ] localhost/index.php/api/v1/category [运行时间：0.277647s][吞吐率：3.60req/s] [内存消耗：2,421.98kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011459s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `service_category` [ RunTime:0.019659s ]
+[ sql ] [ SQL ] SELECT * FROM `service_category` [ RunTime:0.000506s ]
+---------------------------------------------------------------
+[ 2018-06-19T14:02:54+08:00 ] 0.0.0.0 GET /index.php/api/v1/category?XDEBUG_SESSION_START=13015
+[ info ] localhost/index.php/api/v1/category?XDEBUG_SESSION_START=13015 [运行时间：0.079270s][吞吐率：12.62req/s] [内存消耗：2,421.88kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010216s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `service_category` [ RunTime:0.019716s ]
+[ sql ] [ SQL ] SELECT * FROM `service_category` [ RunTime:0.000440s ]
+---------------------------------------------------------------
+[ 2018-06-19T14:02:57+08:00 ] 0.0.0.0 GET /index.php/api/v1/category?XDEBUG_SESSION_START=13015
+[ info ] localhost/index.php/api/v1/category?XDEBUG_SESSION_START=13015 [运行时间：0.070288s][吞吐率：14.23req/s] [内存消耗：2,421.88kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010039s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `service_category` [ RunTime:0.011008s ]
+[ sql ] [ SQL ] SELECT * FROM `service_category` [ RunTime:0.000528s ]
+---------------------------------------------------------------
+[ 2018-06-19T14:08:13+08:00 ] 0.0.0.0 GET /index.php/api/v1/category?XDEBUG_SESSION_START=13015
+[ info ] localhost/index.php/api/v1/category?XDEBUG_SESSION_START=13015 [运行时间：0.084338s][吞吐率：11.86req/s] [内存消耗：2,423.08kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010126s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `service_category` [ RunTime:0.009263s ]
+[ sql ] [ SQL ] SELECT * FROM `service_category` [ RunTime:0.000545s ]
+---------------------------------------------------------------
+[ 2018-06-19T14:08:42+08:00 ] 0.0.0.0 GET /index.php/api/v1/category?XDEBUG_SESSION_START=13015
+[ info ] localhost/index.php/api/v1/category?XDEBUG_SESSION_START=13015 [运行时间：0.069423s][吞吐率：14.40req/s] [内存消耗：2,423.08kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000747s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `service_category` [ RunTime:0.008925s ]
+[ sql ] [ SQL ] SELECT * FROM `service_category` [ RunTime:0.000509s ]
+---------------------------------------------------------------
+[ 2018-06-19T14:09:39+08:00 ] 0.0.0.0 GET /index.php/api/v1/category
+[ info ] localhost/index.php/api/v1/category [运行时间：0.082269s][吞吐率：12.16req/s] [内存消耗：2,422.91kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009679s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `service_category` [ RunTime:0.014780s ]
+[ sql ] [ SQL ] SELECT * FROM `service_category` [ RunTime:0.000463s ]
+---------------------------------------------------------------
+[ 2018-06-19T14:12:22+08:00 ] 0.0.0.0 GET /index.php/api/v1/category
+[ info ] localhost/index.php/api/v1/category [运行时间：0.085788s][吞吐率：11.66req/s] [内存消耗：2,424.14kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009987s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `service_category` [ RunTime:0.008625s ]
+[ sql ] [ SQL ] SELECT * FROM `service_category` [ RunTime:0.000540s ]
+---------------------------------------------------------------
+[ 2018-06-19T14:14:57+08:00 ] 0.0.0.0 GET /index.php/api/v1/sysmsg
+[ info ] localhost/index.php/api/v1/sysmsg [运行时间：0.076281s][吞吐率：13.11req/s] [内存消耗：2,421.92kb] [文件加载：43]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009970s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_message` [ RunTime:0.009140s ]
+[ sql ] [ SQL ] SELECT * FROM `system_message` [ RunTime:0.000581s ]
+---------------------------------------------------------------
+[ 2018-06-19T14:15:26+08:00 ] 0.0.0.0 GET /index.php/api/v1/sysmsg
+[ info ] localhost/index.php/api/v1/sysmsg [运行时间：0.075255s][吞吐率：13.29req/s] [内存消耗：2,426.04kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010200s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_message` [ RunTime:0.009053s ]
+[ sql ] [ SQL ] SELECT * FROM `system_message` [ RunTime:0.000596s ]
+---------------------------------------------------------------
+[ 2018-06-19T14:18:53+08:00 ] 0.0.0.0 GET /index.php/api/v1/sysmsg
+[ info ] localhost/index.php/api/v1/sysmsg [运行时间：0.080824s][吞吐率：12.37req/s] [内存消耗：2,426.50kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010266s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_message` [ RunTime:0.009130s ]
+[ sql ] [ SQL ] SELECT * FROM `system_message` [ RunTime:0.000578s ]
+---------------------------------------------------------------
+[ 2018-06-19T14:41:56+08:00 ] 0.0.0.0 GET /index.php/api/v1/sysmsg
+[ info ] localhost/index.php/api/v1/sysmsg [运行时间：0.083019s][吞吐率：12.05req/s] [内存消耗：2,426.50kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009846s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_message` [ RunTime:0.009345s ]
+[ sql ] [ SQL ] SELECT * FROM `system_message` [ RunTime:0.000629s ]
+---------------------------------------------------------------
+[ 2018-06-19T14:44:31+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/1
+[ info ] localhost/index.php/api/v1/getusers/1 [运行时间：0.081696s][吞吐率：12.24req/s] [内存消耗：2,441.27kb] [文件加载：45]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010709s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009649s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 [ RunTime:0.000743s ]
+---------------------------------------------------------------
+[ 2018-06-19T14:44:36+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/0
+[ info ] localhost/index.php/api/v1/getusers/0 [运行时间：0.077658s][吞吐率：12.88req/s] [内存消耗：2,440.83kb] [文件加载：45]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010492s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.011218s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 0 [ RunTime:0.000646s ]
+---------------------------------------------------------------
+[ 2018-06-19T14:44:38+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/3
+[ info ] localhost/index.php/api/v1/getusers/3 [运行时间：0.076261s][吞吐率：13.11req/s] [内存消耗：2,440.83kb] [文件加载：45]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010622s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.010691s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 3 [ RunTime:0.000643s ]
+---------------------------------------------------------------
+[ 2018-06-19T14:44:39+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/2
+[ info ] localhost/index.php/api/v1/getusers/2 [运行时间：0.074211s][吞吐率：13.48req/s] [内存消耗：2,440.83kb] [文件加载：45]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010609s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009553s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 2 [ RunTime:0.000642s ]
+---------------------------------------------------------------
+[ 2018-06-19T14:44:55+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/1
+[ info ] localhost/index.php/api/v1/getusers/1 [运行时间：0.070291s][吞吐率：14.23req/s] [内存消耗：2,441.27kb] [文件加载：45]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000663s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.008672s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 [ RunTime:0.000632s ]
+---------------------------------------------------------------
+[ 2018-06-19T14:45:16+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/1&XDEBUG_SESSION_START=13316
+[ info ] localhost/index.php/api/v1/getusers/1&XDEBUG_SESSION_START=13316 [运行时间：0.072535s][吞吐率：13.79req/s] [内存消耗：2,441.41kb] [文件加载：45]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000575s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009560s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 [ RunTime:0.000706s ]
+---------------------------------------------------------------
+[ 2018-06-19T14:45:35+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/1&XDEBUG_SESSION_START=15279
+[ info ] localhost/index.php/api/v1/getusers/1&XDEBUG_SESSION_START=15279 [运行时间：0.079039s][吞吐率：12.65req/s] [内存消耗：2,441.41kb] [文件加载：45]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009793s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.011432s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 [ RunTime:0.000784s ]
+---------------------------------------------------------------
+[ 2018-06-19T14:55:37+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/1
+[ info ] localhost/index.php/api/v1/getusers/1 [运行时间：0.084476s][吞吐率：11.84req/s] [内存消耗：2,440.91kb] [文件加载：45]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010012s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009089s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1 LIMIT 1 [ RunTime:0.000703s ]
+---------------------------------------------------------------
+[ 2018-06-19T14:55:49+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/2
+[ info ] localhost/index.php/api/v1/getusers/2 [运行时间：0.064915s][吞吐率：15.40req/s] [内存消耗：2,436.41kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000597s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.010645s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 2 LIMIT 1 [ RunTime:0.000678s ]
+---------------------------------------------------------------
+[ 2018-06-19T14:55:51+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/3
+[ info ] localhost/index.php/api/v1/getusers/3 [运行时间：0.073422s][吞吐率：13.62req/s] [内存消耗：2,436.41kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010120s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009132s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 3 LIMIT 1 [ RunTime:0.000671s ]
+---------------------------------------------------------------
+[ 2018-06-19T15:07:20+08:00 ] 0.0.0.0 GET /index.php/api/v1/banners/all
+[ info ] localhost/index.php/api/v1/banners/all [运行时间：0.073503s][吞吐率：13.60req/s] [内存消耗：2,428.79kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000677s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.009049s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` ORDER BY `id` DESC [ RunTime:0.000569s ]
+---------------------------------------------------------------
+[ 2018-06-19T15:08:06+08:00 ] 0.0.0.0 GET /index.php/api/v1/banners/all
+[ info ] localhost/index.php/api/v1/banners/all [运行时间：0.074047s][吞吐率：13.50req/s] [内存消耗：2,428.79kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010566s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.009498s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` ORDER BY `id` DESC [ RunTime:0.000564s ]
+---------------------------------------------------------------
+[ 2018-06-19T15:08:27+08:00 ] 0.0.0.0 GET /index.php/api/v1/banners/all
+[ info ] localhost/index.php/api/v1/banners/all [运行时间：0.074936s][吞吐率：13.34req/s] [内存消耗：2,428.79kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011541s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.008405s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` ORDER BY `id` DESC [ RunTime:0.000573s ]
+---------------------------------------------------------------
+[ 2018-06-19T15:16:09+08:00 ] 0.0.0.0 GET /index.php/api/v1/range
+[ info ] localhost/index.php/api/v1/range [运行时间：0.069174s][吞吐率：14.46req/s] [内存消耗：2,426.38kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000473s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `service_range` [ RunTime:0.008766s ]
+[ sql ] [ SQL ] SELECT * FROM `service_range` [ RunTime:0.000530s ]
+---------------------------------------------------------------
+[ 2018-06-19T15:16:39+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/1
+[ info ] localhost/index.php/api/v1/getusers/1 [运行时间：0.096417s][吞吐率：10.37req/s] [内存消耗：2,442.19kb] [文件加载：45]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010669s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.011447s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1 LIMIT 1 [ RunTime:0.010478s ]
+---------------------------------------------------------------
+[ 2018-06-19T15:16:40+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/1
+[ info ] localhost/index.php/api/v1/getusers/1 [运行时间：0.080674s][吞吐率：12.40req/s] [内存消耗：2,442.19kb] [文件加载：45]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009686s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009949s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1 LIMIT 1 [ RunTime:0.000755s ]
+---------------------------------------------------------------
+[ 2018-06-19T15:19:10+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/1
+[ info ] localhost/index.php/api/v1/getusers/1 [运行时间：0.100309s][吞吐率：9.97req/s] [内存消耗：2,442.62kb] [文件加载：45]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010501s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.025117s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1 LIMIT 1 [ RunTime:0.000879s ]
+---------------------------------------------------------------
+[ 2018-06-19T15:21:27+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/1
+[ info ] localhost/index.php/api/v1/getusers/1 [运行时间：0.079194s][吞吐率：12.63req/s] [内存消耗：2,442.62kb] [文件加载：45]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000656s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.010129s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1 LIMIT 1 [ RunTime:0.000986s ]
+---------------------------------------------------------------
+[ 2018-06-19T15:21:34+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/2
+[ info ] localhost/index.php/api/v1/getusers/2 [运行时间：0.085445s][吞吐率：11.70req/s] [内存消耗：2,442.63kb] [文件加载：45]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010783s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009091s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 2 LIMIT 1 [ RunTime:0.000693s ]
+---------------------------------------------------------------
+[ 2018-06-19T15:21:44+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/2
+[ info ] localhost/index.php/api/v1/getusers/2 [运行时间：0.084570s][吞吐率：11.82req/s] [内存消耗：2,442.17kb] [文件加载：45]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010163s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.015149s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 2 LIMIT 1 [ RunTime:0.000702s ]
+---------------------------------------------------------------
+[ 2018-06-19T15:21:47+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/1
+[ info ] localhost/index.php/api/v1/getusers/1 [运行时间：0.078452s][吞吐率：12.75req/s] [内存消耗：2,442.62kb] [文件加载：45]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010590s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009340s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1 LIMIT 1 [ RunTime:0.000739s ]
+---------------------------------------------------------------
+[ 2018-06-19T15:21:50+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/1
+[ info ] localhost/index.php/api/v1/getusers/1 [运行时间：0.077344s][吞吐率：12.93req/s] [内存消耗：2,442.62kb] [文件加载：45]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009647s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009204s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1 LIMIT 1 [ RunTime:0.000718s ]
+---------------------------------------------------------------
+[ 2018-06-19T15:21:59+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/1
+[ info ] localhost/index.php/api/v1/getusers/1 [运行时间：0.066029s][吞吐率：15.14req/s] [内存消耗：2,442.62kb] [文件加载：45]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000647s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.008643s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1 LIMIT 1 [ RunTime:0.000646s ]
+---------------------------------------------------------------
+[ 2018-06-19T15:22:15+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/1
+[ info ] localhost/index.php/api/v1/getusers/1 [运行时间：0.067355s][吞吐率：14.85req/s] [内存消耗：2,442.55kb] [文件加载：45]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000636s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.008940s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (1) [ RunTime:0.000643s ]
+---------------------------------------------------------------
+[ 2018-06-19T15:22:38+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/1
+[ info ] localhost/index.php/api/v1/getusers/1 [运行时间：0.078766s][吞吐率：12.70req/s] [内存消耗：2,443.06kb] [文件加载：45]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010548s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.008982s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1 [ RunTime:0.000661s ]
+---------------------------------------------------------------
+[ 2018-06-19T15:22:49+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/1
+[ info ] localhost/index.php/api/v1/getusers/1 [运行时间：0.083431s][吞吐率：11.99req/s] [内存消耗：2,443.52kb] [文件加载：45]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010250s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.008743s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1 [ RunTime:0.000701s ]
+---------------------------------------------------------------
+[ 2018-06-19T15:27:54+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/3
+[ info ] localhost/index.php/api/v1/getusers/3 [运行时间：0.079769s][吞吐率：12.54req/s] [内存消耗：2,442.52kb] [文件加载：45]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010078s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.008729s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 3 [ RunTime:0.000751s ]
+---------------------------------------------------------------
+[ 2018-06-19T15:30:20+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/1
+[ info ] localhost/index.php/api/v1/getusers/1 [运行时间：0.081578s][吞吐率：12.26req/s] [内存消耗：2,444.19kb] [文件加载：45]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010380s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.008661s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1 [ RunTime:0.000673s ]
+---------------------------------------------------------------
+[ 2018-06-19T15:55:26+08:00 ] 0.0.0.0 POST /index.php/api/v1/login/in?phone_number=13852442265&password=123456&loginWayID=0&XDEBUG_SESSION_START=11583
+[ info ] localhost/index.php/api/v1/login/in?phone_number=13852442265&password=123456&loginWayID=0&XDEBUG_SESSION_START=11583 [运行时间：0.372135s][吞吐率：2.69req/s] [内存消耗：2,672.30kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010620s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.008736s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `phone_number` = '13852442265' LIMIT 1 [ RunTime:0.000670s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_fans` [ RunTime:0.008773s ]
+[ sql ] [ SQL ] SELECT * FROM `my_fans` WHERE  `user_id` = 1 [ RunTime:0.011799s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_follows` [ RunTime:0.008691s ]
+[ sql ] [ SQL ] SELECT * FROM `my_follows` WHERE  `user_id` = 1 [ RunTime:0.009458s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `service_evaluation` [ RunTime:0.008614s ]
+[ sql ] [ SQL ] SELECT * FROM `service_evaluation` WHERE  `user_id` = 1 [ RunTime:0.000615s ]
+---------------------------------------------------------------
+[ 2018-06-19T16:17:38+08:00 ] 0.0.0.0 GET /index.php/api/v1/range
+[ info ] localhost/index.php/api/v1/range [运行时间：0.269962s][吞吐率：3.70req/s] [内存消耗：2,427.13kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009748s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `service_range` [ RunTime:0.010263s ]
+[ sql ] [ SQL ] SELECT * FROM `service_range` [ RunTime:0.000529s ]
+---------------------------------------------------------------
+[ 2018-06-19T16:24:50+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/1
+[ info ] localhost/index.php/api/v1/getusers/1 [运行时间：0.279838s][吞吐率：3.57req/s] [内存消耗：2,518.95kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010664s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.008653s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1 [ RunTime:0.000665s ]
+---------------------------------------------------------------
+[ 2018-06-19T16:25:06+08:00 ] 0.0.0.0 GET /index.php/api/v1/category
+[ info ] localhost/index.php/api/v1/category [运行时间：0.280171s][吞吐率：3.57req/s] [内存消耗：2,428.14kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010444s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `service_category` [ RunTime:0.008638s ]
+[ sql ] [ SQL ] SELECT * FROM `service_category` [ RunTime:0.000844s ]
+---------------------------------------------------------------
+[ 2018-06-19T16:25:15+08:00 ] 0.0.0.0 GET /index.php/api/v1/range
+[ info ] localhost/index.php/api/v1/range [运行时间：0.267991s][吞吐率：3.73req/s] [内存消耗：2,427.13kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010624s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `service_range` [ RunTime:0.008906s ]
+[ sql ] [ SQL ] SELECT * FROM `service_range` [ RunTime:0.000517s ]
+---------------------------------------------------------------
+[ 2018-06-19T16:27:30+08:00 ] 0.0.0.0 GET /index.php/api/v1/range
+[ info ] localhost/index.php/api/v1/range [运行时间：0.273337s][吞吐率：3.66req/s] [内存消耗：2,427.59kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010195s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `service_range` [ RunTime:0.008936s ]
+[ sql ] [ SQL ] SELECT * FROM `service_range` [ RunTime:0.000471s ]
+---------------------------------------------------------------
+[ 2018-06-19T16:28:23+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001216s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.008682s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1 [ RunTime:0.000638s ]
+---------------------------------------------------------------
+[ 2018-06-19T16:33:43+08:00 ] 0.0.0.0 GET /index.php/api/v1/sysmsg
+[ info ] localhost/index.php/api/v1/sysmsg [运行时间：0.274114s][吞吐率：3.65req/s] [内存消耗：2,429.80kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009893s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_message` [ RunTime:0.008887s ]
+[ sql ] [ SQL ] SELECT * FROM `system_message` [ RunTime:0.000607s ]
+---------------------------------------------------------------
+[ 2018-06-19T16:38:56+08:00 ] 0.0.0.0 GET /index.php/api/v1/sysmsg
+[ info ] localhost/index.php/api/v1/sysmsg [运行时间：0.280284s][吞吐率：3.57req/s] [内存消耗：2,429.80kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010391s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_message` [ RunTime:0.009211s ]
+[ sql ] [ SQL ] SELECT * FROM `system_message` [ RunTime:0.000543s ]
+---------------------------------------------------------------
+[ 2018-06-19T16:39:03+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/1
+[ info ] localhost/index.php/api/v1/getusers/1 [运行时间：0.269713s][吞吐率：3.71req/s] [内存消耗：2,519.38kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000680s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009640s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1 [ RunTime:0.000717s ]
+---------------------------------------------------------------
+[ 2018-06-19T16:40:30+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/1
+[ info ] localhost/index.php/api/v1/getusers/1 [运行时间：0.288724s][吞吐率：3.46req/s] [内存消耗：2,519.40kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010498s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.008694s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1 [ RunTime:0.000662s ]
+---------------------------------------------------------------
+[ 2018-06-19T16:41:25+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/1
+[ info ] localhost/index.php/api/v1/getusers/1 [运行时间：0.293668s][吞吐率：3.41req/s] [内存消耗：2,519.40kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010814s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.012441s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1 [ RunTime:0.000635s ]
+---------------------------------------------------------------
+[ 2018-06-19T16:45:36+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/1
+[ info ] localhost/index.php/api/v1/getusers/1 [运行时间：0.286019s][吞吐率：3.50req/s] [内存消耗：2,519.40kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010280s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009205s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1 [ RunTime:0.000649s ]
+---------------------------------------------------------------
+[ 2018-06-19T17:36:19+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/1
+[ info ] localhost/index.php/api/v1/getusers/1 [运行时间：0.288795s][吞吐率：3.46req/s] [内存消耗：2,521.95kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010623s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009477s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1 [ RunTime:0.000704s ]
+---------------------------------------------------------------
+[ 2018-06-19T17:59:05+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/g/1?currentCity=%E5%8C%97%E4%BA%AC
+[ info ] localhost/index.php/api/v1/getusers/g/1?currentCity=%E5%8C%97%E4%BA%AC [运行时间：0.286167s][吞吐率：3.49req/s] [内存消耗：2,529.20kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010062s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.010108s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1 ORDER BY `score` DESC LIMIT 10 [ RunTime:0.000684s ]
+---------------------------------------------------------------
+[ 2018-06-19T17:59:54+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/g/1?currentCity=%E5%8C%97%E4%BA%AC
+[ info ] localhost/index.php/api/v1/getusers/g/1?currentCity=%E5%8C%97%E4%BA%AC [运行时间：0.286124s][吞吐率：3.49req/s] [内存消耗：2,529.10kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009959s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009212s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1  AND `current_city` = '北京' ORDER BY `score` DESC LIMIT 10 [ RunTime:0.000738s ]
+---------------------------------------------------------------
+[ 2018-06-19T18:00:12+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/g/1?currentCity=%E5%8C%97%E4%BA%AC
+[ info ] localhost/index.php/api/v1/getusers/g/1?currentCity=%E5%8C%97%E4%BA%AC [运行时间：0.283316s][吞吐率：3.53req/s] [内存消耗：2,529.10kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010738s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.008671s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1  AND `current_city` = '北京' ORDER BY `score` DESC LIMIT 10 [ RunTime:0.000824s ]
+---------------------------------------------------------------
+[ 2018-06-19T18:00:20+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/g/1?currentCity=%E5%BE%90%E5%B7%9E
+[ info ] localhost/index.php/api/v1/getusers/g/1?currentCity=%E5%BE%90%E5%B7%9E [运行时间：0.269383s][吞吐率：3.71req/s] [内存消耗：2,529.14kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000680s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.008754s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1  AND `current_city` = '徐州' ORDER BY `score` DESC LIMIT 10 [ RunTime:0.000661s ]
+---------------------------------------------------------------
+[ 2018-06-19T18:00:27+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/g/1?currentCity=%E5%8D%97%E4%BA%AC
+[ info ] localhost/index.php/api/v1/getusers/g/1?currentCity=%E5%8D%97%E4%BA%AC [运行时间：0.279731s][吞吐率：3.57req/s] [内存消耗：2,529.02kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011163s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009375s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1  AND `current_city` = '南京' ORDER BY `score` DESC LIMIT 10 [ RunTime:0.000718s ]
+---------------------------------------------------------------
+[ 2018-06-19T18:02:09+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/g/1?currentCity=%E5%BE%90%E5%B7%9E
+[ info ] localhost/index.php/api/v1/getusers/g/1?currentCity=%E5%BE%90%E5%B7%9E [运行时间：0.285274s][吞吐率：3.51req/s] [内存消耗：2,530.16kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009865s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.008633s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1  AND `current_city` = '徐州' ORDER BY `score` DESC LIMIT 10 [ RunTime:0.000787s ]
+---------------------------------------------------------------
+[ 2018-06-19T18:03:53+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/g/1?currentCity=%E5%BE%90%E5%B7%9E
+[ info ] localhost/index.php/api/v1/getusers/g/1?currentCity=%E5%BE%90%E5%B7%9E [运行时间：0.293037s][吞吐率：3.41req/s] [内存消耗：2,530.16kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009643s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009581s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1  AND `current_city` = '徐州' ORDER BY `score` DESC LIMIT 10 [ RunTime:0.000758s ]
+---------------------------------------------------------------
+[ 2018-06-19T18:07:48+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/g/1?currentCity=%E5%BE%90%E5%B7%9E
+[ info ] localhost/index.php/api/v1/getusers/g/1?currentCity=%E5%BE%90%E5%B7%9E [运行时间：0.286179s][吞吐率：3.49req/s] [内存消耗：2,530.16kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010482s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009376s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1  AND `current_city` = '徐州' ORDER BY `score` DESC LIMIT 10 [ RunTime:0.000746s ]
+---------------------------------------------------------------
+[ 2018-06-19T18:11:01+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/g/1?currentCity=%E5%BE%90%E5%B7%9E
+[ info ] localhost/index.php/api/v1/getusers/g/1?currentCity=%E5%BE%90%E5%B7%9E [运行时间：0.286132s][吞吐率：3.49req/s] [内存消耗：2,530.16kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010181s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009038s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1  AND `current_city` = '徐州' ORDER BY `score` DESC LIMIT 10 [ RunTime:0.001009s ]
+---------------------------------------------------------------
+[ 2018-06-19T18:11:07+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/g/1?currentCity=%E5%BE%90%E5%B7%9E
+[ info ] localhost/index.php/api/v1/getusers/g/1?currentCity=%E5%BE%90%E5%B7%9E [运行时间：0.297891s][吞吐率：3.36req/s] [内存消耗：2,530.16kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010848s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.011704s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1  AND `current_city` = '徐州' ORDER BY `score` DESC LIMIT 10 [ RunTime:0.000754s ]
+---------------------------------------------------------------
+[ 2018-06-19T18:17:45+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/l/1?currentCity=%E5%BE%90%E5%B7%9E
+[ info ] localhost/index.php/api/v1/getusers/l/1?currentCity=%E5%BE%90%E5%B7%9E [运行时间：0.291070s][吞吐率：3.44req/s] [内存消耗：2,531.87kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009612s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009402s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1  AND `current_city` = '徐州' ORDER BY `score` DESC LIMIT 10 [ RunTime:0.000777s ]
+---------------------------------------------------------------
+[ 2018-06-19T18:18:30+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/l/1?currentCity=%E5%BE%90%E5%B7%9E
+[ info ] localhost/index.php/api/v1/getusers/l/1?currentCity=%E5%BE%90%E5%B7%9E [运行时间：0.294273s][吞吐率：3.40req/s] [内存消耗：2,531.87kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011106s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009403s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1  AND `current_city` = '徐州' ORDER BY `score` DESC LIMIT 10 [ RunTime:0.000923s ]
+---------------------------------------------------------------
+[ 2018-06-19T18:20:27+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/l/1?currentCity=%E5%BE%90%E5%B7%9E
+[ info ] localhost/index.php/api/v1/getusers/l/1?currentCity=%E5%BE%90%E5%B7%9E [运行时间：0.281682s][吞吐率：3.55req/s] [内存消耗：2,531.87kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000647s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009083s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1  AND `current_city` = '徐州' ORDER BY `score` DESC LIMIT 10 [ RunTime:0.000725s ]
+---------------------------------------------------------------
+[ 2018-06-19T18:20:45+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/l/1?currentCity=%E5%BE%90%E5%B7%9E
+[ info ] localhost/index.php/api/v1/getusers/l/1?currentCity=%E5%BE%90%E5%B7%9E [运行时间：0.290862s][吞吐率：3.44req/s] [内存消耗：2,531.87kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009939s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.008973s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1  AND `current_city` = '徐州' ORDER BY `score` DESC LIMIT 10 [ RunTime:0.000790s ]
+---------------------------------------------------------------
+[ 2018-06-19T18:21:26+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/l/1?currentCity=%E5%BE%90%E5%B7%9E
+[ info ] localhost/index.php/api/v1/getusers/l/1?currentCity=%E5%BE%90%E5%B7%9E [运行时间：0.294688s][吞吐率：3.39req/s] [内存消耗：2,531.87kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010784s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.010750s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1  AND `current_city` = '徐州' ORDER BY `score` DESC LIMIT 10 [ RunTime:0.000727s ]
+---------------------------------------------------------------
+[ 2018-06-19T18:21:50+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/l/1?currentCity=%E5%BE%90%E5%B7%9E
+[ info ] localhost/index.php/api/v1/getusers/l/1?currentCity=%E5%BE%90%E5%B7%9E [运行时间：0.277362s][吞吐率：3.61req/s] [内存消耗：2,531.87kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000645s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.008945s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1  AND `current_city` = '徐州' ORDER BY `score` DESC LIMIT 10 [ RunTime:0.000707s ]
+---------------------------------------------------------------
+[ 2018-06-19T18:22:10+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/l/1?currentCity=%E5%BE%90%E5%B7%9E
+[ info ] localhost/index.php/api/v1/getusers/l/1?currentCity=%E5%BE%90%E5%B7%9E [运行时间：0.284249s][吞吐率：3.52req/s] [内存消耗：2,531.84kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009681s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009357s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1  AND `current_city` = '徐州' ORDER BY `score` DESC LIMIT 10 [ RunTime:0.000725s ]
+---------------------------------------------------------------
+[ 2018-06-19T18:22:17+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/l/1?currentCity=%E5%BE%90%E5%B7%9E
+[ info ] localhost/index.php/api/v1/getusers/l/1?currentCity=%E5%BE%90%E5%B7%9E [运行时间：0.283263s][吞吐率：3.53req/s] [内存消耗：2,531.84kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009572s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009231s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1  AND `current_city` = '徐州' ORDER BY `score` DESC LIMIT 10 [ RunTime:0.000828s ]
+---------------------------------------------------------------
+[ 2018-06-19T18:23:04+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/l/1?currentCity=%E5%BE%90%E5%B7%9E
+[ info ] localhost/index.php/api/v1/getusers/l/1?currentCity=%E5%BE%90%E5%B7%9E [运行时间：0.279708s][吞吐率：3.58req/s] [内存消耗：2,531.84kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000611s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009290s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1  AND `current_city` = '徐州' ORDER BY `score` DESC LIMIT 10 [ RunTime:0.000912s ]
+---------------------------------------------------------------
+[ 2018-06-19T18:23:57+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/level/1?currentCity=%E5%BE%90%E5%B7%9E
+[ info ] localhost/index.php/api/v1/getusers/level/1?currentCity=%E5%BE%90%E5%B7%9E [运行时间：0.282584s][吞吐率：3.54req/s] [内存消耗：2,531.87kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010393s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009469s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1  AND `current_city` = '徐州' ORDER BY `score` DESC LIMIT 10 [ RunTime:0.000742s ]
+---------------------------------------------------------------
+[ 2018-06-19T18:25:10+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/level/1?currentCity=%E5%BE%90%E5%B7%9E
+[ info ] localhost/index.php/api/v1/getusers/level/1?currentCity=%E5%BE%90%E5%B7%9E [运行时间：0.288796s][吞吐率：3.46req/s] [内存消耗：2,535.06kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010445s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009777s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1  AND `current_city` = '徐州' ORDER BY `score` DESC LIMIT 10 [ RunTime:0.000717s ]
+---------------------------------------------------------------
+[ 2018-06-19T18:26:46+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/level/1?currentCity=%E5%BE%90%E5%B7%9E
+[ info ] localhost/index.php/api/v1/getusers/level/1?currentCity=%E5%BE%90%E5%B7%9E [运行时间：0.293142s][吞吐率：3.41req/s] [内存消耗：2,535.06kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010486s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009500s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1  AND `current_city` = '徐州' ORDER BY `level` DESC LIMIT 10 [ RunTime:0.000798s ]
+---------------------------------------------------------------
+[ 2018-06-19T18:26:55+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/g/1?currentCity=%E5%BE%90%E5%B7%9E
+[ info ] localhost/index.php/api/v1/getusers/g/1?currentCity=%E5%BE%90%E5%B7%9E [运行时间：0.289606s][吞吐率：3.45req/s] [内存消耗：2,535.04kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010423s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009542s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1  AND `current_city` = '徐州' ORDER BY `level` DESC LIMIT 10 [ RunTime:0.000726s ]
+---------------------------------------------------------------
+[ 2018-06-19T18:27:31+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/g/1?currentCity=%E5%BE%90%E5%B7%9E
+[ info ] localhost/index.php/api/v1/getusers/g/1?currentCity=%E5%BE%90%E5%B7%9E [运行时间：0.285534s][吞吐率：3.50req/s] [内存消耗：2,535.04kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010049s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009562s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1  AND `current_city` = '徐州' ORDER BY `level` DESC LIMIT 10 [ RunTime:0.000773s ]
+---------------------------------------------------------------
+[ 2018-06-19T18:27:46+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/s/1?currentCity=%E5%BE%90%E5%B7%9E
+[ info ] localhost/index.php/api/v1/getusers/s/1?currentCity=%E5%BE%90%E5%B7%9E [运行时间：0.288994s][吞吐率：3.46req/s] [内存消耗：2,535.04kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010508s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009856s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1  AND `current_city` = '徐州' ORDER BY `level` DESC LIMIT 10 [ RunTime:0.000767s ]
+---------------------------------------------------------------
+[ 2018-06-19T18:28:18+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/s/1?currentCity=%E5%BE%90%E5%B7%9E
+[ info ] localhost/index.php/api/v1/getusers/s/1?currentCity=%E5%BE%90%E5%B7%9E [运行时间：0.282476s][吞吐率：3.54req/s] [内存消耗：2,535.63kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009780s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009258s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1  AND `current_city` = '徐州' ORDER BY `level` DESC LIMIT 10 [ RunTime:0.000845s ]
+---------------------------------------------------------------
+[ 2018-06-19T18:28:26+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/s/1?currentCity=%E5%BE%90%E5%B7%9E
+[ info ] localhost/index.php/api/v1/getusers/s/1?currentCity=%E5%BE%90%E5%B7%9E [运行时间：0.284982s][吞吐率：3.51req/s] [内存消耗：2,535.63kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009679s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009616s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1  AND `current_city` = '徐州' ORDER BY `level` DESC LIMIT 10 [ RunTime:0.000741s ]
+---------------------------------------------------------------
+[ 2018-06-19T18:28:31+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/l/1?currentCity=%E5%BE%90%E5%B7%9E
+[ info ] localhost/index.php/api/v1/getusers/l/1?currentCity=%E5%BE%90%E5%B7%9E [运行时间：0.274309s][吞吐率：3.65req/s] [内存消耗：2,535.63kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000644s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009201s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1  AND `current_city` = '徐州' ORDER BY `score` DESC LIMIT 10 [ RunTime:0.001024s ]
+---------------------------------------------------------------
+[ 2018-06-19T18:30:25+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/l/1?currentCity=%E5%BE%90%E5%B7%9E
+[ info ] localhost/index.php/api/v1/getusers/l/1?currentCity=%E5%BE%90%E5%B7%9E [运行时间：0.289385s][吞吐率：3.46req/s] [内存消耗：2,533.88kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009984s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009642s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1  AND `current_city` = '徐州' ORDER BY `score` DESC LIMIT 10 [ RunTime:0.000735s ]
+---------------------------------------------------------------
+[ 2018-06-19T18:31:40+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/l/1?currentCity=%E5%BE%90%E5%B7%9E
+[ info ] localhost/index.php/api/v1/getusers/l/1?currentCity=%E5%BE%90%E5%B7%9E [运行时间：0.286056s][吞吐率：3.50req/s] [内存消耗：2,530.62kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010291s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009345s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1  AND `current_city` = '徐州' ORDER BY `score` DESC LIMIT 10 [ RunTime:0.000721s ]
+---------------------------------------------------------------
+[ 2018-06-19T18:33:17+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/l/1?currentCity=%E5%BE%90%E5%B7%9E
+[ info ] localhost/index.php/api/v1/getusers/l/1?currentCity=%E5%BE%90%E5%B7%9E [运行时间：0.289885s][吞吐率：3.45req/s] [内存消耗：2,533.88kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010718s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009990s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1  AND `current_city` = '徐州' ORDER BY `level` DESC LIMIT 10 [ RunTime:0.000783s ]
+---------------------------------------------------------------
+[ 2018-06-19T18:33:32+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/l/1?currentCity=%E5%BE%90%E5%B7%9E
+[ info ] localhost/index.php/api/v1/getusers/l/1?currentCity=%E5%BE%90%E5%B7%9E [运行时间：0.285675s][吞吐率：3.50req/s] [内存消耗：2,533.88kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009831s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009821s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1  AND `current_city` = '徐州' ORDER BY `level` DESC LIMIT 10 [ RunTime:0.000792s ]
+---------------------------------------------------------------
+[ 2018-06-19T18:33:35+08:00 ] 0.0.0.0 GET /index.php/api/v1/getusers/s/1?currentCity=%E5%BE%90%E5%B7%9E
+[ info ] localhost/index.php/api/v1/getusers/s/1?currentCity=%E5%BE%90%E5%B7%9E [运行时间：0.285122s][吞吐率：3.51req/s] [内存消耗：2,533.88kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010144s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.010252s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `character_id` = 1  AND `current_city` = '徐州' ORDER BY `score` DESC LIMIT 10 [ RunTime:0.000729s ]

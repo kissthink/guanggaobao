@@ -11,12 +11,25 @@ namespace app\api\model;
 
 class User extends BaseModel
 {
-    public static function getUserinfo($data)
+    protected $hidden = ['create_time','update_time','delete_time'];
+//获取登陆用户的基本信息并回显
+    public static function getUser($data,$checkID)
     {
-        $user = self::where('phone_number','=',$data['phone_number'])->find();
-        if ($user['password']==$data['password'])
-        {
-            return $user;
-        }
+
+        $user = self::with('fans,follows,serviceEvaluation')->where($checkID,'=',$data[$checkID])->find();
+        return $user;
+    }
+
+    public function fans()
+    {
+        return $this->hasMany('MyFans','user_id','id');
+    }
+    public function follows()
+    {
+        return $this->hasMany('MyFollows','user_id','id');
+    }
+    public function serviceEvaluation()
+    {
+        return $this->hasOne('ServiceEvaluation','user_id','id');
     }
 }

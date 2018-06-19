@@ -9,23 +9,20 @@
 namespace app\api\controller\v1;
 
 
+use app\api\service\UserInfo;
 use app\api\validate\MobilePhoneNumber;
-use app\api\model\User as UserModel;
-use think\Controller;
-use think\Db;
+use think\Request;
 
 class Login
 {
-    public function  login()
+//    用户登陆验证
+    public function  loginIn(Request $res)
     {
-        $params = (new MobilePhoneNumber())->goCheck();
+        (new MobilePhoneNumber())->goCheck();
 //        $user = UserModel::Where('phone_number','=',$params['phone_number'])->find();
-        $user = UserModel::getUserInfo($params);
-        if (!$user){
-            return json(['该用户不存在','code'=>500]);;
-    }else{
-            return json(['userinfo:'=>$user,'code'=>200]);
-        }
-
+        $params = $res->param();
+        $userInfo = new UserInfo();
+        $user = $userInfo->getUserInfo($params);
+        return $user;
     }
 }
