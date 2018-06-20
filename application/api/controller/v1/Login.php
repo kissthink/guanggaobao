@@ -15,7 +15,7 @@ use think\Request;
 
 class Login
 {
-//    用户登陆验证
+//    用户手机登陆验证
     public function  loginIn(Request $res)
     {
         (new MobilePhoneNumber())->goCheck();

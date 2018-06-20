@@ -11,12 +11,12 @@ namespace app\api\model;
 
 class User extends BaseModel
 {
-    protected $hidden = ['create_time','update_time','delete_time'];
+    protected $hidden = ['create_time','update_time','delete_time','password','login_way_id','character_id','range_id'];
 //获取登陆用户的基本信息并回显
     public static function getUser($data,$checkID)
     {
 
-        $user = self::with('fans,follows,serviceEvaluation')->where($checkID,'=',$data[$checkID])->find();
+        $user = self::with('fans,follows,serviceEvaluation')->withCount('fans,follows')->where($checkID,'=',$data[$checkID])->find();
         return $user;
     }
 

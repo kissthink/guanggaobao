@@ -11,5 +11,5 @@ namespace app\api\model;
 
 class MyFans extends BaseModel
 {
-//    protected $hidden =['create_time','update_time','delete_time'];
+    protected $hidden =['create_time','update_time','delete_time','user_id'];
 }

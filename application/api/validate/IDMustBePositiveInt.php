@@ -16,6 +16,7 @@ class IDMustBePositiveInt extends BaseValidate
     ];
 
     protected $message = [
-        'id'=>'id must be a PositiveInteger'
+        'id.require'=>'id is required',
+        'id.isPositiveInteger'=>'id must be a PositiveInteger'
     ];
 }

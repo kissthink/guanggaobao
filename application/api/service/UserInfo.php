@@ -35,7 +35,8 @@ class UserInfo
             throw new UserInvalidException();
         }
     }
-    public  static function getUsersByScore($id,$currentCity)
+//    根据得分选择用户
+    public  static function getUsersByScore($id,$currentcity)
     {
         $character =null;
         switch ($id){
@@ -57,18 +58,18 @@ class UserInfo
 // 查询数据集
         $userlist = $user
             ->where('character_id', $id)
-            ->where('current_city', $currentCity)
+            ->where('current_city', $currentcity)
             ->limit(10)
-            ->order('score', 'desc')
+            ->order('score desc')
             ->select();
-        if(!$userlist)
+        if($userlist->isEmpty())
         {
             throw new CharacterIDException();
         }
         return json([$character=>$userlist],200);
     }
 
-    public  static function getUsersByLevel($id,$currentCity)
+    public  static function getUsersByLevel($id,$currentcity)
     {
         $character =null;
         switch ($id){
@@ -90,11 +91,11 @@ class UserInfo
 // 查询数据集
         $userlist = $user
             ->where('character_id', $id)
-            ->where('current_city', $currentCity)
+            ->where('current_city', $currentcity)
             ->limit(10)
             ->order('level', 'desc')
             ->select();
-        if(!$userlist)
+        if($userlist->isEmpty())
         {
             throw new CharacterIDException();
         }

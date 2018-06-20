@@ -11,9 +11,8 @@ namespace app\api\model;
 
 class SystemMessage extends BaseModel
 {
-    //
-    public static function getRecentMsg()
-    {
+    protected $hidden = [
+        'update_time','delete_time','level'
+    ];
 
-    }
 }

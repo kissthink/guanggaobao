@@ -21,13 +21,13 @@ class User
      * @sincerity,good_opinion,transaction,fans_num,quality,speed,service
      *
      * */
-    public function  getUsersByLevel($id,$currentCity)
+    public function  getUsersByLevel($id,$currentcity)
     {
         (new IDMustBePositiveInt())->goCheck();
         (new CurrentCity())->goCheck();
         $userInfo = new UserInfo();
         //按用户角色进行分列用户信息
-        $users = $userInfo->getUsersByLevel($id,$currentCity);
+        $users = $userInfo->getUsersByLevel($id,$currentcity);
         return $users;
     }
     /* 根据参数选择用户
@@ -37,11 +37,11 @@ class User
         * @sincerity,good_opinion,transaction,fans_num,quality,speed,service
         * */
 //    根据综合评分score排名
-    public function  getUsersByScore($id,$currentCity)
+    public function  getUsersByScore($id,$currentcity)
     {
         (new IDMustBePositiveInt())->goCheck();
         (new CurrentCity())->goCheck();
-        $users = UserInfo::getUsersByScore($id,$currentCity);
+        $users = UserInfo::getUsersByScore($id,$currentcity);
         return $users;
     }
 }
