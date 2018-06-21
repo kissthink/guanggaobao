@@ -44,4 +44,12 @@ class User
         $users = UserInfo::getUsersByScore($id,$currentcity);
         return $users;
     }
+
+//    根据用户id获取对应的关注信息:关注的设计师,服务商信息
+ public function getMyFollows($id)
+ {
+     (new IDMustBePositiveInt())->goCheck();
+     $myFollows = UserInfo::getMyFollows($id);
+     return $myFollows;
+ }
 }

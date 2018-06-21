@@ -11,5 +11,15 @@ namespace app\api\model;
 
 class MyFollows extends BaseModel
 {
-    protected $hidden =['create_time','update_time','delete_time','user_id'];
+    protected $hidden =['create_time','update_time','delete_time','user_id','follow_id'];
+
+    public static function getFollows($id)
+    {
+        return self::with('userdata')->where('user_id',$id)->select();
+    }
+
+    public function userdata()
+    {
+        return $this->belongsTo('User','follow_id','id');
+    }
 }

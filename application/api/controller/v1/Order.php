@@ -44,4 +44,11 @@ class Order
         $orderCollection = OrderInfo::getCollection($id);
         return $orderCollection;
     }
+
+    public function getMyBidOrders($id)
+    {
+        (new IDMustBePositiveInt())->goCheck();
+        $bidOrders = OrderInfo::getBidOrders($id);
+        return $bidOrders;
+    }
 }

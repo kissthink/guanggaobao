@@ -8,9 +8,11 @@
 
 namespace app\api\service;
 
+use app\api\model\MyFollows;
 use app\api\model\User as UserModel;
 use app\api\model\User;
 use app\lib\exception\CharacterIDException;
+use app\lib\exception\UserInfoException;
 use app\lib\exception\UserInvalidException;
 use app\lib\exception\LoginInvaildException;
 class UserInfo
@@ -88,7 +90,6 @@ class UserInfo
         }
 //        $userlist = User::all(['character_id' => $id]);
         $user = new User();
-// 查询数据集
         $userlist = $user
             ->where('character_id', $id)
             ->where('current_city', $currentcity)
@@ -100,5 +101,16 @@ class UserInfo
             throw new CharacterIDException();
         }
         return json([$character=>$userlist],200);
+    }
+
+    public static function getMyFollows($id)
+    {
+        $myFollows = MyFollows::getFollows($id);
+        if($myFollows->isEmpty())
+        {
+            throw new UserInfoException();
+        }else{
+            return $myFollows;
+        }
     }
 }

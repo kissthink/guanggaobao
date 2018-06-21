@@ -10,27 +10,41 @@ namespace app\api\service;
 
 use app\api\model\OrderMessage as OrderMessageModel;
 use app\api\model\SystemMessage as SystemMessageModel;
+use app\api\model\SystemUser as SystemUserModel;
 use app\api\validate\IDMustBePositiveInt;
 use app\lib\exception\SystemMessageException;
 
 class SystemMessage
 {
-    public static function getRecentMsg()
+//    获取系统最新未被阅读的信息数量
+    public static function getNewMsgCount($id)
     {
-        $systemMsg = SystemMessageModel::all();
-        if($systemMsg->isEmpty())
+        $newMsgCount = SystemUserModel::getNewMsgCount($id);
+        if(!$newMsgCount)
         {
             throw new SystemMessageException();
         }else{
-            return $systemMsg;
+            return $newMsgCount;
+        }
+
+    }
+//    获取系统最新的信息
+    public static function getSysMsg($id)
+    {
+        $newMsg = SystemUserModel::getSysMsg($id);
+        if($newMsg->isEmpty())
+        {
+            throw new SystemMessageException();
+        }else{
+            return $newMsg;
         }
 
     }
 
-    public  static function getMyOrdersCount($id)
+    public  static function getNewOrdersCount($id)
     {
         (new IDMustBePositiveInt())->goCheck();
-        $orderMsgCount = OrderMessageModel::getMyOrdersCount($id);
+        $orderMsgCount = OrderMessageModel::getNewOrdersCount($id);
         if(!$orderMsgCount)
         {
             throw new SystemMessageException();
@@ -43,10 +57,12 @@ class SystemMessage
     public  static function getMyOrders($id)
     {
         (new IDMustBePositiveInt())->goCheck();
-        $orderMsg = OrderMessageModel::all($id);
+        $orderMsg = OrderMessageModel::getMyOrders($id);
         if($orderMsg->isEmpty())
         {
-            throw new SystemMessageException();
+            throw new SystemMessageException(
+                "OrderMessage do not exit or has been read, please check and try agagin."
+            );
         }
         else{
             return $orderMsg;

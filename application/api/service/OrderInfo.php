@@ -9,9 +9,11 @@
 namespace app\api\service;
 
 
+use app\api\model\BidDetail;
+use app\api\model\Order;
 use app\api\model\Order as OrderModel;
 use app\lib\exception\OrderGetException;
-use app\api\model\OrderCollection as OrderCollection;
+use app\api\model\User as UserModel;
 class OrderInfo
 {
 //    根据当前城市选择订单列表
@@ -65,5 +67,15 @@ class OrderInfo
             throw new OrderGetException();
         }
         return $order;
+    }
+
+    public static function getBidOrders($id)
+    {
+        $bidOrders =UserModel::getBidOrders($id);
+        if($bidOrders->isEmpty())
+        {
+            throw new OrderGetException();
+        }
+        return $bidOrders;
     }
 }

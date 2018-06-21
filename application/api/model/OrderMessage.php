@@ -11,8 +11,14 @@ namespace app\api\model;
 
 class OrderMessage extends BaseModel
 {
-    public static function getMyOrdersCount($id)
+//    获取对应id用户未被阅读的订单信息数
+    public static function getNewOrdersCount($id)
     {
-        return self::count('user_id', $id);
+        return self::where(['user_id'=>$id,'status'=>0])->count();
+    }
+
+    public static function getMyOrders($id)
+    {
+        return self::where(['user_id'=>$id])->select();
     }
 }

@@ -13,21 +13,28 @@ use app\lib\exception\SystemMessageException;
 
 class Message
 {
-    //获取平台最新系统公告
-    public function getRecentMsg()
+    //获取平台最新系统公告数量
+    public function getSysMsg($id)
     {
-        $systemMsg = SystemMessage::getRecentMsg();
+        $systemMsg = SystemMessage::getSysMsg($id);
+        return $systemMsg;
+
+    }
+    //获取平台最新系统公告
+    public function getNewMsgCount($id)
+    {
+        $systemMsg = SystemMessage::getNewMsgCount($id);
         return $systemMsg;
 
     }
 
-    //    根据用户id获取对应的订单信息数量
-    public function  getMyOrdersMessageCount($id)
+    //    根据用户id获取对应的...未被阅读...的订单信息数量
+    public function  getNewOrdersMessageCount($id)
     {
-        $orderMsgCount = SystemMessage::getMyOrdersCount($id);
+        $orderMsgCount = SystemMessage::getNewOrdersCount($id);
         return $orderMsgCount;
     }
-    //    根据用户id获取对应的订单信息
+    //    根据用户id获取对应的订单信息,按时间降序排列
     public function  getMyOrdersMessage($id)
     {
         $msg = SystemMessage::getMyOrders($id);

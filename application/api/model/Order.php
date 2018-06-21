@@ -25,6 +25,21 @@ class Order extends BaseModel
         $orders->hidden(['user.phone_number','user.email','brief_introduction','user.level','user.vip','user.score','user.city']);
         return $orders;
     }
+
+    public function user()
+    {
+        return $this->belongsTo('User','user_id','id');
+    }
+
+    public  function imgs()
+    {
+        return $this->hasOne('Order_Image','order_id','id');
+    }
+    public function bidders()
+    {
+        return $this->hasMany('BidDetail','order_id','id');
+    }
+
     public static function getByRangeType($rangetype, $currentcity)
     {
         $orders = self::with('user')->withCount('bidders')
@@ -61,19 +76,5 @@ class Order extends BaseModel
     public function orderUsers()
     {
         return $this->belongsToMany('Order','order_collection','user_id','order_id');
-    }
-
-    public function user()
-    {
-        return $this->belongsTo('User','user_id','id');
-    }
-
-    public  function imgs()
-    {
-        return $this->hasOne('Order_Image','order_id','id');
-    }
-    public function bidders()
-    {
-        return $this->hasMany('BidDetail','order_id','id');
     }
 }

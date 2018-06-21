@@ -14,6 +14,9 @@ class BidDetail extends BaseModel
     public function user()
     {
         return $this->belongsTo('user','bider_id','id');
-
     }
+//    public function maxPrice()
+//    {
+//        return self::max('bid_price');
+//    }
 }
