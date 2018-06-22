@@ -77,4 +77,9 @@ class Order extends BaseModel
     {
         return $this->belongsToMany('Order','order_collection','user_id','order_id');
     }
+
+    public static function countByStatus($id,$s)
+    {
+        return self::where(['user_id'=>$id,'status'=>$s])->count();
+    }
 }

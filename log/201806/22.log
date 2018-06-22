@@ -1,0 +1,992 @@
+---------------------------------------------------------------
+[ 2018-06-22T09:53:10+08:00 ] 0.0.0.0 GET /index.php/api/v1/bidorders/1
+[ info ] localhost/index.php/api/v1/bidorders/1 [运行时间：0.370953s][吞吐率：2.70req/s] [内存消耗：2,787.45kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.016688s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.030479s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 [ RunTime:0.000806s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.032823s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_bider` [ RunTime:0.009465s ]
+[ sql ] [ SQL ] SELECT `order`.*,pivot.order_id AS pivot__order_id,pivot.bider_id AS pivot__bider_id,pivot.create_time AS pivot__create_time,pivot.update_time AS pivot__update_time,pivot.delete_time AS pivot__delete_time FROM `order` INNER JOIN `order_bider` `pivot` ON `pivot`.`order_id`=`order`.`id` WHERE  `pivot`.`bider_id` = 1  AND `status` = 0 [ RunTime:0.000852s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bid_detail` [ RunTime:0.027585s ]
+[ sql ] [ SQL ] SELECT * FROM `bid_detail` WHERE  `bider_id` IN (1) [ RunTime:0.000599s ]
+---------------------------------------------------------------
+[ 2018-06-22T11:22:19+08:00 ] 0.0.0.0 GET /index.php/api/v1/bidorders/1
+[ info ] localhost/index.php/api/v1/bidorders/1 [运行时间：0.155683s][吞吐率：6.42req/s] [内存消耗：2,787.43kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010616s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009215s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 [ RunTime:0.000720s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.008346s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_bider` [ RunTime:0.009235s ]
+[ sql ] [ SQL ] SELECT `order`.*,pivot.order_id AS pivot__order_id,pivot.bider_id AS pivot__bider_id,pivot.create_time AS pivot__create_time,pivot.update_time AS pivot__update_time,pivot.delete_time AS pivot__delete_time FROM `order` INNER JOIN `order_bider` `pivot` ON `pivot`.`order_id`=`order`.`id` WHERE  `pivot`.`bider_id` = 1  AND `status` = 0 [ RunTime:0.000762s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bid_detail` [ RunTime:0.008944s ]
+[ sql ] [ SQL ] SELECT * FROM `bid_detail` WHERE  `bider_id` IN (1) [ RunTime:0.000660s ]
+---------------------------------------------------------------
+[ 2018-06-22T11:22:39+08:00 ] 0.0.0.0 GET /index.php/api/v1/bidorders/1
+[ info ] localhost/index.php/api/v1/bidorders/1 [运行时间：0.132504s][吞吐率：7.55req/s] [内存消耗：2,736.28kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010879s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.008735s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 [ RunTime:0.000703s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.008652s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_bider` [ RunTime:0.008574s ]
+[ sql ] [ SQL ] SELECT `order`.*,pivot.order_id AS pivot__order_id,pivot.bider_id AS pivot__bider_id,pivot.create_time AS pivot__create_time,pivot.update_time AS pivot__update_time,pivot.delete_time AS pivot__delete_time FROM `order` INNER JOIN `order_bider` `pivot` ON `pivot`.`order_id`=`order`.`id` WHERE  `pivot`.`bider_id` = 1  AND `status` = 0 [ RunTime:0.000732s ]
+---------------------------------------------------------------
+[ 2018-06-22T11:24:09+08:00 ] 0.0.0.0 GET /index.php/api/v1/bidorders/1
+[ info ] localhost/index.php/api/v1/bidorders/1 [运行时间：0.130074s][吞吐率：7.69req/s] [内存消耗：2,736.25kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010739s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.008406s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 [ RunTime:0.000660s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.008323s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_bider` [ RunTime:0.008216s ]
+[ sql ] [ SQL ] SELECT `order`.*,pivot.order_id AS pivot__order_id,pivot.bider_id AS pivot__bider_id,pivot.create_time AS pivot__create_time,pivot.update_time AS pivot__update_time,pivot.delete_time AS pivot__delete_time FROM `order` INNER JOIN `order_bider` `pivot` ON `pivot`.`order_id`=`order`.`id` WHERE  `pivot`.`bider_id` = 1  AND `status` = 0 [ RunTime:0.000710s ]
+---------------------------------------------------------------
+[ 2018-06-22T11:24:20+08:00 ] 0.0.0.0 GET /index.php/api/v1/bidorders/1
+[ info ] localhost/index.php/api/v1/bidorders/1 [运行时间：0.140239s][吞吐率：7.13req/s] [内存消耗：2,736.22kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010263s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009575s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 [ RunTime:0.000687s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.009046s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_bider` [ RunTime:0.009239s ]
+[ sql ] [ SQL ] SELECT `order`.*,pivot.order_id AS pivot__order_id,pivot.bider_id AS pivot__bider_id,pivot.create_time AS pivot__create_time,pivot.update_time AS pivot__update_time,pivot.delete_time AS pivot__delete_time FROM `order` INNER JOIN `order_bider` `pivot` ON `pivot`.`order_id`=`order`.`id` WHERE  `pivot`.`bider_id` = 1  AND `status` = 0 [ RunTime:0.000745s ]
+---------------------------------------------------------------
+[ 2018-06-22T11:24:48+08:00 ] 0.0.0.0 GET /index.php/api/v1/bidorders/1
+[ info ] localhost/index.php/api/v1/bidorders/1 [运行时间：0.132022s][吞吐率：7.57req/s] [内存消耗：2,735.45kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010840s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.008453s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 [ RunTime:0.000700s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.008636s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_bider` [ RunTime:0.008723s ]
+[ sql ] [ SQL ] SELECT `order`.*,pivot.order_id AS pivot__order_id,pivot.bider_id AS pivot__bider_id,pivot.create_time AS pivot__create_time,pivot.update_time AS pivot__update_time,pivot.delete_time AS pivot__delete_time FROM `order` INNER JOIN `order_bider` `pivot` ON `pivot`.`order_id`=`order`.`id` WHERE  `pivot`.`bider_id` = 1  AND `status` = 0 [ RunTime:0.000715s ]
+---------------------------------------------------------------
+[ 2018-06-22T11:25:30+08:00 ] 0.0.0.0 GET /index.php/api/v1/bidorders/1
+[ info ] localhost/index.php/api/v1/bidorders/1 [运行时间：0.132838s][吞吐率：7.53req/s] [内存消耗：2,736.05kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010596s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009693s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 [ RunTime:0.000710s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.008854s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_bider` [ RunTime:0.009185s ]
+[ sql ] [ SQL ] SELECT `order`.*,pivot.order_id AS pivot__order_id,pivot.bider_id AS pivot__bider_id,pivot.bid_price AS pivot__bid_price,pivot.create_time AS pivot__create_time,pivot.update_time AS pivot__update_time,pivot.delete_time AS pivot__delete_time FROM `order` INNER JOIN `order_bider` `pivot` ON `pivot`.`order_id`=`order`.`id` WHERE  `pivot`.`bider_id` = 1  AND `status` = 0 [ RunTime:0.000720s ]
+---------------------------------------------------------------
+[ 2018-06-22T11:26:18+08:00 ] 0.0.0.0 GET /index.php/api/v1/bidorders/1
+[ info ] localhost/index.php/api/v1/bidorders/1 [运行时间：0.131105s][吞吐率：7.63req/s] [内存消耗：2,736.05kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010164s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009261s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 [ RunTime:0.000705s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.008898s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_bider` [ RunTime:0.008739s ]
+[ sql ] [ SQL ] SELECT `order`.*,pivot.order_id AS pivot__order_id,pivot.bider_id AS pivot__bider_id,pivot.new_price AS pivot__new_price,pivot.create_time AS pivot__create_time,pivot.update_time AS pivot__update_time,pivot.delete_time AS pivot__delete_time FROM `order` INNER JOIN `order_bider` `pivot` ON `pivot`.`order_id`=`order`.`id` WHERE  `pivot`.`bider_id` = 1  AND `status` = 0 [ RunTime:0.000728s ]
+---------------------------------------------------------------
+[ 2018-06-22T11:26:39+08:00 ] 0.0.0.0 GET /index.php/api/v1/bidorders/1
+[ info ] localhost/index.php/api/v1/bidorders/1 [运行时间：0.176546s][吞吐率：5.66req/s] [内存消耗：2,736.05kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010493s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009380s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 [ RunTime:0.000703s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.009593s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_bider` [ RunTime:0.036275s ]
+[ sql ] [ SQL ] SELECT `order`.*,pivot.order_id AS pivot__order_id,pivot.bider_id AS pivot__bider_id,pivot.last_price AS pivot__last_price,pivot.create_time AS pivot__create_time,pivot.update_time AS pivot__update_time,pivot.delete_time AS pivot__delete_time FROM `order` INNER JOIN `order_bider` `pivot` ON `pivot`.`order_id`=`order`.`id` WHERE  `pivot`.`bider_id` = 1  AND `status` = 0 [ RunTime:0.000778s ]
+---------------------------------------------------------------
+[ 2018-06-22T11:31:41+08:00 ] 0.0.0.0 GET /index.php/api/v1/bidorders/1
+[ info ] localhost/index.php/api/v1/bidorders/1 [运行时间：0.141358s][吞吐率：7.07req/s] [内存消耗：2,736.84kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010477s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.008864s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 [ RunTime:0.000721s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.011240s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_bider` [ RunTime:0.008452s ]
+[ sql ] [ SQL ] SELECT `order`.*,pivot.order_id AS pivot__order_id,pivot.bider_id AS pivot__bider_id,pivot.last_price AS pivot__last_price,pivot.create_time AS pivot__create_time,pivot.update_time AS pivot__update_time,pivot.delete_time AS pivot__delete_time FROM `order` INNER JOIN `order_bider` `pivot` ON `pivot`.`order_id`=`order`.`id` WHERE  `pivot`.`bider_id` = 1  AND `status` = 0 [ RunTime:0.000716s ]
+---------------------------------------------------------------
+[ 2018-06-22T11:32:18+08:00 ] 0.0.0.0 GET /index.php/api/v1/bidorders/1
+[ info ] localhost/index.php/api/v1/bidorders/1 [运行时间：0.138554s][吞吐率：7.22req/s] [内存消耗：2,736.90kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010038s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.008486s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 [ RunTime:0.000718s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.008320s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_bider` [ RunTime:0.008387s ]
+[ sql ] [ SQL ] SELECT `order`.*,pivot.order_id AS pivot__order_id,pivot.bider_id AS pivot__bider_id,pivot.last_price AS pivot__last_price,pivot.create_time AS pivot__create_time,pivot.update_time AS pivot__update_time,pivot.delete_time AS pivot__delete_time FROM `order` INNER JOIN `order_bider` `pivot` ON `pivot`.`order_id`=`order`.`id` WHERE  `pivot`.`bider_id` = 1  AND `status` = 0 [ RunTime:0.000715s ]
+---------------------------------------------------------------
+[ 2018-06-22T11:32:41+08:00 ] 0.0.0.0 GET /index.php/api/v1/bidorders/1
+[ info ] localhost/index.php/api/v1/bidorders/1 [运行时间：0.127165s][吞吐率：7.86req/s] [内存消耗：2,737.43kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010595s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.008524s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 [ RunTime:0.000644s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.008471s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_bider` [ RunTime:0.008408s ]
+[ sql ] [ SQL ] SELECT `order`.*,pivot.order_id AS pivot__order_id,pivot.bider_id AS pivot__bider_id,pivot.last_price AS pivot__last_price,pivot.create_time AS pivot__create_time,pivot.update_time AS pivot__update_time,pivot.delete_time AS pivot__delete_time FROM `order` INNER JOIN `order_bider` `pivot` ON `pivot`.`order_id`=`order`.`id` WHERE  `pivot`.`bider_id` = 1  AND `status` = 0 [ RunTime:0.000707s ]
+---------------------------------------------------------------
+[ 2018-06-22T11:33:02+08:00 ] 0.0.0.0 GET /index.php/api/v1/bidorders/1
+[ info ] localhost/index.php/api/v1/bidorders/1 [运行时间：0.130899s][吞吐率：7.64req/s] [内存消耗：2,736.05kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009595s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.008887s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 [ RunTime:0.000632s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.008342s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_bider` [ RunTime:0.008592s ]
+[ sql ] [ SQL ] SELECT `order`.*,pivot.order_id AS pivot__order_id,pivot.bider_id AS pivot__bider_id,pivot.last_price AS pivot__last_price,pivot.create_time AS pivot__create_time,pivot.update_time AS pivot__update_time,pivot.delete_time AS pivot__delete_time FROM `order` INNER JOIN `order_bider` `pivot` ON `pivot`.`order_id`=`order`.`id` WHERE  `pivot`.`bider_id` = 1  AND `status` = 0 [ RunTime:0.000695s ]
+---------------------------------------------------------------
+[ 2018-06-22T11:35:50+08:00 ] 0.0.0.0 GET /index.php/api/v1/biddetail?id=1
+[ info ] localhost/index.php/api/v1/biddetail?id=1 [运行时间：0.124318s][吞吐率：8.04req/s] [内存消耗：2,671.53kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000670s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bid_detail` [ RunTime:0.008572s ]
+[ sql ] [ SQL ] SELECT * FROM `bid_detail` WHERE  `order_id` = 1 ORDER BY `bid_price` DESC [ RunTime:0.000639s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.008394s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (1,2) [ RunTime:0.000832s ]
+---------------------------------------------------------------
+[ 2018-06-22T13:51:57+08:00 ] 0.0.0.0 GET /index.php/api/v1/bidordercount/1
+[ info ] localhost/index.php/api/v1/bidordercount/1 [运行时间：0.084712s][吞吐率：11.80req/s] [内存消耗：2,584.91kb] [文件加载：49]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010741s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_bider` [ RunTime:0.008659s ]
+[ sql ] [ SQL ] SELECT * FROM `order_bider` WHERE  `bider_id` = 1  AND `status` = 0 [ RunTime:0.000661s ]
+---------------------------------------------------------------
+[ 2018-06-22T13:52:55+08:00 ] 0.0.0.0 GET /index.php/api/v1/bidordercount/1
+[ info ] localhost/index.php/api/v1/bidordercount/1 [运行时间：0.093320s][吞吐率：10.72req/s] [内存消耗：2,540.14kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010487s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_bider` [ RunTime:0.014004s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `order_bider` WHERE  `bider_id` = 1  AND `status` = 0 LIMIT 1 [ RunTime:0.000574s ]
+---------------------------------------------------------------
+[ 2018-06-22T14:05:55+08:00 ] 0.0.0.0 GET /index.php/api/v1/bidorders/1
+[ info ] localhost/index.php/api/v1/bidorders/1 [运行时间：0.140154s][吞吐率：7.14req/s] [内存消耗：2,740.56kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009883s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.008771s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 [ RunTime:0.000835s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.008492s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_bider` [ RunTime:0.008852s ]
+[ sql ] [ SQL ] SELECT `order`.*,pivot.order_id AS pivot__order_id,pivot.bider_id AS pivot__bider_id,pivot.last_price AS pivot__last_price,pivot.order_status AS pivot__order_status,pivot.create_time AS pivot__create_time,pivot.update_time AS pivot__update_time,pivot.delete_time AS pivot__delete_time FROM `order` INNER JOIN `order_bider` `pivot` ON `pivot`.`order_id`=`order`.`id` WHERE  `pivot`.`bider_id` = 1  AND `status` = 0 [ RunTime:0.000798s ]
+---------------------------------------------------------------
+[ 2018-06-22T14:07:53+08:00 ] 0.0.0.0 GET /index.php/api/v1/bidordercount/1
+[ info ] localhost/index.php/api/v1/bidordercount/1 [运行时间：0.089742s][吞吐率：11.14req/s] [内存消耗：2,540.18kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010758s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_bider` [ RunTime:0.008947s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `order_bider` WHERE  `bider_id` = 1  AND `order_status` = 0 LIMIT 1 [ RunTime:0.000667s ]
+---------------------------------------------------------------
+[ 2018-06-22T14:30:55+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.091736s][吞吐率：10.90req/s] [内存消耗：2,577.79kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010392s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_comments` [ RunTime:0.009945s ]
+[ sql ] [ SQL ] SELECT * FROM `my_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000701s ]
+---------------------------------------------------------------
+[ 2018-06-22T14:35:36+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycommentcount?id=1
+[ info ] localhost/index.php/api/v1/mycommentcount?id=1 [运行时间：0.089193s][吞吐率：11.21req/s] [内存消耗：2,535.23kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011255s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_comments` [ RunTime:0.008385s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `my_comments` WHERE  `customer_id` = 1 LIMIT 1 [ RunTime:0.000526s ]
+---------------------------------------------------------------
+[ 2018-06-22T14:51:10+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycommentcount?id=1
+[ info ] localhost/index.php/api/v1/mycommentcount?id=1 [运行时间：0.119695s][吞吐率：8.35req/s] [内存消耗：2,581.92kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010473s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.027099s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.001200s ]
+---------------------------------------------------------------
+[ 2018-06-22T14:51:29+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycommentcount?id=1
+[ info ] localhost/index.php/api/v1/mycommentcount?id=1 [运行时间：0.094157s][吞吐率：10.62req/s] [内存消耗：2,581.92kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010439s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.009420s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000730s ]
+---------------------------------------------------------------
+[ 2018-06-22T14:51:41+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.094652s][吞吐率：10.57req/s] [内存消耗：2,581.91kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010796s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.010304s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000883s ]
+---------------------------------------------------------------
+[ 2018-06-22T14:52:09+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.081890s][吞吐率：12.21req/s] [内存消耗：2,581.99kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000642s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.009868s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000655s ]
+---------------------------------------------------------------
+[ 2018-06-22T14:53:00+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycommentcount?id=1
+[ info ] localhost/index.php/api/v1/mycommentcount?id=1 [运行时间：0.073518s][吞吐率：13.60req/s] [内存消耗：2,536.26kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000678s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.008177s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `order_comments` WHERE  `customer_id` = 1 LIMIT 1 [ RunTime:0.000556s ]
+---------------------------------------------------------------
+[ 2018-06-22T14:53:21+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.094009s][吞吐率：10.64req/s] [内存消耗：2,581.95kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010644s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.008298s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000635s ]
+---------------------------------------------------------------
+[ 2018-06-22T14:54:04+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.113168s][吞吐率：8.84req/s] [内存消耗：2,641.20kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010549s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.008658s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000644s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.009189s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000727s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:00:37+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.112444s][吞吐率：8.89req/s] [内存消耗：2,641.91kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010171s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.008523s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000665s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.009114s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000680s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:00:54+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.110809s][吞吐率：9.02req/s] [内存消耗：2,641.92kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009695s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.008474s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000645s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.008618s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000658s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:02:04+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.137851s][吞吐率：7.25req/s] [内存消耗：2,641.95kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010701s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.022088s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000982s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.009149s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000648s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:02:13+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.119030s][吞吐率：8.40req/s] [内存消耗：2,641.94kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010316s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.008294s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000655s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.008735s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000675s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:03:18+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.112763s][吞吐率：8.87req/s] [内存消耗：2,641.95kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010441s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.008206s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000672s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.008285s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000704s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:04:32+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.120959s][吞吐率：8.27req/s] [内存消耗：2,641.94kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009847s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.009336s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000713s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.008500s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000685s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:04:36+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.117776s][吞吐率：8.49req/s] [内存消耗：2,641.94kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010547s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.008791s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000646s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.008959s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000699s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:05:07+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.126825s][吞吐率：7.88req/s] [内存消耗：2,641.94kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010208s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.008413s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.011301s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.008353s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000668s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:05:18+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=2
+[ info ] localhost/index.php/api/v1/mycomments?id=2 [运行时间：0.086316s][吞吐率：11.59req/s] [内存消耗：2,636.59kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009877s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.008508s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 2 ORDER BY `create_time` DESC [ RunTime:0.000643s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:05:21+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.110672s][吞吐率：9.04req/s] [内存消耗：2,641.94kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010355s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.008454s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000675s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.008625s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000674s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:05:44+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.110111s][吞吐率：9.08req/s] [内存消耗：2,641.91kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009864s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.008209s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000642s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.008298s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000654s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:06:11+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.114173s][吞吐率：8.76req/s] [内存消耗：2,641.94kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010369s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.009240s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000562s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.008216s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000586s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:06:44+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.117778s][吞吐率：8.49req/s] [内存消耗：2,641.94kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011002s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.008600s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000650s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.008569s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000670s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:06:55+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.129049s][吞吐率：7.75req/s] [内存消耗：2,641.94kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000605s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.008288s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000632s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.008311s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000643s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:07:06+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.109847s][吞吐率：9.10req/s] [内存消耗：2,641.96kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010346s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.008203s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000695s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.008284s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000655s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:07:22+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycommentcount?id=1
+[ info ] localhost/index.php/api/v1/mycommentcount?id=1 [运行时间：0.088683s][吞吐率：11.28req/s] [内存消耗：2,537.04kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010579s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.008614s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `order_comments` WHERE  `customer_id` = 1 LIMIT 1 [ RunTime:0.000592s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:07:25+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.152240s][吞吐率：6.57req/s] [内存消耗：2,641.96kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010496s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.013625s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000573s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.008176s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000577s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:07:39+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.125721s][吞吐率：7.95req/s] [内存消耗：2,641.38kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010507s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.015867s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.001103s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.009680s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000679s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:07:42+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=2
+[ info ] localhost/index.php/api/v1/mycomments?id=2 [运行时间：0.085375s][吞吐率：11.71req/s] [内存消耗：2,636.03kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009839s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.008289s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 2 ORDER BY `create_time` DESC [ RunTime:0.000605s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:07:44+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=2
+[ info ] localhost/index.php/api/v1/mycomments?id=2 [运行时间：0.084995s][吞吐率：11.77req/s] [内存消耗：2,636.03kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010320s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.008320s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 2 ORDER BY `create_time` DESC [ RunTime:0.000622s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:07:45+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=3
+[ info ] localhost/index.php/api/v1/mycomments?id=3 [运行时间：0.093487s][吞吐率：10.70req/s] [内存消耗：2,636.03kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010102s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.013088s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 3 ORDER BY `create_time` DESC [ RunTime:0.000969s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:07:46+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.111609s][吞吐率：8.96req/s] [内存消耗：2,641.38kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010685s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.008522s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000645s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.008259s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000653s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:08:36+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.110407s][吞吐率：9.06req/s] [内存消耗：2,641.94kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009770s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.008677s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000638s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.008454s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000716s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:08:46+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.122984s][吞吐率：8.13req/s] [内存消耗：2,642.15kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009709s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.008960s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000653s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.009059s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000690s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:09:00+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=2
+[ info ] localhost/index.php/api/v1/mycomments?id=2 [运行时间：0.089166s][吞吐率：11.22req/s] [内存消耗：2,636.80kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010207s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.008706s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 2 ORDER BY `create_time` DESC [ RunTime:0.000658s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:09:06+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.114580s][吞吐率：8.73req/s] [内存消耗：2,642.15kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011316s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.009058s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000711s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.008505s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000703s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:09:24+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.123053s][吞吐率：8.13req/s] [内存消耗：2,641.94kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010639s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.008868s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000683s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.011781s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000695s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:09:32+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.114544s][吞吐率：8.73req/s] [内存消耗：2,641.91kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010605s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.010007s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000727s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.009137s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000707s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:09:34+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.113278s][吞吐率：8.83req/s] [内存消耗：2,641.91kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010266s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.008377s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000633s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.010189s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000706s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:09:35+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.113540s][吞吐率：8.81req/s] [内存消耗：2,641.91kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010601s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.008437s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000643s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.008233s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000687s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:09:35+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.113223s][吞吐率：8.83req/s] [内存消耗：2,641.91kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010527s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.009218s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000711s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.008701s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000745s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:09:35+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.110812s][吞吐率：9.02req/s] [内存消耗：2,641.91kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010337s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.008133s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000667s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.008330s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000727s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:09:36+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.110261s][吞吐率：9.07req/s] [内存消耗：2,641.91kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009950s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.008870s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000637s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.008477s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000688s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:09:36+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.114507s][吞吐率：8.73req/s] [内存消耗：2,641.91kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010610s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.008752s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000699s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.009083s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000669s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:09:37+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.111000s][吞吐率：9.01req/s] [内存消耗：2,641.91kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010760s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.008481s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000665s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.008608s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000611s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:09:37+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.108674s][吞吐率：9.20req/s] [内存消耗：2,641.91kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010072s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.008099s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000664s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.008218s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000664s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:09:38+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.112407s][吞吐率：8.90req/s] [内存消耗：2,641.91kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010662s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.009776s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000632s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.008656s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000647s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:09:38+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.107777s][吞吐率：9.28req/s] [内存消耗：2,641.91kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009886s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.008096s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000680s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.008149s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000631s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:09:39+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.115429s][吞吐率：8.66req/s] [内存消耗：2,641.91kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010198s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.011350s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000645s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.009057s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000661s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:09:40+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.100824s][吞吐率：9.92req/s] [内存消耗：2,641.91kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000662s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.008137s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000623s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.008209s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000658s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:09:40+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.108790s][吞吐率：9.19req/s] [内存消耗：2,641.91kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010064s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.008294s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000637s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.008118s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000645s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:09:53+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.130071s][吞吐率：7.69req/s] [内存消耗：2,641.36kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011561s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.015473s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.001050s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.010162s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000700s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:10:33+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.112397s][吞吐率：8.90req/s] [内存消耗：2,641.36kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010212s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.008367s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000662s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.008356s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000680s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:11:02+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.118755s][吞吐率：8.42req/s] [内存消耗：2,641.36kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010056s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.008428s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000720s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.008606s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000721s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:11:49+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.137626s][吞吐率：7.27req/s] [内存消耗：2,738.14kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009908s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.008792s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000682s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.008256s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000711s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.008646s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `id` IN (2,1) [ RunTime:0.000787s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:12:15+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.141595s][吞吐率：7.06req/s] [内存消耗：2,733.43kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010416s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.009029s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000735s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.008449s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `id` IN (2,1) [ RunTime:0.000756s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.009441s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000698s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:13:04+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.147312s][吞吐率：6.79req/s] [内存消耗：2,738.14kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010648s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.008596s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000738s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.009141s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000664s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.009481s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `id` IN (2,1) [ RunTime:0.000743s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:28:10+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.143523s][吞吐率：6.97req/s] [内存消耗：2,738.68kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010301s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.008942s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000667s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.009295s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000645s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.009877s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `id` IN (2,1) [ RunTime:0.000759s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:28:54+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.147646s][吞吐率：6.77req/s] [内存消耗：2,739.13kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011063s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.008530s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000668s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.008583s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000686s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.008759s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `id` IN (2,1) [ RunTime:0.000787s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:29:08+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.173404s][吞吐率：5.77req/s] [内存消耗：2,765.63kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010813s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.008764s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000660s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.009127s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000727s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009094s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (1) [ RunTime:0.000709s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.008558s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `id` IN (2,1) [ RunTime:0.000746s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:29:30+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.164935s][吞吐率：6.06req/s] [内存消耗：2,772.07kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000627s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.008661s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000662s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.008625s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000745s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000769s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.008706s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (1) [ RunTime:0.000717s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.008736s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `id` IN (2,1) [ RunTime:0.000763s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:37:01+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.179849s][吞吐率：5.56req/s] [内存消耗：2,774.73kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010390s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.008605s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000702s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.009825s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000674s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000737s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.008400s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (1) [ RunTime:0.000644s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.009152s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `id` IN (2,1) [ RunTime:0.000713s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:37:51+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.180694s][吞吐率：5.53req/s] [内存消耗：2,774.73kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010736s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.009116s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000753s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.009011s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000710s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000768s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.008850s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (1) [ RunTime:0.000703s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.009446s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `id` IN (2,1) [ RunTime:0.000741s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:39:50+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.182100s][吞吐率：5.49req/s] [内存消耗：2,774.83kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010811s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.013346s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.001026s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.008358s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000687s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000765s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009018s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (1) [ RunTime:0.000668s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.008751s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `id` IN (2,1) [ RunTime:0.000707s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:40:44+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.177683s][吞吐率：5.63req/s] [内存消耗：2,774.83kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010479s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.008227s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000714s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.008377s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000751s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000724s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009253s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (1) [ RunTime:0.000656s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.008753s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `id` IN (2,1) [ RunTime:0.000850s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:42:38+08:00 ] 0.0.0.0 GET /index.php/api/v1/mycomments?id=1
+[ info ] localhost/index.php/api/v1/mycomments?id=1 [运行时间：0.173549s][吞吐率：5.76req/s] [内存消耗：2,774.83kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010914s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_comments` [ RunTime:0.008823s ]
+[ sql ] [ SQL ] SELECT * FROM `order_comments` WHERE  `customer_id` = 1 ORDER BY `create_time` DESC [ RunTime:0.000745s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_review` [ RunTime:0.008721s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000671s ]
+[ sql ] [ SQL ] SELECT * FROM `order_review` WHERE  `comment_id` IN (2,1) [ RunTime:0.000710s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.008585s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (1) [ RunTime:0.000758s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.008917s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `id` IN (2,1) [ RunTime:0.000766s ]
+---------------------------------------------------------------
+[ 2018-06-22T15:57:16+08:00 ] 0.0.0.0 GET /index.php/api/v1/follows/1
+[ info ] localhost/index.php/api/v1/follows/1 [运行时间：0.134073s][吞吐率：7.46req/s] [内存消耗：2,692.66kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010785s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_follows` [ RunTime:0.013908s ]
+[ sql ] [ SQL ] SELECT * FROM `my_follows` WHERE  `user_id` = 1 [ RunTime:0.000760s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.010982s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (2,3) [ RunTime:0.000822s ]
+---------------------------------------------------------------
+[ 2018-06-22T16:00:30+08:00 ] 0.0.0.0 GET /index.php/api/v1/fans/1
+[ info ] localhost/index.php/api/v1/fans/1 [运行时间：0.090681s][吞吐率：11.03req/s] [内存消耗：2,592.84kb] [文件加载：49]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010641s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_fans` [ RunTime:0.009016s ]
+[ sql ] [ SQL ] SELECT * FROM `my_fans` WHERE  `fan_id` = 0 [ RunTime:0.000580s ]
+---------------------------------------------------------------
+[ 2018-06-22T16:00:32+08:00 ] 0.0.0.0 GET /index.php/api/v1/fans/1
+[ info ] localhost/index.php/api/v1/fans/1 [运行时间：0.088067s][吞吐率：11.36req/s] [内存消耗：2,592.84kb] [文件加载：49]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010419s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_fans` [ RunTime:0.008609s ]
+[ sql ] [ SQL ] SELECT * FROM `my_fans` WHERE  `fan_id` = 0 [ RunTime:0.000630s ]
+---------------------------------------------------------------
+[ 2018-06-22T16:01:05+08:00 ] 0.0.0.0 GET /index.php/api/v1/fans/1
+[ info ] localhost/index.php/api/v1/fans/1 [运行时间：0.084657s][吞吐率：11.81req/s] [内存消耗：2,592.84kb] [文件加载：49]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010434s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_fans` [ RunTime:0.008526s ]
+[ sql ] [ SQL ] SELECT * FROM `my_fans` WHERE  `user_id` = 0 [ RunTime:0.000629s ]
+---------------------------------------------------------------
+[ 2018-06-22T16:01:07+08:00 ] 0.0.0.0 GET /index.php/api/v1/fans/1
+[ info ] localhost/index.php/api/v1/fans/1 [运行时间：0.088229s][吞吐率：11.33req/s] [内存消耗：2,592.84kb] [文件加载：49]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010813s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_fans` [ RunTime:0.008744s ]
+[ sql ] [ SQL ] SELECT * FROM `my_fans` WHERE  `user_id` = 0 [ RunTime:0.000641s ]
+---------------------------------------------------------------
+[ 2018-06-22T16:01:46+08:00 ] 0.0.0.0 GET /index.php/api/v1/fans/1
+[ info ] localhost/index.php/api/v1/fans/1 [运行时间：0.088980s][吞吐率：11.24req/s] [内存消耗：2,593.10kb] [文件加载：49]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010647s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_fans` [ RunTime:0.008459s ]
+[ sql ] [ SQL ] SELECT * FROM `my_fans` WHERE  `user_id` = 1 [ RunTime:0.000700s ]
+---------------------------------------------------------------
+[ 2018-06-22T16:03:11+08:00 ] 0.0.0.0 GET /index.php/api/v1/fans/1
+[ info ] localhost/index.php/api/v1/fans/1 [运行时间：0.088187s][吞吐率：11.34req/s] [内存消耗：2,593.65kb] [文件加载：49]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011240s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_fans` [ RunTime:0.008827s ]
+[ sql ] [ SQL ] SELECT * FROM `my_fans` WHERE  `user_id` = 1 [ RunTime:0.000667s ]
+---------------------------------------------------------------
+[ 2018-06-22T16:03:47+08:00 ] 0.0.0.0 GET /index.php/api/v1/fans/1
+[ info ] localhost/index.php/api/v1/fans/1 [运行时间：0.113340s][吞吐率：8.82req/s] [内存消耗：2,693.52kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000610s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_fans` [ RunTime:0.009011s ]
+[ sql ] [ SQL ] SELECT * FROM `my_fans` WHERE  `user_id` = 1 [ RunTime:0.000596s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.008256s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (1) [ RunTime:0.000685s ]
+---------------------------------------------------------------
+[ 2018-06-22T16:04:36+08:00 ] 0.0.0.0 GET /index.php/api/v1/fans/1
+[ info ] localhost/index.php/api/v1/fans/1 [运行时间：0.117054s][吞吐率：8.54req/s] [内存消耗：2,693.48kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010648s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_fans` [ RunTime:0.008267s ]
+[ sql ] [ SQL ] SELECT * FROM `my_fans` WHERE  `user_id` = 1 [ RunTime:0.000627s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.008699s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (1) [ RunTime:0.000711s ]
+---------------------------------------------------------------
+[ 2018-06-22T16:06:57+08:00 ] 0.0.0.0 GET /index.php/api/v1/fans/1
+[ info ] localhost/index.php/api/v1/fans/1 [运行时间：0.127357s][吞吐率：7.85req/s] [内存消耗：2,693.66kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011068s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_fans` [ RunTime:0.008631s ]
+[ sql ] [ SQL ] SELECT * FROM `my_fans` WHERE  `user_id` = 1 [ RunTime:0.000708s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.010668s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (1) [ RunTime:0.000804s ]
+---------------------------------------------------------------
+[ 2018-06-22T16:07:09+08:00 ] 0.0.0.0 GET /index.php/api/v1/fans/1
+[ info ] localhost/index.php/api/v1/fans/1 [运行时间：0.119547s][吞吐率：8.36req/s] [内存消耗：2,693.66kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011245s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_fans` [ RunTime:0.010388s ]
+[ sql ] [ SQL ] SELECT * FROM `my_fans` WHERE  `user_id` = 1 [ RunTime:0.000530s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.008985s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (1) [ RunTime:0.000668s ]
+---------------------------------------------------------------
+[ 2018-06-22T16:07:46+08:00 ] 0.0.0.0 GET /index.php/api/v1/fans/1
+[ info ] localhost/index.php/api/v1/fans/1 [运行时间：0.117396s][吞吐率：8.52req/s] [内存消耗：2,694.12kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010211s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_fans` [ RunTime:0.008420s ]
+[ sql ] [ SQL ] SELECT * FROM `my_fans` WHERE  `user_id` = 1 [ RunTime:0.000681s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009110s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (1) [ RunTime:0.000811s ]
+---------------------------------------------------------------
+[ 2018-06-22T16:09:29+08:00 ] 0.0.0.0 GET /index.php/api/v1/fans/1
+[ info ] localhost/index.php/api/v1/fans/1 [运行时间：0.122119s][吞吐率：8.19req/s] [内存消耗：2,694.12kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010405s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_fans` [ RunTime:0.008930s ]
+[ sql ] [ SQL ] SELECT * FROM `my_fans` WHERE  `user_id` = 1 [ RunTime:0.000638s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009196s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (1) [ RunTime:0.000701s ]
+---------------------------------------------------------------
+[ 2018-06-22T16:11:01+08:00 ] 0.0.0.0 GET /index.php/api/v1/fans/2
+[ info ] localhost/index.php/api/v1/fans/2 [运行时间：0.112979s][吞吐率：8.85req/s] [内存消耗：2,694.13kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010831s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_fans` [ RunTime:0.008402s ]
+[ sql ] [ SQL ] SELECT * FROM `my_fans` WHERE  `user_id` = 2 [ RunTime:0.000618s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.008265s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (2) [ RunTime:0.000638s ]
+---------------------------------------------------------------
+[ 2018-06-22T16:37:45+08:00 ] 0.0.0.0 GET /index.php/api/v1/ordercountbys?id=1
+[ info ] localhost/index.php/api/v1/ordercountbys?id=1 [运行时间：0.117457s][吞吐率：8.51req/s] [内存消耗：2,623.87kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009790s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.008665s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 1  AND `status` = 1 [ RunTime:0.000761s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 1  AND `status` = 2 [ RunTime:0.000695s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 1  AND `status` = 3 [ RunTime:0.000691s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 1  AND `status` = 4 [ RunTime:0.000762s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 1  AND `status` = 5 [ RunTime:0.000749s ]
+---------------------------------------------------------------
+[ 2018-06-22T16:38:23+08:00 ] 0.0.0.0 GET /index.php/api/v1/ordercountbys?id=1
+[ info ] localhost/index.php/api/v1/ordercountbys?id=1 [运行时间：0.117205s][吞吐率：8.53req/s] [内存消耗：2,623.87kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010279s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.008877s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 1  AND `status` = 1 [ RunTime:0.000835s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 1  AND `status` = 2 [ RunTime:0.000853s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 1  AND `status` = 3 [ RunTime:0.000848s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 1  AND `status` = 4 [ RunTime:0.000791s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 1  AND `status` = 5 [ RunTime:0.000744s ]
+---------------------------------------------------------------
+[ 2018-06-22T16:39:19+08:00 ] 0.0.0.0 GET /index.php/api/v1/ordercountbys?id=1
+[ info ] localhost/index.php/api/v1/ordercountbys?id=1 [运行时间：0.101343s][吞吐率：9.87req/s] [内存消耗：2,623.87kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000701s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.008643s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 1  AND `status` = 1 [ RunTime:0.000761s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 1  AND `status` = 2 [ RunTime:0.000743s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 1  AND `status` = 3 [ RunTime:0.000753s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 1  AND `status` = 4 [ RunTime:0.000769s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 1  AND `status` = 5 [ RunTime:0.000684s ]
+---------------------------------------------------------------
+[ 2018-06-22T16:40:17+08:00 ] 0.0.0.0 GET /index.php/api/v1/ordercountbys?id=1
+[ info ] localhost/index.php/api/v1/ordercountbys?id=1 [运行时间：0.101811s][吞吐率：9.82req/s] [内存消耗：2,624.31kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000611s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.009002s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 1  AND `status` = 1 [ RunTime:0.000890s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 1  AND `status` = 2 [ RunTime:0.000691s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 1  AND `status` = 3 [ RunTime:0.000712s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 1  AND `status` = 4 [ RunTime:0.000633s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 1  AND `status` = 5 [ RunTime:0.000709s ]
+---------------------------------------------------------------
+[ 2018-06-22T16:41:17+08:00 ] 0.0.0.0 GET /index.php/api/v1/ordercountbys?id=1
+[ info ] localhost/index.php/api/v1/ordercountbys?id=1 [运行时间：0.117908s][吞吐率：8.48req/s] [内存消耗：2,625.12kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010558s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.009194s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 1  AND `status` = 1 [ RunTime:0.000756s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 1  AND `status` = 2 [ RunTime:0.000688s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 1  AND `status` = 3 [ RunTime:0.000687s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 1  AND `status` = 4 [ RunTime:0.000787s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 1  AND `status` = 5 [ RunTime:0.000725s ]
+---------------------------------------------------------------
+[ 2018-06-22T16:42:26+08:00 ] 0.0.0.0 GET /index.php/api/v1/ordercountbys?id=1
+[ info ] localhost/index.php/api/v1/ordercountbys?id=1 [运行时间：0.094084s][吞吐率：10.63req/s] [内存消耗：2,613.08kb] [文件加载：49]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010238s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.008657s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 1  AND `status` = 1 [ RunTime:0.000757s ]
+---------------------------------------------------------------
+[ 2018-06-22T16:42:31+08:00 ] 0.0.0.0 GET /index.php/api/v1/ordercountbys?id=5
+[ info ] localhost/index.php/api/v1/ordercountbys?id=5 [运行时间：0.088891s][吞吐率：11.25req/s] [内存消耗：2,613.08kb] [文件加载：49]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009864s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.009700s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 5  AND `status` = 1 [ RunTime:0.000733s ]
+---------------------------------------------------------------
+[ 2018-06-22T16:42:32+08:00 ] 0.0.0.0 GET /index.php/api/v1/ordercountbys?id=1
+[ info ] localhost/index.php/api/v1/ordercountbys?id=1 [运行时间：0.088791s][吞吐率：11.26req/s] [内存消耗：2,613.08kb] [文件加载：49]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009537s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.009538s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 1  AND `status` = 1 [ RunTime:0.000755s ]
+---------------------------------------------------------------
+[ 2018-06-22T16:42:32+08:00 ] 0.0.0.0 GET /index.php/api/v1/ordercountbys?id=2
+[ info ] localhost/index.php/api/v1/ordercountbys?id=2 [运行时间：0.096586s][吞吐率：10.35req/s] [内存消耗：2,613.08kb] [文件加载：49]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010421s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.016981s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 2  AND `status` = 1 [ RunTime:0.000773s ]
+---------------------------------------------------------------
+[ 2018-06-22T16:42:33+08:00 ] 0.0.0.0 GET /index.php/api/v1/ordercountbys?id=3
+[ info ] localhost/index.php/api/v1/ordercountbys?id=3 [运行时间：0.089806s][吞吐率：11.14req/s] [内存消耗：2,613.08kb] [文件加载：49]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009628s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.010215s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 3  AND `status` = 1 [ RunTime:0.000762s ]
+---------------------------------------------------------------
+[ 2018-06-22T16:42:34+08:00 ] 0.0.0.0 GET /index.php/api/v1/ordercountbys?id=5
+[ info ] localhost/index.php/api/v1/ordercountbys?id=5 [运行时间：0.078104s][吞吐率：12.80req/s] [内存消耗：2,613.08kb] [文件加载：49]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000650s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.008899s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 5  AND `status` = 1 [ RunTime:0.000765s ]
+---------------------------------------------------------------
+[ 2018-06-22T16:42:35+08:00 ] 0.0.0.0 GET /index.php/api/v1/ordercountbys?id=4
+[ info ] localhost/index.php/api/v1/ordercountbys?id=4 [运行时间：0.080999s][吞吐率：12.35req/s] [内存消耗：2,613.08kb] [文件加载：49]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000603s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.010840s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 4  AND `status` = 1 [ RunTime:0.000812s ]
+---------------------------------------------------------------
+[ 2018-06-22T16:42:36+08:00 ] 0.0.0.0 GET /index.php/api/v1/ordercountbys?id=1
+[ info ] localhost/index.php/api/v1/ordercountbys?id=1 [运行时间：0.090735s][吞吐率：11.02req/s] [内存消耗：2,613.08kb] [文件加载：49]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010582s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.009988s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 1  AND `status` = 1 [ RunTime:0.000752s ]
+---------------------------------------------------------------
+[ 2018-06-22T16:43:17+08:00 ] 0.0.0.0 GET /index.php/api/v1/ordercountbys?id=1
+[ info ] localhost/index.php/api/v1/ordercountbys?id=1 [运行时间：0.088675s][吞吐率：11.28req/s] [内存消耗：2,610.70kb] [文件加载：49]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009797s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.008537s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` IS NULL [ RunTime:0.000601s ]
+---------------------------------------------------------------
+[ 2018-06-22T16:44:30+08:00 ] 0.0.0.0 GET /index.php/api/v1/ordercountbys?id=1&XDEBUG_SESSION_START=10853
+[ info ] localhost/index.php/api/v1/ordercountbys?id=1&XDEBUG_SESSION_START=10853 [运行时间：33.005589s][吞吐率：0.03req/s] [内存消耗：2,616.45kb] [文件加载：49]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010038s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.009187s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 1  AND `status` = 1 [ RunTime:0.000784s ]
+---------------------------------------------------------------
+[ 2018-06-22T16:46:32+08:00 ] 0.0.0.0 GET /index.php/api/v1/ordercountbys?id=1&XDEBUG_SESSION_START=10853
+[ info ] localhost/index.php/api/v1/ordercountbys?id=1&XDEBUG_SESSION_START=10853 [运行时间：0.122111s][吞吐率：8.19req/s] [内存消耗：2,625.24kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010043s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.008735s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 1  AND `status` = 1 [ RunTime:0.000743s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 1  AND `status` = 2 [ RunTime:0.000770s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 1  AND `status` = 3 [ RunTime:0.000813s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 1  AND `status` = 4 [ RunTime:0.000662s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 1  AND `status` = 5 [ RunTime:0.000713s ]
+---------------------------------------------------------------
+[ 2018-06-22T16:47:00+08:00 ] 0.0.0.0 GET /index.php/api/v1/ordercountbys?id=1&XDEBUG_SESSION_START=10853
+[ info ] localhost/index.php/api/v1/ordercountbys?id=1&XDEBUG_SESSION_START=10853 [运行时间：0.110411s][吞吐率：9.06req/s] [内存消耗：2,628.05kb] [文件加载：49]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010446s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.008518s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 1  AND `status` = 1 [ RunTime:0.000735s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 1  AND `status` = 2 [ RunTime:0.000761s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 1  AND `status` = 3 [ RunTime:0.000719s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 1  AND `status` = 4 [ RunTime:0.000677s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 1  AND `status` = 5 [ RunTime:0.000673s ]
+---------------------------------------------------------------
+[ 2018-06-22T16:54:22+08:00 ] 0.0.0.0 GET /index.php/api/v1/ordercountbys?id=1&XDEBUG_SESSION_START=10853
+[ info ] localhost/index.php/api/v1/ordercountbys?id=1&XDEBUG_SESSION_START=10853 [运行时间：0.109651s][吞吐率：9.12req/s] [内存消耗：2,579.66kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000735s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.010323s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `order` WHERE  `user_id` = 1  AND `status` = 0 LIMIT 1 [ RunTime:0.000749s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `order` WHERE  `user_id` = 1  AND `status` = 1 LIMIT 1 [ RunTime:0.000714s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `order` WHERE  `user_id` = 1  AND `status` = 2 LIMIT 1 [ RunTime:0.000789s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `order` WHERE  `user_id` = 1  AND `status` = 3 LIMIT 1 [ RunTime:0.000636s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `order` WHERE  `user_id` = 1  AND `status` = 4 LIMIT 1 [ RunTime:0.000634s ]
+---------------------------------------------------------------
+[ 2018-06-22T16:54:27+08:00 ] 0.0.0.0 GET /index.php/api/v1/ordercountbys?id=1
+[ info ] localhost/index.php/api/v1/ordercountbys?id=1 [运行时间：0.104427s][吞吐率：9.58req/s] [内存消耗：2,579.48kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000585s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.012048s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `order` WHERE  `user_id` = 1  AND `status` = 0 LIMIT 1 [ RunTime:0.000775s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `order` WHERE  `user_id` = 1  AND `status` = 1 LIMIT 1 [ RunTime:0.000650s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `order` WHERE  `user_id` = 1  AND `status` = 2 LIMIT 1 [ RunTime:0.000645s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `order` WHERE  `user_id` = 1  AND `status` = 3 LIMIT 1 [ RunTime:0.000646s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `order` WHERE  `user_id` = 1  AND `status` = 4 LIMIT 1 [ RunTime:0.000736s ]
+---------------------------------------------------------------
+[ 2018-06-22T16:56:31+08:00 ] 0.0.0.0 GET /index.php/api/v1/ordercountbys?id=1
+[ info ] localhost/index.php/api/v1/ordercountbys?id=1 [运行时间：0.120687s][吞吐率：8.29req/s] [内存消耗：2,579.81kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011211s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.009496s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `order` WHERE  `user_id` = 1  AND `status` = 0 LIMIT 1 [ RunTime:0.000869s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `order` WHERE  `user_id` = 1  AND `status` = 1 LIMIT 1 [ RunTime:0.000763s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `order` WHERE  `user_id` = 1  AND `status` = 2 LIMIT 1 [ RunTime:0.000659s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `order` WHERE  `user_id` = 1  AND `status` = 3 LIMIT 1 [ RunTime:0.000799s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `order` WHERE  `user_id` = 1  AND `status` = 4 LIMIT 1 [ RunTime:0.000729s ]
+---------------------------------------------------------------
+[ 2018-06-22T16:57:40+08:00 ] 0.0.0.0 GET /index.php/api/v1/ordercountbys?id=1
+[ info ] localhost/index.php/api/v1/ordercountbys?id=1 [运行时间：0.118206s][吞吐率：8.46req/s] [内存消耗：2,579.94kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010367s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.010304s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `order` WHERE  `user_id` = 1  AND `status` = 0 LIMIT 1 [ RunTime:0.000708s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `order` WHERE  `user_id` = 1  AND `status` = 1 LIMIT 1 [ RunTime:0.000694s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `order` WHERE  `user_id` = 1  AND `status` = 2 LIMIT 1 [ RunTime:0.000710s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `order` WHERE  `user_id` = 1  AND `status` = 3 LIMIT 1 [ RunTime:0.000621s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `order` WHERE  `user_id` = 1  AND `status` = 4 LIMIT 1 [ RunTime:0.000580s ]
+---------------------------------------------------------------
+[ 2018-06-22T16:58:31+08:00 ] 0.0.0.0 GET /index.php/api/v1/ordercountbys?id=1
+[ info ] localhost/index.php/api/v1/ordercountbys?id=1 [运行时间：0.112341s][吞吐率：8.90req/s] [内存消耗：2,579.81kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010326s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.010053s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `order` WHERE  `user_id` = 1  AND `status` = 0 LIMIT 1 [ RunTime:0.000757s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `order` WHERE  `user_id` = 1  AND `status` = 1 LIMIT 1 [ RunTime:0.000775s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `order` WHERE  `user_id` = 1  AND `status` = 2 LIMIT 1 [ RunTime:0.000721s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `order` WHERE  `user_id` = 1  AND `status` = 3 LIMIT 1 [ RunTime:0.000696s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `order` WHERE  `user_id` = 1  AND `status` = 4 LIMIT 1 [ RunTime:0.001016s ]
+---------------------------------------------------------------
+[ 2018-06-22T16:58:44+08:00 ] 0.0.0.0 GET /index.php/api/v1/ordercountbys?id=1
+[ info ] localhost/index.php/api/v1/ordercountbys?id=1 [运行时间：0.117983s][吞吐率：8.48req/s] [内存消耗：2,579.81kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010629s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.009473s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `order` WHERE  `user_id` = 1  AND `status` = 0 LIMIT 1 [ RunTime:0.000744s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `order` WHERE  `user_id` = 1  AND `status` = 1 LIMIT 1 [ RunTime:0.000676s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `order` WHERE  `user_id` = 1  AND `status` = 2 LIMIT 1 [ RunTime:0.000913s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `order` WHERE  `user_id` = 1  AND `status` = 3 LIMIT 1 [ RunTime:0.000672s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `order` WHERE  `user_id` = 1  AND `status` = 4 LIMIT 1 [ RunTime:0.000726s ]
+---------------------------------------------------------------
+[ 2018-06-22T16:59:28+08:00 ] 0.0.0.0 GET /index.php/api/v1/ordercountbys?id=1
+[ info ] localhost/index.php/api/v1/ordercountbys?id=1 [运行时间：0.114102s][吞吐率：8.76req/s] [内存消耗：2,579.81kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011073s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.009634s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `order` WHERE  `user_id` = 1  AND `status` = 0 LIMIT 1 [ RunTime:0.000751s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `order` WHERE  `user_id` = 1  AND `status` = 1 LIMIT 1 [ RunTime:0.000615s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `order` WHERE  `user_id` = 1  AND `status` = 2 LIMIT 1 [ RunTime:0.000791s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `order` WHERE  `user_id` = 1  AND `status` = 3 LIMIT 1 [ RunTime:0.000722s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `order` WHERE  `user_id` = 1  AND `status` = 4 LIMIT 1 [ RunTime:0.000633s ]

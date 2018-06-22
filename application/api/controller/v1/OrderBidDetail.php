@@ -16,10 +16,10 @@ use app\lib\exception\OrderGetException;
 class OrderBidDetail
 {
 //    根据订单号id获取竞价详情
-    public function bidDetail($orderid)
+    public function bidDetail($id)
     {
         (new IDMustBePositiveInt())->goCheck();
-        $bidDetail = BidDetail::with('user')->where('order_id',$orderid)->order('bid_price desc')->select();
+        $bidDetail = BidDetail::with('user')->where('order_id',$id)->order('bid_price desc')->select();
         $bidDetail->hidden(['user.phone_number','user.email','brief_introduction','user.level','user.vip','user.score','user.city']);
         if (!$bidDetail)
         {

@@ -39,11 +39,10 @@ class User extends BaseModel
 //根据用户id获取用户参与竞价的订单列表
     public static function getBidOrders($id)
     {
-        $bidOrders = self::with('bidOrders')->with('bidPrice')
+        $bidOrders = self::with('bidOrders')
             ->where('id', $id)
             ->select();
-        $bidOrders->hidden(['bid_orders.pivot', 'avatar', 'phone_number', 'email', 'brief_introduction', 'level', 'vip', 'city',
-            'bid_price.id','bid_price.update_time','bid_price.delete_time']);
+        $bidOrders->hidden([ 'avatar', 'phone_number', 'email', 'brief_introduction', 'level', 'vip', 'city']);
         return $bidOrders;
     }
 
@@ -51,11 +50,4 @@ class User extends BaseModel
     {
         return $bidOrders = $this->belongsToMany('Order', 'order_bider', 'order_id', 'bider_id')->where('status', 0);
     }
-
-    public function bidPrice()
-    {
-        $bidPrice = $this->hasMany('BidDetail', 'bider_id', 'id');
-        return $bidPrice;
-    }
-
 }

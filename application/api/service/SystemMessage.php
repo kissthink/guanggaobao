@@ -41,6 +41,12 @@ class SystemMessage
 
     }
 
+    /**
+     * @param $id
+     * @return int|string
+     * @throws SystemMessageException
+     * @throws \app\lib\exception\ParameterException
+     */
     public  static function getNewOrdersCount($id)
     {
         (new IDMustBePositiveInt())->goCheck();
@@ -54,6 +60,15 @@ class SystemMessage
         }
     }
 
+    /**
+     * @param $id
+     * @return false|\PDOStatement|string|\think\Collection
+     * @throws SystemMessageException
+     * @throws \app\lib\exception\ParameterException
+     * @throws \think\db\exception\DataNotFoundException
+     * @throws \think\db\exception\ModelNotFoundException
+     * @throws \think\exception\DbException
+     */
     public  static function getMyOrders($id)
     {
         (new IDMustBePositiveInt())->goCheck();

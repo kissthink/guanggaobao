@@ -9,14 +9,18 @@
 namespace app\api\service;
 
 
-use app\api\model\BidDetail;
-use app\api\model\Order;
 use app\api\model\Order as OrderModel;
-use app\lib\exception\OrderGetException;
+use app\api\model\OrderBider;
 use app\api\model\User as UserModel;
+use app\lib\exception\OrderGetException;
+
 class OrderInfo
 {
 //    根据当前城市选择订单列表
+/*@param currentCity
+ *
+ *
+ * */
     public static function getByCurrentCity($currentcity)
     {
         $order = OrderModel::getByCurrentCity($currentcity);
@@ -68,7 +72,17 @@ class OrderInfo
         }
         return $order;
     }
-
+    //    获取用户参与竞价的订单数量
+    public static function getBidOrderCount($id)
+    {
+        $bidOrderCount =OrderBider::getBiderCount($id);
+        if(!$bidOrderCount)
+        {
+            throw new OrderGetException();
+        }
+        return $bidOrderCount;
+    }
+    //    获取用户参与竞价的订单
     public static function getBidOrders($id)
     {
         $bidOrders =UserModel::getBidOrders($id);
@@ -77,5 +91,15 @@ class OrderInfo
             throw new OrderGetException();
         }
         return $bidOrders;
+    }
+    //根据用户id和订单状态获取订单数
+    public static function getOrderCountByStatus($id)
+    {
+        $CountByStatus = [];
+        for ($s =0;$s<=4;$s++)
+        {
+            $CountByStatus[$s] = OrderModel::countByStatus($id,$s);
+        }
+        return json(['orderCount'=>$CountByStatus,],200);
     }
 }

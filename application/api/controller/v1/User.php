@@ -8,9 +8,12 @@
 
 namespace app\api\controller\v1;
 
+use app\api\model\OrderComments as OrderCommentsModel;
 use app\api\service\UserInfo;
 use app\api\validate\IDMustBePositiveInt;
 use app\api\validate\CurrentCity;
+use app\api\validate\TokenGet;
+
 class User
 {
     /*   首页方法
@@ -52,4 +55,28 @@ class User
      $myFollows = UserInfo::getMyFollows($id);
      return $myFollows;
  }
+
+    //    根据用户id获取对应的关注信息:关注的设计师,服务商信息
+    public function getMyFans($id)
+    {
+        (new IDMustBePositiveInt())->goCheck();
+        $myFollows = UserInfo::getMyFans($id);
+        return $myFollows;
+    }
+
+    //根据用户id获取对订单的评论列表
+    public function myCommentCount($id)
+    {
+        (new IDMustBePositiveInt())->goCheck();
+        $myFollows = OrderCommentsModel::orderCommentCount($id);
+        return $myFollows;
+    }
+
+//根据用户id获取对订单的评论列表
+    public function myComments($id)
+    {
+        (new IDMustBePositiveInt())->goCheck();
+        $myFollows = OrderCommentsModel::getOrderComments($id);
+        return $myFollows;
+    }
 }
