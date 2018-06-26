@@ -13,6 +13,7 @@ use app\api\model\MyFans as MyFansModel;
 use app\api\model\MyFollows;
 use app\api\model\User as UserModel;
 use app\api\model\User;
+use app\api\validate\MobilePhoneNumber;
 use app\lib\exception\CharacterIDException;
 use app\lib\exception\UserInfoException;
 use app\lib\exception\UserInvalidException;
@@ -31,17 +32,10 @@ class UserInfo
      * @throws LoginInvaildException
      * @throws UserInvalidException
      */
-    public function getUserinfo($data)
+    public static function getUserinfoByM($data)
     {
-        $checkID =null;
-        if($data['loginWayID']==0)
-        {
-            $checkID = 'phone_number';
-        }else
-        {
-            throw new LoginInvaildException();
-        }
-        $user = UserModel::getUser($data,$checkID);
+        (new MobilePhoneNumber())->goCheck();
+        $user = UserModel::getUserM($data);
         if ($user['password']==$data['password'])
         {
             return $user;

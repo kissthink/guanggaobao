@@ -12,10 +12,10 @@ namespace app\api\validate;
 class MobilePhoneNumber extends BaseValidate
 {
     protected $rule = [
-      'phone_number' =>['/^1[34578]\d{9}$/']
+      'username' =>['/^1[34578]\d{9}$/'],
     ];
 
     protected $message = [
-        'phone_number' =>'手机号码格式不正确'
+        'username' =>'手机号码格式不正确'
     ];
 }

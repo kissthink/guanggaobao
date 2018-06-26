@@ -14,10 +14,10 @@ class User extends BaseModel
     protected $hidden = ['create_time', 'update_time', 'delete_time', 'password', 'login_way_id', 'character_id', 'range_id'];
 
 //获取登陆用户的基本信息并回显
-    public static function getUser($data, $checkID)
+    public static function getUserM($data)
     {
 
-        $user = self::with('fans,follows,serviceEvaluation')->withCount('fans,follows')->where($checkID, '=', $data[$checkID])->find();
+        $user = self::with('fans,follows,serviceEvaluation')->withCount('fans,follows')->where('phone_number', '=', $data['username'])->find();
         return $user;
     }
 

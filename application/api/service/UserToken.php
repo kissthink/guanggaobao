@@ -8,8 +8,14 @@
 
 namespace app\api\service;
 
-
-class UserToken
+/**
+ * Class UserToken 生成用户令牌
+ * @package app\api\service
+ */
+class UserToken extends Token
 {
-
+    public function saveToCache()
+    {
+        $key = self::generateToken();
+    }
 }

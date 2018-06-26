@@ -53,7 +53,8 @@ class SystemMessage
         $orderMsgCount = OrderMessageModel::getNewOrdersCount($id);
         if(!$orderMsgCount)
         {
-            throw new SystemMessageException();
+            throw new SystemMessageException('123'
+            );
         }
         else{
             return $orderMsgCount;
@@ -76,7 +77,6 @@ class SystemMessage
         if($orderMsg->isEmpty())
         {
             throw new SystemMessageException(
-                "OrderMessage do not exit or has been read, please check and try agagin."
             );
         }
         else{

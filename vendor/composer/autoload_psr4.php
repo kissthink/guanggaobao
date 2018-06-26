@@ -13,5 +13,8 @@ return array(
     'think\\captcha\\' => array($vendorDir . '/topthink/think-captcha/src'),
     'think\\' => array($baseDir . '/thinkphp/library/think', $vendorDir . '/topthink/think-image/src', $vendorDir . '/topthink/think-queue/src'),
     'app\\' => array($baseDir . '/application'),
+    'Workerman\\' => array($vendorDir . '/workerman/workerman-for-win'),
     'Phinx\\' => array($vendorDir . '/topthink/think-migration/phinx/src/Phinx'),
+    'GatewayWorker\\' => array($vendorDir . '/workerman/gateway-worker-for-win/src'),
+    'GatewayClient\\' => array($vendorDir . '/workerman/gatewayclient'),
 );

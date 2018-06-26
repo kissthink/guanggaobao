@@ -1,0 +1,38 @@
+---------------------------------------------------------------
+[ 2018-06-23T13:33:57+08:00 ] 0.0.0.0 GET /index.php/api/v1/ordermsg?id=1
+[ info ] localhost/index.php/api/v1/ordermsg?id=1 [运行时间：0.380000s][吞吐率：2.63req/s] [内存消耗：2,589.66kb] [文件加载：49]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010794s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_message` [ RunTime:0.051084s ]
+[ sql ] [ SQL ] SELECT * FROM `order_message` WHERE  `user_id` = 1 [ RunTime:0.000810s ]
+---------------------------------------------------------------
+[ 2018-06-23T14:15:24+08:00 ] 0.0.0.0 GET /index.php/api/v1/ordermsg?id=2
+[ error ] [0]Orders do not exit, please check and try agagin.
+[ error ] Orders do not exit, please check and try agagin.
+---------------------------------------------------------------
+[ 2018-06-23T14:17:17+08:00 ] 0.0.0.0 GET /index.php/api/v1/newordermsgcount?id=2
+[ error ] [0]致命错误: Wrong parameters for app\lib\exception\SystemMessageException([string $message [, long $code [, Throwable $previous = NULL]]])
+[ error ] Fatal error: Wrong parameters for app\lib\exception\SystemMessageException([string $message [, long $code [, Throwable $previous = NULL]]])
+---------------------------------------------------------------
+[ 2018-06-23T18:39:06+08:00 ] 0.0.0.0 POST /index.php/api/v1/login?XDEBUG_SESSION_START=19613
+[ info ] localhost/index.php/api/v1/login?XDEBUG_SESSION_START=19613 [运行时间：0.409060s][吞吐率：2.44req/s] [内存消耗：2,774.34kb] [文件加载：59]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011087s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_fans` [ RunTime:0.015084s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_follows` [ RunTime:0.012290s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.031248s ]
+[ sql ] [ SQL ] SELECT *,(SELECT COUNT(*) AS tp_count FROM `my_fans` WHERE  ( `user_id` =user.id ) LIMIT 1) AS `fans_count`,(SELECT COUNT(*) AS tp_count FROM `my_follows` WHERE  ( `user_id` =user.id ) LIMIT 1) AS `follows_count` FROM `user` WHERE  `phone_number` = '13852442265' LIMIT 1 [ RunTime:0.001014s ]
+[ sql ] [ SQL ] SELECT * FROM `my_fans` WHERE  `user_id` = 1 [ RunTime:0.000640s ]
+[ sql ] [ SQL ] SELECT * FROM `my_follows` WHERE  `user_id` = 1 [ RunTime:0.000681s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `service_evaluation` [ RunTime:0.031002s ]
+[ sql ] [ SQL ] SELECT * FROM `service_evaluation` WHERE  `user_id` = 1 [ RunTime:0.000684s ]
+---------------------------------------------------------------
+[ 2018-06-23T18:53:17+08:00 ] 0.0.0.0 POST /index.php/api/v1/login
+[ info ] localhost/index.php/api/v1/login [运行时间：0.377503s][吞吐率：2.65req/s] [内存消耗：2,774.30kb] [文件加载：59]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010455s ] mysql:host=127.0.0.1;port=3306;dbname=guanggaobao;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_fans` [ RunTime:0.012413s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `my_follows` [ RunTime:0.013851s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.013155s ]
+[ sql ] [ SQL ] SELECT *,(SELECT COUNT(*) AS tp_count FROM `my_fans` WHERE  ( `user_id` =user.id ) LIMIT 1) AS `fans_count`,(SELECT COUNT(*) AS tp_count FROM `my_follows` WHERE  ( `user_id` =user.id ) LIMIT 1) AS `follows_count` FROM `user` WHERE  `phone_number` = '13852442265' LIMIT 1 [ RunTime:0.000896s ]
+[ sql ] [ SQL ] SELECT * FROM `my_fans` WHERE  `user_id` = 1 [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SELECT * FROM `my_follows` WHERE  `user_id` = 1 [ RunTime:0.000839s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `service_evaluation` [ RunTime:0.013482s ]
+[ sql ] [ SQL ] SELECT * FROM `service_evaluation` WHERE  `user_id` = 1 [ RunTime:0.000649s ]

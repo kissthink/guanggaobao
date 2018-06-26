@@ -23,7 +23,9 @@
         "topthink/think-mongo": "1.*",
         "topthink/think-migration": "1.*",
         "topthink/think-queue": "1.*",
-        "topthink/think-helper": "1.*"
+        "topthink/think-helper": "1.*",
+        "workerman/gateway-worker-for-win": "^3.0",
+        "workerman/gatewayclient": "^3.0"
     },
     "autoload": {
         "psr-4": {

@@ -13,7 +13,7 @@ use think\Route;
 Route::get('api/:version/banners/all',   'api/:version.Banner/getBanners');
 
 //用户登录:---------------------------------------------------------------------------------------------
-Route::post('api/:version/login/in',     'api/:version.Login/LoginIn');
+Route::post('api/:version/login',     'api/:version.Login/LoginIn');
 
 //服务类目:---------------------------------------------------------------------------------------------
 Route::get('api/:version/category',      'api/:version.CategoryAndRange/getServiceCategory');
@@ -23,14 +23,19 @@ Route::get('api/:version/range',         'api/:version.CategoryAndRange/getServi
 
 //系统消息---------------------------------------------------------------------------------------------
 
-//根据用户id获取系统消息,并按时间降序排列
+//根据用户id获取系统消息,并按时间降序排列----------------------------------------------------------------
 Route::get('api/:version/sysmsg',        'api/:version.Message/getSysMsg');
-//未读系统消息数
+//未读系统消息数---------------------------------------------------------------------------------------
 Route::get('api/:version/newsysmsgcount',        'api/:version.Message/getNewMsgCount');
 
 
 
 //用户信息---------------------------------------------------------------------------------------------
+//用户注册---------------------------------------------------------------------------------------------
+Route::post('api/:version/register','api/:version.Login/register');
+//用户地址信息
+//定义用户收货地址------------------------------------------------------------------------------------
+Route::get('api/:version/address','api/:version.Address/CreateOrUpdateAddress');
 //根据用户的综合评分进行推广显示
 Route::get('api/:version/getusers/s/:id','api/:version.User/getUsersByScore');
 //根据用户购买的服务等级进行推广显示
@@ -79,3 +84,9 @@ Route::get('api/:version/mycommentcount',     'api/:version.User/myCommentCount'
 //评论列表----------------------------------------------------------------------------------
 Route::get('api/:version/mycomments',     'api/:version.User/myComments');
 
+
+//商品服务表----------------------------------------------------------------------------------
+//根据用户id获取商品列表数量
+Route::get('api/:version/product/show',     'api/:version.Product/show');
+//根据用户id添加商品----------------------------------------------------------------------------------
+Route::post('api/:version/product/add',     'api/:version.Product/add');

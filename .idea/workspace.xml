@@ -2,32 +2,652 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/public/index.php" line="16" />
-    <bookmark url="file://$PROJECT_DIR$/application/api/service/UserInfo.php" line="85" />
+    <bookmark url="file://$PROJECT_DIR$/application/api/service/UserInfo.php" line="79" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb97e2ae-f3ac-4c82-8444-97df87c09ad9" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/application/api/model/OrderBider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/api/model/OrderComments.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/api/model/OrderReview.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/api/service/Token.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/api/service/UserToken.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/api/validate/TokenGet.php" afterDir="false" />
+    <list default="true" id="cb97e2ae-f3ac-4c82-8444-97df87c09ad9" name="Default" comment="1.写了好多东西,懒得细写了,主要是实现订单的一些功能">
+      <change afterPath="$PROJECT_DIR$/application/api/config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/api/controller/v1/Address.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/api/controller/v1/Product.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/api/controller/v2/Bind.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/api/model/Product.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/api/model/ProductTag.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/api/service/ProductInfo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/api/validate/Email.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/extra/appparams.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/extra/queue.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/extra/secure.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/lib/exception/ProductException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/push/Events.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/push/server.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/push/start_businessworker.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/push/start_gateway.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/push/start_register.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/SendSms.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/composer.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/lib/Api/Sms/Request/V20170525/QueryInterSmsIsoInfoRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/lib/Api/Sms/Request/V20170525/QuerySendDetailsRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/lib/Api/Sms/Request/V20170525/SendBatchSmsRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/lib/Api/Sms/Request/V20170525/SendInterSmsRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/lib/Api/Sms/Request/V20170525/SendSmsRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/lib/Core/AcsRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/lib/Core/AcsResponse.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/lib/Core/Auth/Credential.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/lib/Core/Auth/ISigner.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/lib/Core/Auth/ShaHmac1Signer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/lib/Core/Auth/ShaHmac256Signer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/lib/Core/Config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/lib/Core/DefaultAcsClient.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/lib/Core/Exception/ClientException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/lib/Core/Exception/ServerException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/lib/Core/Http/HttpHelper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/lib/Core/Http/HttpResponse.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/lib/Core/IAcsClient.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/lib/Core/Profile/DefaultProfile.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/lib/Core/Profile/IClientProfile.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/lib/Core/Regions/Endpoint.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/lib/Core/Regions/EndpointConfig.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/lib/Core/Regions/EndpointProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/lib/Core/Regions/ProductDomain.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/lib/Core/Regions/endpoints.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/lib/Core/RoaAcsRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/lib/Core/RpcAcsRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/phpunit.integration.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/phpunit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/autoload.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/bin/phpunit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/composer/ClassLoader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/composer/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/composer/autoload_namespaces.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/composer/autoload_real.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/composer/autoload_static.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/composer/installed.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/doctrine/instantiator/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/doctrine/instantiator/.scrutinizer.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/doctrine/instantiator/.travis.install.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/doctrine/instantiator/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/doctrine/instantiator/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/doctrine/instantiator/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/doctrine/instantiator/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/doctrine/instantiator/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/doctrine/instantiator/phpmd.xml.dist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/doctrine/instantiator/phpunit.xml.dist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/doctrine/instantiator/src/Doctrine/Instantiator/Exception/ExceptionInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/doctrine/instantiator/src/Doctrine/Instantiator/Exception/InvalidArgumentException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/doctrine/instantiator/src/Doctrine/Instantiator/Exception/UnexpectedValueException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/doctrine/instantiator/src/Doctrine/Instantiator/Instantiator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/doctrine/instantiator/src/Doctrine/Instantiator/InstantiatorInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorPerformance/InstantiatorPerformanceEvent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTest/Exception/InvalidArgumentExceptionTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTest/Exception/UnexpectedValueExceptionTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTest/InstantiatorTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/AbstractClassAsset.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/ArrayObjectAsset.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/ExceptionAsset.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/FinalExceptionAsset.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/PharAsset.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/PharExceptionAsset.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/SerializableArrayObjectAsset.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/SimpleSerializableAsset.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/SimpleTraitAsset.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/UnCloneableAsset.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/UnserializeExceptionArrayObjectAsset.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/WakeUpNoticesAsset.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/XMLReaderAsset.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-common/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-common/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-common/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-common/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-common/composer.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-common/phpunit.xml.dist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-common/src/Element.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-common/src/File.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-common/src/Fqsen.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-common/src/Location.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-common/src/Project.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-common/src/ProjectFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-common/tests/common/bootstrap.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-common/tests/unit/FqsenTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-docblock/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-docblock/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-docblock/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-docblock/src/DocBlock.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Description.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-docblock/src/DocBlock/DescriptionFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-docblock/src/DocBlock/ExampleFinder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Serializer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-docblock/src/DocBlock/StandardTagFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tag.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-docblock/src/DocBlock/TagFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Author.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/BaseTag.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Covers.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Deprecated.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Example.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Factory/StaticMethod.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Factory/Strategy.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Formatter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Formatter/AlignFormatter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Formatter/PassthroughFormatter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Generic.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Link.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Method.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Param.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Property.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/PropertyRead.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/PropertyWrite.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Return_.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/See.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Since.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Source.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Throws.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Uses.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Var_.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Version.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-docblock/src/DocBlockFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/reflection-docblock/src/DocBlockFactoryInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/type-resolver/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/type-resolver/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/type-resolver/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/type-resolver/src/FqsenResolver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/type-resolver/src/Type.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/type-resolver/src/TypeResolver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/type-resolver/src/Types/Array_.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/type-resolver/src/Types/Boolean.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/type-resolver/src/Types/Callable_.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/type-resolver/src/Types/Compound.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/type-resolver/src/Types/Context.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/type-resolver/src/Types/ContextFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/type-resolver/src/Types/Float_.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/type-resolver/src/Types/Integer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/type-resolver/src/Types/Iterable_.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/type-resolver/src/Types/Mixed_.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/type-resolver/src/Types/Null_.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/type-resolver/src/Types/Nullable.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/type-resolver/src/Types/Object_.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/type-resolver/src/Types/Parent_.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/type-resolver/src/Types/Resource_.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/type-resolver/src/Types/Scalar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/type-resolver/src/Types/Self_.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/type-resolver/src/Types/Static_.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/type-resolver/src/Types/String_.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/type-resolver/src/Types/This.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/phpdocumentor/type-resolver/src/Types/Void_.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/comparator/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/comparator/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/comparator/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/comparator/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/comparator/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/comparator/build/travis-ci.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/comparator/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/comparator/phpunit.xml.dist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/comparator/src/ArrayComparator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/comparator/src/Comparator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/comparator/src/ComparisonFailure.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/comparator/src/DOMNodeComparator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/comparator/src/DateTimeComparator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/comparator/src/DoubleComparator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/comparator/src/ExceptionComparator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/comparator/src/Factory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/comparator/src/MockObjectComparator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/comparator/src/NumericComparator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/comparator/src/ObjectComparator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/comparator/src/ResourceComparator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/comparator/src/ScalarComparator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/comparator/src/SplObjectStorageComparator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/comparator/src/TypeComparator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/comparator/tests/ArrayComparatorTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/comparator/tests/DOMNodeComparatorTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/comparator/tests/DateTimeComparatorTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/comparator/tests/DoubleComparatorTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/comparator/tests/ExceptionComparatorTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/comparator/tests/FactoryTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/comparator/tests/MockObjectComparatorTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/comparator/tests/NumericComparatorTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/comparator/tests/ObjectComparatorTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/comparator/tests/ResourceComparatorTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/comparator/tests/ScalarComparatorTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/comparator/tests/SplObjectStorageComparatorTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/comparator/tests/TypeComparatorTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/comparator/tests/_files/Author.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/comparator/tests/_files/Book.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/comparator/tests/_files/ClassWithToString.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/comparator/tests/_files/SampleClass.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/comparator/tests/_files/Struct.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/comparator/tests/_files/TestClass.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/comparator/tests/_files/TestClassComparator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/comparator/tests/autoload.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/comparator/tests/bootstrap.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/diff/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/diff/.php_cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/diff/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/diff/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/diff/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/diff/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/diff/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/diff/phpunit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/diff/src/Chunk.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/diff/src/Diff.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/diff/src/Differ.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/diff/src/LCS/LongestCommonSubsequence.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/diff/src/LCS/MemoryEfficientLongestCommonSubsequenceImplementation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/diff/src/LCS/TimeEfficientLongestCommonSubsequenceImplementation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/diff/src/Line.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/diff/src/Parser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/diff/tests/ChunkTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/diff/tests/DiffTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/diff/tests/DifferTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/diff/tests/LCS/LongestCommonSubsequenceTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/diff/tests/LCS/MemoryEfficientImplementationTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/diff/tests/LCS/TimeEfficientImplementationTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/diff/tests/LineTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/diff/tests/ParserTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/diff/tests/fixtures/patch.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/diff/tests/fixtures/patch2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/environment/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/environment/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/environment/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/environment/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/environment/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/environment/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/environment/phpunit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/environment/src/Console.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/environment/src/Runtime.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/environment/tests/ConsoleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/environment/tests/RuntimeTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/exporter/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/exporter/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/exporter/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/exporter/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/exporter/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/exporter/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/exporter/phpunit.xml.dist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/exporter/src/Exporter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/exporter/tests/ExporterTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/global-state/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/global-state/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/global-state/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/global-state/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/global-state/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/global-state/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/global-state/phpunit.xml.dist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/global-state/src/Blacklist.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/global-state/src/CodeExporter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/global-state/src/Exception.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/global-state/src/Restorer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/global-state/src/RuntimeException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/global-state/src/Snapshot.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/global-state/tests/BlacklistTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/global-state/tests/SnapshotTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/global-state/tests/_fixture/BlacklistedChildClass.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/global-state/tests/_fixture/BlacklistedClass.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/global-state/tests/_fixture/BlacklistedImplementor.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/global-state/tests/_fixture/BlacklistedInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/global-state/tests/_fixture/SnapshotClass.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/global-state/tests/_fixture/SnapshotDomDocument.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/global-state/tests/_fixture/SnapshotFunctions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/global-state/tests/_fixture/SnapshotTrait.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/recursion-context/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/recursion-context/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/recursion-context/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/recursion-context/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/recursion-context/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/recursion-context/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/recursion-context/phpunit.xml.dist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/recursion-context/src/Context.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/recursion-context/src/Exception.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/recursion-context/src/InvalidArgumentException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/recursion-context/tests/ContextTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/version/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/version/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/version/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/version/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/version/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/sebastian/version/src/Version.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/Command/LintCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/Dumper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/Escaper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/Exception/DumpException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/Exception/ExceptionInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/Exception/ParseException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/Exception/RuntimeException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/Inline.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/Parser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/Tag/TaggedValue.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/Tests/Command/LintCommandTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/Tests/DumperTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/Tests/Fixtures/YtsAnchorAlias.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/Tests/Fixtures/YtsBasicTests.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/Tests/Fixtures/YtsBlockMapping.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/Tests/Fixtures/YtsDocumentSeparator.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/Tests/Fixtures/YtsErrorTests.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/Tests/Fixtures/YtsFlowCollections.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/Tests/Fixtures/YtsFoldedScalars.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/Tests/Fixtures/YtsNullsAndEmpties.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/Tests/Fixtures/YtsSpecificationExamples.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/Tests/Fixtures/YtsTypeTransfers.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/Tests/Fixtures/arrow.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/Tests/Fixtures/booleanMappingKeys.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/Tests/Fixtures/embededPhp.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/Tests/Fixtures/escapedCharacters.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/Tests/Fixtures/index.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/Tests/Fixtures/legacyBooleanMappingKeys.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/Tests/Fixtures/legacyNonStringKeys.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/Tests/Fixtures/legacyNullMappingKey.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/Tests/Fixtures/multiple_lines_as_literal_block.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/Tests/Fixtures/nonStringKeys.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/Tests/Fixtures/nullMappingKey.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/Tests/Fixtures/numericMappingKeys.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/Tests/Fixtures/sfComments.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/Tests/Fixtures/sfCompact.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/Tests/Fixtures/sfMergeKey.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/Tests/Fixtures/sfObjects.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/Tests/Fixtures/sfQuotes.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/Tests/Fixtures/sfTests.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/Tests/Fixtures/unindentedCollections.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/Tests/InlineTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/Tests/ParseExceptionTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/Tests/ParserTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/Tests/YamlTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/Unescaper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/Yaml.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/symfony/yaml/phpunit.xml.dist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/webmozart/assert/.composer-auth.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/webmozart/assert/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/webmozart/assert/.styleci.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/webmozart/assert/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/webmozart/assert/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/webmozart/assert/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/webmozart/assert/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/webmozart/assert/appveyor.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/webmozart/assert/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/webmozart/assert/phpunit.xml.dist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/webmozart/assert/src/Assert.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extend/alisms/vendor/webmozart/assert/tests/AssertTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/201806/23.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/201806/25.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/201806/26.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runtime/temp/ac933f511aaa25f231fdbaf6b6cdd7fc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/start_for_win.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thinkphp/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thinkphp/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thinkphp/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-mongo/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/topthink/think-queue/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/workerman/gateway-worker-for-win/MIT-LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/workerman/gateway-worker-for-win/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/workerman/gateway-worker-for-win/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/workerman/gateway-worker-for-win/src/BusinessWorker.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/workerman/gateway-worker-for-win/src/Gateway.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/workerman/gateway-worker-for-win/src/Lib/Context.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/workerman/gateway-worker-for-win/src/Lib/Db.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/workerman/gateway-worker-for-win/src/Lib/DbConnection.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/workerman/gateway-worker-for-win/src/Lib/Gateway.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/workerman/gateway-worker-for-win/src/Protocols/GatewayProtocol.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/workerman/gateway-worker-for-win/src/Register.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/workerman/gatewayclient/Gateway.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/workerman/gatewayclient/MIT-LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/workerman/gatewayclient/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/workerman/gatewayclient/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/workerman/workerman-for-win/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/workerman/workerman-for-win/Autoloader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/workerman/workerman-for-win/Connection/AsyncTcpConnection.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/workerman/workerman-for-win/Connection/AsyncUdpConnection.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/workerman/workerman-for-win/Connection/ConnectionInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/workerman/workerman-for-win/Connection/TcpConnection.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/workerman/workerman-for-win/Connection/UdpConnection.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/workerman/workerman-for-win/Events/Ev.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/workerman/workerman-for-win/Events/Event.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/workerman/workerman-for-win/Events/EventInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/workerman/workerman-for-win/Events/Libevent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/workerman/workerman-for-win/Events/React/ExtEventLoop.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/workerman/workerman-for-win/Events/React/LibEventLoop.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/workerman/workerman-for-win/Events/React/StreamSelectLoop.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/workerman/workerman-for-win/Events/Select.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/workerman/workerman-for-win/Lib/Constants.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/workerman/workerman-for-win/Lib/Timer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/workerman/workerman-for-win/MIT-LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/workerman/workerman-for-win/Protocols/Frame.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/workerman/workerman-for-win/Protocols/Http.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/workerman/workerman-for-win/Protocols/Http/mime.types" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/workerman/workerman-for-win/Protocols/ProtocolInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/workerman/workerman-for-win/Protocols/Text.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/workerman/workerman-for-win/Protocols/Websocket.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/workerman/workerman-for-win/Protocols/Ws.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/workerman/workerman-for-win/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/workerman/workerman-for-win/WebServer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/workerman/workerman-for-win/Worker.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/workerman/workerman-for-win/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/workerman/workerman.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/guanggaobao.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/guanggaobao.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/api/controller/v1/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/controller/v1/Order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/api/controller/v1/OrderBidDetail.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/controller/v1/OrderBidDetail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/api/controller/v1/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/controller/v1/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/api/model/Banner.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/model/Banner.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/api/model/MyFans.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/model/MyFans.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/api/model/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/model/Order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/api/model/OrderMessage.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/model/OrderMessage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/api/controller/v1/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/controller/v1/Login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/api/model/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/model/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/api/service/OrderInfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/service/OrderInfo.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/api/service/SystemMessage.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/service/SystemMessage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/api/service/Token.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/service/Token.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/api/service/UserInfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/service/UserInfo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/api/service/UserToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/service/UserToken.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/api/validate/MobilePhoneNumber.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/validate/MobilePhoneNumber.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/common.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/database.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/route.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/route.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/a1c294f6d330559df3cfccf90e07b07e.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/e5a08f398c16742d0b567014c9afc8a7.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vip_level_codes" beforeDir="false" afterPath="$PROJECT_DIR$/vip_level_codes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/error_codes" beforeDir="false" afterPath="$PROJECT_DIR$/error_codes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/CONTRIBUTING.md" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/CONTRIBUTING.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/base.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/base.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/codecov.yml" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/codecov.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/console.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/console.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/convention.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/convention.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/helper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/lang/zh-cn.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/lang/zh-cn.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/App.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/App.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/Build.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/Build.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/Cache.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/Cache.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/Collection.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/Collection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/Config.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/Config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/Console.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/Console.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/Cookie.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/Cookie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/Db.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/Db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/Debug.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/Debug.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/Env.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/Env.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/Error.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/Error.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/Exception.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/Exception.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/File.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/File.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/Hook.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/Hook.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/Lang.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/Lang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/Loader.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/Loader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/Log.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/Log.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/Model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/Paginator.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/Paginator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/Process.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/Process.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/Request.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/Request.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/Response.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/Response.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/Route.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/Route.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/Session.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/Session.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/Template.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/Template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/Url.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/Url.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/Validate.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/Validate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/View.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/View.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/cache/Driver.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/cache/Driver.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/cache/driver/File.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/cache/driver/File.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/cache/driver/Lite.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/cache/driver/Lite.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/cache/driver/Memcache.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/cache/driver/Memcache.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/cache/driver/Memcached.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/cache/driver/Memcached.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/cache/driver/Redis.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/cache/driver/Redis.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/cache/driver/Sqlite.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/cache/driver/Sqlite.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/cache/driver/Wincache.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/cache/driver/Wincache.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/cache/driver/Xcache.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/cache/driver/Xcache.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/config/driver/Ini.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/config/driver/Ini.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/config/driver/Json.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/config/driver/Json.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/config/driver/Xml.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/config/driver/Xml.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/console/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/console/Command.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/console/Input.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/console/Input.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/console/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/console/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/console/Output.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/console/Output.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/console/bin/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/console/bin/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/console/command/Build.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/console/command/Build.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/console/command/Clear.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/console/command/Clear.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/console/command/Help.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/console/command/Help.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/console/command/Lists.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/console/command/Lists.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/console/command/Make.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/console/command/Make.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/console/command/make/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/console/command/make/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/console/command/make/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/console/command/make/Model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/console/command/make/stubs/controller.plain.stub" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/console/command/make/stubs/controller.plain.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/console/command/make/stubs/controller.stub" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/console/command/make/stubs/controller.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/console/command/make/stubs/model.stub" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/console/command/make/stubs/model.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/console/command/optimize/Autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/console/command/optimize/Autoload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/console/command/optimize/Config.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/console/command/optimize/Config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/console/command/optimize/Route.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/console/command/optimize/Route.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/console/command/optimize/Schema.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/console/command/optimize/Schema.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/console/input/Argument.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/console/input/Argument.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/console/input/Definition.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/console/input/Definition.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/console/input/Option.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/console/input/Option.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/console/output/Ask.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/console/output/Ask.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/console/output/Descriptor.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/console/output/Descriptor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/console/output/Formatter.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/console/output/Formatter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/console/output/Question.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/console/output/Question.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/console/output/descriptor/Console.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/console/output/descriptor/Console.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/console/output/driver/Buffer.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/console/output/driver/Buffer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/console/output/driver/Console.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/console/output/driver/Console.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/console/output/driver/Nothing.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/console/output/driver/Nothing.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/console/output/formatter/Stack.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/console/output/formatter/Stack.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/console/output/formatter/Style.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/console/output/formatter/Style.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/console/output/question/Choice.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/console/output/question/Choice.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/console/output/question/Confirmation.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/console/output/question/Confirmation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/controller/Rest.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/controller/Rest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/controller/Yar.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/controller/Yar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/db/Builder.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/db/Builder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/db/Connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/db/Connection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/db/Expression.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/db/Expression.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/db/Query.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/db/Query.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/db/builder/Mysql.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/db/builder/Mysql.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/db/builder/Pgsql.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/db/builder/Pgsql.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/db/builder/Sqlite.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/db/builder/Sqlite.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/db/builder/Sqlsrv.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/db/builder/Sqlsrv.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/db/connector/Mysql.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/db/connector/Mysql.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/db/connector/Pgsql.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/db/connector/Pgsql.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/db/connector/Sqlite.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/db/connector/Sqlite.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/db/connector/Sqlsrv.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/db/connector/Sqlsrv.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/db/connector/pgsql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/db/connector/pgsql.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/db/exception/BindParamException.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/db/exception/BindParamException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/db/exception/DataNotFoundException.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/db/exception/DataNotFoundException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/db/exception/ModelNotFoundException.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/db/exception/ModelNotFoundException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/debug/Console.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/debug/Console.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/debug/Html.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/debug/Html.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/exception/ClassNotFoundException.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/exception/ClassNotFoundException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/exception/DbException.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/exception/DbException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/exception/ErrorException.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/exception/ErrorException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/exception/Handle.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/exception/Handle.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/exception/HttpException.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/exception/HttpException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/exception/HttpResponseException.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/exception/HttpResponseException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/exception/PDOException.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/exception/PDOException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/exception/RouteNotFoundException.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/exception/RouteNotFoundException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/exception/TemplateNotFoundException.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/exception/TemplateNotFoundException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/exception/ThrowableError.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/exception/ThrowableError.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/exception/ValidateException.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/exception/ValidateException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/log/driver/File.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/log/driver/File.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/log/driver/Socket.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/log/driver/Socket.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/log/driver/Test.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/log/driver/Test.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/model/Collection.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/model/Collection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/model/Merge.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/model/Merge.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/model/Pivot.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/model/Pivot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/model/Relation.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/model/Relation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/model/relation/BelongsTo.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/model/relation/BelongsTo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/model/relation/BelongsToMany.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/model/relation/BelongsToMany.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/model/relation/HasMany.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/model/relation/HasMany.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/model/relation/HasManyThrough.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/model/relation/HasManyThrough.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/model/relation/HasOne.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/model/relation/HasOne.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/model/relation/MorphMany.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/model/relation/MorphMany.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/model/relation/MorphOne.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/model/relation/MorphOne.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/model/relation/MorphTo.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/model/relation/MorphTo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/model/relation/OneToOne.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/model/relation/OneToOne.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/paginator/driver/Bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/paginator/driver/Bootstrap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/process/Builder.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/process/Builder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/process/Utils.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/process/Utils.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/process/exception/Failed.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/process/exception/Failed.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/process/exception/Timeout.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/process/exception/Timeout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/process/pipes/Pipes.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/process/pipes/Pipes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/process/pipes/Unix.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/process/pipes/Unix.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/process/pipes/Windows.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/process/pipes/Windows.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/response/Json.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/response/Json.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/response/Jsonp.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/response/Jsonp.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/response/Redirect.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/response/Redirect.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/response/View.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/response/View.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/response/Xml.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/response/Xml.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/session/driver/Memcache.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/session/driver/Memcache.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/session/driver/Memcached.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/session/driver/Memcached.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/session/driver/Redis.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/session/driver/Redis.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/template/TagLib.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/template/TagLib.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/template/driver/File.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/template/driver/File.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/template/taglib/Cx.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/template/taglib/Cx.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/view/driver/Php.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/view/driver/Php.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/view/driver/Think.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/view/driver/Think.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/traits/controller/Jump.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/traits/controller/Jump.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/traits/model/SoftDelete.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/traits/model/SoftDelete.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/traits/think/Instance.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/traits/think/Instance.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/phpunit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/start.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/start.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/tpl/default_index.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/tpl/default_index.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/tpl/dispatch_jump.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/tpl/dispatch_jump.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/tpl/page_trace.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/tpl/page_trace.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/tpl/think_exception.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/tpl/think_exception.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/autoload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/topthink/think-mongo/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/topthink/think-mongo/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/topthink/think-mongo/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/topthink/think-mongo/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/topthink/think-mongo/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/topthink/think-mongo/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/topthink/think-mongo/src/Builder.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/topthink/think-mongo/src/Builder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/topthink/think-mongo/src/Connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/topthink/think-mongo/src/Connection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/topthink/think-mongo/src/Query.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/topthink/think-mongo/src/Query.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/topthink/think-queue/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/topthink/think-queue/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/topthink/think-queue/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/topthink/think-queue/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/topthink/think-queue/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/topthink/think-queue/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/topthink/think-queue/src/Queue.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/topthink/think-queue/src/Queue.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/topthink/think-queue/src/common.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/topthink/think-queue/src/common.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/topthink/think-queue/src/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/topthink/think-queue/src/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/topthink/think-queue/src/queue/CallQueuedHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/topthink/think-queue/src/queue/CallQueuedHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/topthink/think-queue/src/queue/Connector.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/topthink/think-queue/src/queue/Connector.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/topthink/think-queue/src/queue/Job.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/topthink/think-queue/src/queue/Job.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/topthink/think-queue/src/queue/Listener.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/topthink/think-queue/src/queue/Listener.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/topthink/think-queue/src/queue/Queueable.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/topthink/think-queue/src/queue/Queueable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/topthink/think-queue/src/queue/ShouldQueue.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/topthink/think-queue/src/queue/ShouldQueue.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/topthink/think-queue/src/queue/Worker.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/topthink/think-queue/src/queue/Worker.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/topthink/think-queue/src/queue/command/Listen.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/topthink/think-queue/src/queue/command/Listen.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/topthink/think-queue/src/queue/command/Restart.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/topthink/think-queue/src/queue/command/Restart.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/topthink/think-queue/src/queue/command/Subscribe.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/topthink/think-queue/src/queue/command/Subscribe.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/topthink/think-queue/src/queue/command/Work.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/topthink/think-queue/src/queue/command/Work.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/topthink/think-queue/src/queue/connector/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/topthink/think-queue/src/queue/connector/Database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/topthink/think-queue/src/queue/connector/Redis.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/topthink/think-queue/src/queue/connector/Redis.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/topthink/think-queue/src/queue/connector/Sync.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/topthink/think-queue/src/queue/connector/Sync.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/topthink/think-queue/src/queue/connector/Topthink.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/topthink/think-queue/src/queue/connector/Topthink.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/topthink/think-queue/src/queue/job/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/topthink/think-queue/src/queue/job/Database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/topthink/think-queue/src/queue/job/Redis.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/topthink/think-queue/src/queue/job/Redis.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/topthink/think-queue/src/queue/job/Sync.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/topthink/think-queue/src/queue/job/Sync.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/topthink/think-queue/src/queue/job/Topthink.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/topthink/think-queue/src/queue/job/Topthink.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -58,111 +678,49 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="OrderInfo.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/api/service/OrderInfo.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-138">
-              <caret line="23" column="43" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="43" />
-              <folding>
-                <element signature="e#122#160#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SystemMessage.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/api/service/SystemMessage.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="523">
-              <caret line="47" column="39" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
-              <folding>
-                <element signature="e#121#173#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Order.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/api/controller/v1/Order.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="e#6#90#0#PHP" expanded="true" />
-                <element signature="e#127#157#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Banner.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/api/model/Banner.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/api/controller/v1/User.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="42" column="36" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Login.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/api/controller/v1/Login.php">
+      <file leaf-file-name="Product.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/api/controller/v1/Product.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="506">
-              <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+              <caret line="27" column="37" lean-forward="true" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
               <folding>
-                <element signature="e#128#157#0#PHP" expanded="true" />
+                <element signature="e#127#159#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Banner.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/api/controller/v1/Banner.php">
+      <file leaf-file-name="Login.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/api/controller/v1/Login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="16" column="15" lean-forward="true" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+            <state relative-caret-position="246">
+              <caret line="30" column="29" lean-forward="true" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="44" />
               <folding>
-                <element signature="e#128#168#0#PHP" expanded="true" />
+                <element signature="e#128#147#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserInfo.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/api/service/UserInfo.php">
+      <file leaf-file-name="Bind.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/api/controller/v2/Bind.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
-              <folding>
-                <element signature="e#130#170#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="437">
+              <caret line="24" column="41" lean-forward="true" selection-end-line="33" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Model.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/thinkphp/library/think/Model.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="68" column="14" selection-start-line="68" selection-start-column="14" selection-end-line="68" selection-end-column="14" />
-            </state>
-          </provider>
+      <file leaf-file-name="IDMustBePositiveInt.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/api/validate/IDMustBePositiveInt.php">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="OrderMessage.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/api/model/OrderMessage.php">
+      <file leaf-file-name="Token.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/api/service/Token.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+            <state relative-caret-position="391">
+              <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -193,6 +751,14 @@
       <find>$position</find>
       <find>$City</find>
       <find>OrderInfo::</find>
+      <find>$beforeActionList</find>
+      <find>$beforeAction</find>
+      <find>auto</find>
+      <find>ip</find>
+      <find>getAcsResponse</find>
+      <find>$request</find>
+      <find>app</find>
+      <find>SendSmsRequest</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -214,57 +780,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/vip_codes" />
-        <option value="$PROJECT_DIR$/application/api/controller/v1/ParamIsNotEmpty.php" />
-        <option value="$PROJECT_DIR$/application/api/validate/CurrentRequest.php" />
-        <option value="$PROJECT_DIR$/application/lib/exception/CharacterIDException.php" />
-        <option value="$PROJECT_DIR$/application/api/controller/v1/Design.php" />
-        <option value="$PROJECT_DIR$/application/api/validate/OrderParams.php" />
-        <option value="$PROJECT_DIR$/application/api/validate/OrderAllCheck.php" />
-        <option value="$PROJECT_DIR$/application/api/controller/v1/OrderBindDetail.php" />
-        <option value="$PROJECT_DIR$/application/api/validate/IDMustBePositiveInt.php" />
-        <option value="$PROJECT_DIR$/application/api/model/OrderImage.php" />
-        <option value="$PROJECT_DIR$/application/config.php" />
-        <option value="$PROJECT_DIR$/application/lib/exception/OrderGetException.php" />
-        <option value="$PROJECT_DIR$/application/api/model/ServiceEvaluation.php" />
-        <option value="$PROJECT_DIR$/application/api/validate/CurrentCity.php" />
-        <option value="$PROJECT_DIR$/application/api/validate/OrderParamsCheck.php" />
-        <option value="$PROJECT_DIR$/application/api/validate/OrderCategoryTYpeCheck.php" />
-        <option value="$PROJECT_DIR$/application/api/validate/OrderRangeTypeCheck.php" />
-        <option value="$PROJECT_DIR$/application/api/controller/v1/SystemMessage.php" />
-        <option value="$PROJECT_DIR$/application/api/controller/v1/OrderMessage.php" />
-        <option value="$PROJECT_DIR$/application/database.php" />
-        <option value="$PROJECT_DIR$/application/api/controller/v1/Login.php" />
-        <option value="$PROJECT_DIR$/application/api/model/SystemMessage.php" />
-        <option value="$PROJECT_DIR$/application/api/model/SystemUser.php" />
-        <option value="$PROJECT_DIR$/application/lib/exception/UserInfoException.php" />
-        <option value="$PROJECT_DIR$/application/api/model/MyFollows.php" />
-        <option value="$PROJECT_DIR$/error_codes" />
-        <option value="$PROJECT_DIR$/application/api/controller/v1/Message.php" />
-        <option value="$PROJECT_DIR$/application/api/model/OrderCollection.php" />
-        <option value="$PROJECT_DIR$/application/api/service/Token.php" />
-        <option value="$PROJECT_DIR$/application/api/validate/TokenGet.php" />
-        <option value="$PROJECT_DIR$/application/api/model/BidDetail.php" />
-        <option value="$PROJECT_DIR$/application/api/model/User.php" />
-        <option value="$PROJECT_DIR$/application/api/controller/v1/OrderBidDetail.php" />
-        <option value="$PROJECT_DIR$/application/api/model/OrderBider.php" />
-        <option value="$PROJECT_DIR$/application/api/model/MyComment.php" />
-        <option value="$PROJECT_DIR$/application/api/model/Review.php" />
         <option value="$PROJECT_DIR$/application/api/model/MyComments.php" />
         <option value="$PROJECT_DIR$/application/api/model/OrderComments.php" />
         <option value="$PROJECT_DIR$/application/api/model/OrderReview.php" />
         <option value="$PROJECT_DIR$/application/api/controller/v1/User.php" />
         <option value="$PROJECT_DIR$/application/api/model/MyFans.php" />
         <option value="$PROJECT_DIR$/vip_level_codes" />
-        <option value="$PROJECT_DIR$/application/route.php" />
         <option value="$PROJECT_DIR$/application/api/model/Order.php" />
         <option value="$PROJECT_DIR$/application/api/validate/BaseValidate.php" />
         <option value="$PROJECT_DIR$/application/api/service/OrderInfo.php" />
         <option value="$PROJECT_DIR$/application/api/controller/v1/Order.php" />
         <option value="$PROJECT_DIR$/application/api/model/OrderMessage.php" />
-        <option value="$PROJECT_DIR$/application/api/service/SystemMessage.php" />
         <option value="$PROJECT_DIR$/application/api/model/Banner.php" />
+        <option value="$PROJECT_DIR$/application/api/controller/v1/Address.php" />
+        <option value="$PROJECT_DIR$/application/api/service/SystemMessage.php" />
+        <option value="$PROJECT_DIR$/application/common.php" />
+        <option value="$PROJECT_DIR$/application/lib/exception/CharacterIDException.php" />
+        <option value="$PROJECT_DIR$/application/extra/secure.php" />
+        <option value="$PROJECT_DIR$/application/api/service/Token.php" />
+        <option value="$PROJECT_DIR$/application/api/service/UserToken.php" />
+        <option value="$PROJECT_DIR$/application/api/controller/v2/SmsDemo.php" />
+        <option value="$PROJECT_DIR$/application/extend/alisms/composer.json" />
+        <option value="$PROJECT_DIR$/application/extend/alisms/SendSms.php" />
+        <option value="$PROJECT_DIR$/extend/SendSms.php" />
+        <option value="$PROJECT_DIR$/application/api/model/User.php" />
+        <option value="$PROJECT_DIR$/application/api/validate/Email.php" />
         <option value="$PROJECT_DIR$/application/api/service/UserInfo.php" />
+        <option value="$PROJECT_DIR$/application/push/start_register.php" />
+        <option value="$PROJECT_DIR$/start_for_win.bat" />
+        <option value="$PROJECT_DIR$/application/push/server.php" />
+        <option value="$PROJECT_DIR$/application/push/start_gateway.php" />
+        <option value="$PROJECT_DIR$/application/client/Client.php" />
+        <option value="$PROJECT_DIR$/application/client/view/client.html" />
+        <option value="$PROJECT_DIR$/application/client/controller/Client.php" />
+        <option value="$PROJECT_DIR$/application/config.php" />
+        <option value="$PROJECT_DIR$/application/api/config.php" />
+        <option value="$PROJECT_DIR$/application/client/view/client/client.html" />
+        <option value="$PROJECT_DIR$/error_codes" />
+        <option value="$PROJECT_DIR$/application/lib/exception/ProductException.php" />
+        <option value="$PROJECT_DIR$/application/api/model/ProductTag.php" />
+        <option value="$PROJECT_DIR$/application/api/model/BaseModel.php" />
+        <option value="$PROJECT_DIR$/application/database.php" />
+        <option value="$PROJECT_DIR$/application/api/model/Product.php" />
+        <option value="$PROJECT_DIR$/application/api/service/ProductInfo.php" />
+        <option value="$PROJECT_DIR$/application/api/controller/v1/Product.php" />
+        <option value="$PROJECT_DIR$/application/route.php" />
+        <option value="$PROJECT_DIR$/extend/alisms/SendSms.php" />
+        <option value="$PROJECT_DIR$/application/api/validate/MobilePhoneNumber.php" />
+        <option value="$PROJECT_DIR$/extend/alisms/vendor/phpunit/php-code-coverage/tests/_files/CoverageTwoDefaultClassAnnotations.php" />
+        <option value="$PROJECT_DIR$/extend/alisms/vendor/phpspec/prophecy/spec/Prophecy/ArgumentSpec.php" />
+        <option value="$PROJECT_DIR$/application/api/controller/v1/Login.php" />
+        <option value="$PROJECT_DIR$/application/api/controller/v2/Bind.php" />
       </list>
     </option>
   </component>
@@ -308,11 +874,15 @@
       <path value="$PROJECT_DIR$/vendor/topthink/think-captcha" />
       <path value="$PROJECT_DIR$/vendor/topthink/think-image" />
       <path value="$PROJECT_DIR$/vendor/topthink/think-helper" />
+      <path value="$PROJECT_DIR$/vendor/workerman/workerman-for-win" />
+      <path value="$PROJECT_DIR$/vendor/workerman/gateway-worker-for-win" />
+      <path value="$PROJECT_DIR$/vendor/workerman/gatewayclient" />
     </include_path>
   </component>
   <component name="PhpXdebugProxy" ide_key="phpStorm" host="localhost" port="80" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-6" />
+    <option name="x" value="32" />
+    <option name="y" value="83" />
     <option name="width" value="1920" />
     <option name="height" value="1047" />
   </component>
@@ -360,13 +930,6 @@
               <item name="guanggaobao" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="guanggaobao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guanggaobao" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -379,15 +942,13 @@
             <path>
               <item name="guanggaobao" type="b2602c69:ProjectViewProjectNode" />
               <item name="guanggaobao" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="extend" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="guanggaobao" type="b2602c69:ProjectViewProjectNode" />
               <item name="guanggaobao" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="exception" type="462c0819:PsiDirectoryNode" />
+              <item name="extend" type="462c0819:PsiDirectoryNode" />
+              <item name="alisms" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -398,7 +959,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SearchEverywhereHistoryKey" value="start&#9;FILE&#9;file://D:/xammp/htdocs/zerg/thinkphp/start.php&#10;show line&#9;null&#9;null&#10;showl&#9;null&#9;null&#10;showline&#9;null&#9;null&#10;assgin()&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="show&#9;null&#9;null&#10;start&#9;FILE&#9;file://D:/xammp/htdocs/zerg/thinkphp/start.php&#10;show line&#9;null&#9;null&#10;showl&#9;null&#9;null&#10;showline&#9;null&#9;null&#10;assgin()&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -408,15 +969,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\xammp\htdocs\guanggaobao\application\api" />
+      <recent name="D:\xammp\htdocs\guanggaobao\application\api\controller\v2" />
       <recent name="D:\xammp\htdocs\guanggaobao\application\api\validate" />
       <recent name="D:\xammp\htdocs\guanggaobao" />
       <recent name="D:\xammp\htdocs\guanggaobao\application\lib\exception" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\xammp\htdocs\guanggaobao\application\client\view\client" />
+      <recent name="D:\xammp\htdocs\guanggaobao\application\client\controller" />
+      <recent name="D:\xammp\htdocs\guanggaobao\extend\alisms" />
+      <recent name="D:\xammp\htdocs\guanggaobao\application\extra" />
       <recent name="D:\xammp\htdocs\zerg\application\lib" />
-      <recent name="D:\xammp\htdocs\zerg\application\index\view\index" />
-      <recent name="D:\xammp\htdocs\zerg\application\index\view" />
-      <recent name="E:\wamp64\www\thinkphp5\application\index\view\index" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -492,6 +1056,10 @@
       <workItem from="1529485918301" duration="5073000" />
       <workItem from="1529545367809" duration="29972000" />
       <workItem from="1529629913666" duration="22062000" />
+      <workItem from="1529717049357" duration="17106000" />
+      <workItem from="1529889809303" duration="11719000" />
+      <workItem from="1529906576981" duration="8672000" />
+      <workItem from="1529973795985" duration="21378000" />
     </task>
     <task id="LOCAL-00001" summary="给小马宝莉后面加了两个叹号">
       <created>1528862174566</created>
@@ -595,9 +1163,9 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="279457000" />
+    <option name="totallyTimeSpent" value="338332000" />
   </component>
-  <component name="TodoView">
+  <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -610,16 +1178,18 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6884956" visible="true" weight="0.16684435" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32518598" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32497275" />
+      <window_info active="true" anchor="bottom" id="Messages" visible="true" weight="0.3293348" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.32824427" />
-      <window_info anchor="right" id="Database" order="3" weight="0.32995737" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.49946696" weight="0.32824427" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info id="Structure" order="1" sideWeight="0.3103082" side_tool="true" weight="0.24114583" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49840087" weight="0.30861506" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6884956" visible="true" weight="0.17324094" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32995737" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3478735" />
+      <window_info id="Structure" order="1" sideWeight="0.3103082" side_tool="true" weight="0.24114583" />
       <window_info id="Favorites" order="2" sideWeight="0.31150442" side_tool="true" weight="0.24114583" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991276" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -631,7 +1201,6 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="调试" order="13" sideWeight="0.4977612" weight="0.32780084" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3478735" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -684,357 +1253,298 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="172" />
+      <option name="time" value="175" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/api/controller/v1/CategoryAndRange.php">
+    <entry file="file://$PROJECT_DIR$/application/api/model/Product.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="31" column="12" lean-forward="true" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+        <state relative-caret-position="246">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/lib/exception/SystemMessageException.php">
+    <entry file="file://$PROJECT_DIR$/thinkphp/library/think/Request.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="-503">
+          <caret line="1306" column="28" selection-start-line="1306" selection-start-column="20" selection-end-line="1306" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/lib/exception/ExceptionHandler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="39" column="34" lean-forward="true" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/lib/exception/UserInfoException.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/lib/exception/UserInvalidException.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/error_codes">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/api/model/OrderCollection.php" />
-    <entry file="file://$PROJECT_DIR$/application/api/model/SystemMessage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/api/model/ServiceRange.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/api/model/ServiceEvaluation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/api/model/ServiceCategory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/api/model/SystemUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="26" column="36" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/api/model/MyFollows.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/api/validate/TokenGet.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/api/service/UserToken.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/api/validate/MobilePhoneNumber.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/api/controller/v1/Message.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="614">
-          <caret line="37" column="39" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="39" />
-          <folding>
-            <element signature="e#127#161#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/api/model/BidDetail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="20" column="7" selection-start-line="17" selection-start-column="6" selection-end-line="20" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/api/controller/v1/OrderBidDetail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="21" column="66" selection-start-line="21" selection-start-column="66" selection-end-line="21" selection-end-column="66" />
-          <folding>
-            <element signature="e#128#156#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/runtime/temp/a1c294f6d330559df3cfccf90e07b07e.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1042" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/runtime/temp/e5a08f398c16742d0b567014c9afc8a7.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/api/model/OrderComments.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/api/model/MyFans.php">
+    <entry file="file://$PROJECT_DIR$/application/api/model/ProductTag.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
-          <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+          <caret line="23" column="42" lean-forward="true" selection-start-line="19" selection-start-column="11" selection-end-line="23" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/api/service/Token.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/application/api/model/Banner.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/api/model/BaseModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/application/api/model/BidDetail.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/vip_level_codes">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="24" column="23" lean-forward="true" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/application/api/model/MyFans.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/route.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="53" column="15" lean-forward="true" selection-start-line="53" selection-start-column="15" selection-end-line="53" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thinkphp/library/think/db/Connection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="669">
-          <caret line="1068" selection-start-line="1068" selection-end-line="1068" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thinkphp/library/think/Response.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="137" selection-start-line="137" selection-end-line="137" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thinkphp/library/think/App.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="163" selection-start-line="163" selection-end-line="163" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thinkphp/library/think/Error.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="93" selection-start-line="93" selection-end-line="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/api/model/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/application/api/model/MyFollows.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/application/api/model/Order.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="683">
-          <caret line="82" column="66" selection-start-line="82" selection-start-column="66" selection-end-line="82" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/lib/exception/ServiceCategoryException.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/lib/exception/LoginInvaildException.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/lib/exception/BaseException.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/api/model/OrderImage.php">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
-          <caret line="14" column="65" selection-start-line="14" selection-start-column="65" selection-end-line="14" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/api/validate/BaseValidate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/api/model/OrderBider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/api/model/OrderReview.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thinkphp/library/think/Model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="68" column="14" selection-start-line="68" selection-start-column="14" selection-end-line="68" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/api/model/OrderMessage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/api/service/OrderInfo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-138">
-          <caret line="23" column="43" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="43" />
+        <state relative-caret-position="69">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="13" />
           <folding>
-            <element signature="e#122#160#0#PHP" expanded="true" />
+            <element signature="e#121#159#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/api/service/SystemMessage.php">
+    <entry file="file://$PROJECT_DIR$/public/info.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="47" column="39" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
+        <state relative-caret-position="138">
+          <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/think">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thinkphp/console.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thinkphp/start.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="18" column="19" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thinkphp/base.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="706">
+          <caret line="64" column="45" lean-forward="true" selection-start-line="64" selection-start-column="45" selection-end-line="64" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thinkphp/convention.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5533">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extend/alisms/lib/Core/DefaultAcsClient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="30" column="42" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extend/alisms/phpunit.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extend/alisms/phpunit.integration.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extend/alisms/LICENSE">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extend/alisms/tests/bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extend/alisms/SendSms.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1495">
+          <caret line="70" column="31" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="31" />
           <folding>
-            <element signature="e#121#173#0#PHP" expanded="true" />
+            <element signature="e#145#168#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="26" column="14" lean-forward="true" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extend/alisms/lib/Api/Sms/Request/V20170525/SendSmsRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-69">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/route.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="34" column="34" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/api/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="17" column="39" lean-forward="true" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/command.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/common.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/api/validate/OrderAllCheck.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/api/validate/MobilePhoneNumber.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="14" column="41" lean-forward="true" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/api/controller/v1/Order.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="-115">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="24" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/api/service/ProductInfo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="569">
+          <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
           <folding>
-            <element signature="e#6#90#0#PHP" expanded="true" />
-            <element signature="e#127#157#0#PHP" expanded="true" />
+            <element signature="e#122#148#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/api/model/Banner.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/api/controller/v1/Banner.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="16" column="15" lean-forward="true" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
-          <folding>
-            <element signature="e#128#168#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/application/api/service/SystemMessage.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/application/api/service/UserInfo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
+        <state relative-caret-position="23">
+          <caret line="48" column="47" selection-start-line="48" selection-start-column="47" selection-end-line="48" selection-end-column="47" />
           <folding>
             <element signature="e#130#170#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/api/controller/v1/User.php">
+    <entry file="file://$PROJECT_DIR$/application/api/service/Token.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="42" column="36" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="36" />
+        <state relative-caret-position="391">
+          <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/api/controller/v1/Product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="27" column="37" lean-forward="true" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+          <folding>
+            <element signature="e#127#159#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/api/validate/IDMustBePositiveInt.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extend/alisms/vendor/phpunit/phpunit/tests/_files/configuration.colors.empty.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extend/alisms/vendor/phpunit/phpunit/tests/_files/structureExpected.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="88" selection-start-line="1" selection-start-column="88" selection-end-line="1" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extend/alisms/vendor/phpunit/phpunit/tests/Fail/fail.phpt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extend/alisms/vendor/phpunit/php-code-coverage/tests/_files/CoverageTwoDefaultClassAnnotations.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extend/alisms/vendor/phpspec/prophecy/spec/Prophecy/ArgumentSpec.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extend/alisms/vendor/phpspec/prophecy/fixtures/EmptyClass.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extend/alisms/vendor/phpspec/prophecy/fixtures/FinalClass.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extend/alisms/vendor/phpspec/prophecy/fixtures/EmptyInterface.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extend/alisms/vendor/phpunit/php-token-stream/tests/_fixture/classUsesNamespacedFunction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extend/alisms/tests/Core/DefaultAcsClientTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/api/controller/v1/Login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        <state relative-caret-position="246">
+          <caret line="30" column="29" lean-forward="true" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="44" />
           <folding>
-            <element signature="e#128#157#0#PHP" expanded="true" />
+            <element signature="e#128#147#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/api/controller/v2/Bind.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="24" column="41" lean-forward="true" selection-end-line="33" selection-end-column="3" />
         </state>
       </provider>
     </entry>
